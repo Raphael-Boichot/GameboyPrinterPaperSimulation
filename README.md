@@ -1,4 +1,4 @@
-# Gameboy Printer Paper Simulation
+# Gameboy Printer Paper Simulation V1
 
 * Creation Date: 2020-08-23
 * Author: *Raphaël BOICHOT*
@@ -111,6 +111,8 @@ This allowed him to generate this dot ![](./images/2020-08-17/dot_small.png) and
 ### Attempt 2: Less Error
 
 * ![](./images/2020-08-17/attempt2_lesserror.png)
+
+# Gameboy Printer Paper Simulation V2
 
 ### Attempt 3: Less Pixel Masking
 
