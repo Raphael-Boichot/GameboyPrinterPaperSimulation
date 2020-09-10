@@ -110,25 +110,25 @@ This allowed him to generate this dot ![](./images/2020-08-17/dot_small.png) and
 
 ### Attempt 2: Less Error
 
-* ![](./images/2020-08-17/attempt2_lesserror.png)
+![](./images/2020-08-17/attempt2_lesserror.png)
 
 ### Attempt 3: Less Pixel Masking
 
-* ![](./images/2020-08-17/attempt3_lesspixelmask.png)
+![](./images/2020-08-17/attempt3_lesspixelmask.png)
 
 ### Attempt 4: Hard To Be Crap Like Reality
 
 > It hard to be crap like reality ~ Raphaël BOICHOT
 
-* ![](./images/2020-08-17/attempt4_hardToBeCrapLikeReality.png)
+![](./images/2020-08-17/attempt4_hardToBeCrapLikeReality.png)
 
 ### Attempt 5: Link
 
-* ![](./images/2020-08-17/attempt5_link.png)
+![](./images/2020-08-17/attempt5_link.png)
 
 ### Attempt 6: Squid
 
-* ![](./images/2020-08-17/attempt6_squid.png)
+![](./images/2020-08-17/attempt6_squid.png)
 
 # Gameboy Printer Paper Simulation V2
 
@@ -140,11 +140,15 @@ Typically, there is no image available to print that presents perfectly isolated
 https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
 
 So I created this test image :
-* ![](./images/2020-09-10/Image_test.png)
+![](./images/2020-09-10/Image_test.png)
 
 Then I scanned a print of this image :
-* ![](./images/2020-09-10/Image_test_printed.png)
+![](./images/2020-09-10/Image_test_printed.png)
 
 And I sampled a collection of 50 pixels of each level of grayscale : 
-* ![](./images/2020-09-10/Pixel_sample_3600dpi.png)
+![](./images/2020-09-10/Pixel_sample_3600dpi.png)
+
+![](./images/2020-09-10/Chip_chip.png)
+![](./images/2020-09-10/Printed.png)
+![](./images/2020-09-10/Direct_e-paper.png)
 
