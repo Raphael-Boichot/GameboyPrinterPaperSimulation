@@ -148,7 +148,10 @@ Then I scanned a print of this image :
 And I sampled a collection of 50 pixels of each level of grayscale : 
 ![](./images/2020-09-10/Pixel_sample_3600dpi.png)
 
+# The pixel perfect test case :
 ![](./images/2020-09-10/Chip_chip.png)
+# A scan of printed image on a real Game Boy Printer :
 ![](./images/2020-09-10/Printed.png)
+# The e-paper image obtained with Octave :
 ![](./images/2020-09-10/Direct_e-paper.png)
 
