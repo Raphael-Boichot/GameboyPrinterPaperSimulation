@@ -112,8 +112,6 @@ This allowed him to generate this dot ![](./images/2020-08-17/dot_small.png) and
 
 * ![](./images/2020-08-17/attempt2_lesserror.png)
 
-# Gameboy Printer Paper Simulation V2
-
 ### Attempt 3: Less Pixel Masking
 
 * ![](./images/2020-08-17/attempt3_lesspixelmask.png)
@@ -132,5 +130,21 @@ This allowed him to generate this dot ![](./images/2020-08-17/dot_small.png) and
 
 * ![](./images/2020-08-17/attempt6_squid.png)
 
+# Gameboy Printer Paper Simulation V2
 
+By Raphaël BOICHOT, 2020-09-10. 
+After considering many comparisons between the code V1 and real prints obtained with a recently bought Pocket Printer, I was still not satisfied by the rendering. The difficulty is that the printer add noise to the image at diffrent length scales, what is particularly difficult to render with a fast code. So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality images of isolated pixels printed with my printer.
+
+Typically, there is no image available to print that presents perfectly isolated pixels. My idea was to create a test case with my brand new SD printer :
+
+https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
+
+So I created this test image :
+* ![](./images/2020-09-10/Image_test.png)
+
+Then I scanned a print of this image :
+* ![](./images/2020-09-10/Image_test_printed.png)
+
+And I sampled a collection of 50 pixels of each level of grayscale : 
+* ![](./images/2020-09-10/Pixel_sample_3600dpi.png)
 
