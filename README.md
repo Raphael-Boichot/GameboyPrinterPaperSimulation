@@ -132,26 +132,35 @@ This allowed him to generate this dot ![](./images/2020-08-17/dot_small.png) and
 
 # Gameboy Printer Paper Simulation V2
 
-By Raphaël BOICHOT, 2020-09-10. 
-After considering many comparisons between the code V1 and real prints obtained with a recently bought Pocket Printer, I was still not satisfied by the rendering. The difficulty is that the printer add noise to the image at diffrent length scales, what is particularly difficult to render with a fast code. So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality images of isolated pixels printed with my printer.
+* Creation Date: 2020-09-10
+* Author: *Raphaël BOICHOT*
 
-Typically, there is no image available to print that presents perfectly isolated pixels. My idea was to create a test case with my brand new SD printer :
+After considering many comparisons between the code V1 and real prints obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer add noise to the image at different length scales, what is particularly difficult to render with a fast code. So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality images of isolated pixels printed with my printer.
+
+Typically, there is no image available to print in Game Boy library that presents perfectly isolated pixels. My idea was to create a test case with my brand new SD printer :
 
 https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
 
-So I created this test image :
+So I created this test image with isolated pixels of the three different grayscales :
 ![](./images/2020-09-10/Image_test.png)
 
-Then I scanned a print of this image :
+Then I scanned a printed of this image at 3600 dpi (sufficient to see the details of pixels) :
 ![](./images/2020-09-10/Image_test_printed.png)
 
-And I sampled a collection of 50 pixels of each level of grayscale : 
+And I sampled manually a collection of 50 pixels of each level of grayscale : 
 ![](./images/2020-09-10/Pixel_sample_3600dpi.png)
 
+The the Octave code just read a pixel on a pixel perfect image, pick a random pixel amonng the 50 of its own "color" and draw it on a new file with some overlapping. 50 pixels of each color is not much but a pixel is a simple matrix of value. In consequence, to increase randomness each pixel itself is flipped or rotated randomly. Finally, the printing paper presents fibres that create vertical streaks of "ink" (thermal paper has no ink but you see the idea). So the code randomly decreases the intensity of printing along some streaks chosen randomly.
+
+I choose to make a test case with a Chip Chip printed from Super Mario Deluxe :
 # The pixel perfect test case :
 ![](./images/2020-09-10/Chip_chip.png)
+
+I then scanned this printing at 3600 dpi (after some contrast enhancement, the printings appear in fact greenish)
 # A scan of printed image on a real Game Boy Printer :
 ![](./images/2020-09-10/Printed.png)
+
+Then I ran Octave with the pixel perfect image and here the result : 
 # The e-paper image obtained with Octave :
 ![](./images/2020-09-10/Direct_e-paper.png)
 
