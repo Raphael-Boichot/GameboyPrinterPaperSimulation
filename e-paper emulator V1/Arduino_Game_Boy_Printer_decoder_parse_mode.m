@@ -10,6 +10,7 @@ global file
 fid = fopen(file,'r');
 IMAGE=[];
 output_image=[];
+output_crap=[];
 DATA=0;
 PRINTER=0;
 PRINTING=0;
@@ -43,6 +44,7 @@ NEW_READ=1;
 if not(isempty(strfind(a,str)))
 % We get the current palette here. Each packet could have it's own palette
 PALETTE=dec2bin(str2double(a(strfind(a,'pallet')+8:strfind(a,'pallet')+10)),8);
+if PALETTE==0;PALETTE=228;end;
 %3 = black, 2 = dark gray, 1 = light gray, 0 = white
 COLORS=[bin2dec(PALETTE(7:8)), bin2dec(PALETTE(5:6))...
     bin2dec(PALETTE(3:4)), bin2dec(PALETTE(1:2))];
@@ -88,7 +90,7 @@ if COMPRESSION==1
     a_parse=num2str([]);
     a=fgets(fid);
     while(isempty(strfind(a,'{')))
-    a_parse=[a_parse,a(1:end-2),' '];
+    a_parse=[a_parse,a(1:end-1),' '];
     a=fgets(fid);
     end
     NEW_READ=0;
@@ -176,13 +178,24 @@ end
 if PRINTER==1
 [h, w, ~]=size(IMAGE);
 frame=zeros(h, w, 3);
+crap_frame=zeros(h, w);
 %now we swap the palette, as palette may vary.
         for j=1:1:h
         for k=1:1:w
         IMAGE(j,k)=COLORS(IMAGE(j,k)+1);
         end
         end
-
+        
+%Frame for CrapPrinter undergoes a separate treattment    
+        for j=1:1:h
+        for k=1:1:w
+        if IMAGE(j,k)==0; crap_frame(j,k,:)=255; end
+        if IMAGE(j,k)==1; crap_frame(j,k,:)=168; end
+        if IMAGE(j,k)==2; crap_frame(j,k,:)=84; end
+        if IMAGE(j,k)==3; crap_frame(j,k,:)=0; end
+        end
+        end
+        
 %now we colorize the image in RGB true colors        
         for j=1:1:h
         for k=1:1:w
@@ -206,11 +219,19 @@ if color_option==3
          if IMAGE(j,k)==1; frame(j,k,:)=[93 150 78]; end
          if IMAGE(j,k)==0; frame(j,k,:)=[120 169 59]; end
 end
+
+if color_option==4
+         if IMAGE(j,k)==3; frame(j,k,:)=[0 0 0];end
+         if IMAGE(j,k)==2; frame(j,k,:)=[239 42 248]; end
+         if IMAGE(j,k)==1; frame(j,k,:)=[89 255 252]; end
+         if IMAGE(j,k)==0; frame(j,k,:)=[255 255 255]; end
+end
         end
         end
     %converts double into 8 bits integers  
     frame=uint8(frame);
     output_image=[output_image;frame];
+    output_crap=[output_crap;crap_frame];
     figure(1)
     imagesc(output_image)
     colormap(gray)
@@ -222,11 +243,12 @@ end
     imwrite(output_image,['Game_Boy_Pixel_perfect_',num2str(PRINTING),'.png'])
     if crap_mode==1
     disp('Creating e-paper image, be patient...')
-    [crap]=Game_Boy_crap_me(output_image);
+    [crap]=Game_Boy_crap_me(output_crap);
     imwrite(crap,['Game_Boy_Printer_e-paper_',num2str(PRINTING),'.png']);    
     disp('Printing e-paper image')
     end  
-    output_image=[];  
+    output_image=[];
+    output_crap=[];
     end
     end
     
@@ -242,7 +264,7 @@ if not(isempty(output_image))
     imwrite(output_image,['Game_Boy_Pixel_perfect_',num2str(PRINTING),'.png'])
     if crap_mode==1
     disp('Creating e-paper image, be patient...')
-    [crap]=Game_Boy_crap_me(output_image);
+    [crap]=Game_Boy_crap_me(output_crap);
     imwrite(crap,['Game_Boy_Printer_e-paper_',num2str(PRINTING),'.png']);    
     disp('Printing e-paper image')
     end
