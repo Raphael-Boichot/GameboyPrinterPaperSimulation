@@ -38,7 +38,7 @@ https://t.me/gameboycamera
 
 --------------------------------------------------------------------------------
 
-# Two ways of using the emulator :
+# Two ways of using the emulator V1 :
 
 - Copy paste game boy serial data obtained from https://github.com/mofosyne/arduino-gameboy-printer-emulator into Entry_file.txt
 - Open Octave/Matlab code "Main_Decoder.m"
@@ -163,6 +163,22 @@ I then scanned this printing at 3600 dpi (after some contrast enhancement, the p
 Then I ran Octave with the pixel perfect image and here the result : 
 # The e-paper image obtained with Octave :
 ![](./images/2020-09-10/Direct_e-paper.png)
+
+# Two ways of using the emulator V2 :
+
+- Copy paste game boy serial data obtained from https://github.com/mofosyne/arduino-gameboy-printer-emulator into Entry_file.txt
+- Open Octave/Matlab code "Main_Decoder.m"
+- Choose some options
+- Run and wait
+- Enjoy your images
+
+OR
+
+- Choose a pixel perfect image 4 shades of gray from any Game Boy Game using the printer (or any other source)
+- Open Octave/Matlab code "Game_Boy_crap_me_directly.m"
+- Change the name of the image file to convert
+- Run and wait
+- Enjoy your 16 millions color 2564x2308 new image
 
 # The e-paper squid test :
 ![](./images/2020-09-10/Squid_e-paper.png)
