@@ -44,6 +44,7 @@ NEW_READ=1;
 if not(isempty(strfind(a,str)))
 % We get the current palette here. Each packet could have it's own palette
 PALETTE=dec2bin(str2double(a(strfind(a,'pallet')+8:strfind(a,'pallet')+10)),8);
+if PALETTE==0;PALETTE=228;end;
 %3 = black, 2 = dark gray, 1 = light gray, 0 = white
 COLORS=[bin2dec(PALETTE(7:8)), bin2dec(PALETTE(5:6))...
     bin2dec(PALETTE(3:4)), bin2dec(PALETTE(1:2))];
@@ -89,7 +90,7 @@ if COMPRESSION==1
     a_parse=num2str([]);
     a=fgets(fid);
     while(isempty(strfind(a,'{')))
-    a_parse=[a_parse,a(1:end-2),' '];
+    a_parse=[a_parse,a(1:end-1),' '];
     a=fgets(fid);
     end
     NEW_READ=0;

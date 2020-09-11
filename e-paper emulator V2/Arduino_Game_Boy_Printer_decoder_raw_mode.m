@@ -38,6 +38,7 @@ str='88 33 02';
 if not(isempty(strfind(a,str)))
 % We get the current palette here. Each packet could have it's own palette
 PALETTE=dec2bin(hex2dec(a(25:26)),8);
+if PALETTE=='00000000';PALETTE='11100100';end;
 %3 = black, 2 = dark gray, 1 = light gray, 0 = white
 COLORS=[bin2dec(PALETTE(7:8)), bin2dec(PALETTE(5:6))...
     bin2dec(PALETTE(3:4)), bin2dec(PALETTE(1:2))];
@@ -115,7 +116,7 @@ end
         
     if not (COMPRESSION==1)
     %I just extract the data, not the commands or checksum
-    a=a(19:end-15);
+    a=a(19:end);
     end
     
     PACKET_image_width=160;
