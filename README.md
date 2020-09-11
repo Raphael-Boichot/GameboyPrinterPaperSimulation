@@ -164,6 +164,6 @@ Then I ran Octave with the pixel perfect image and here the result :
 # The e-paper image obtained with Octave :
 ![](./images/2020-09-10/Direct_e-paper.png)
 
-# The Squid test :
+# The e-paper squid test :
 ![](./images/2020-09-10/Squid_e-paper.png)
 
