@@ -1,5 +1,5 @@
 %function [output]=Game_Boy_crap_me(input)
-% Raphaël BOICHOT 10-09-2020
+% RaphaÃ«l BOICHOT 10-09-2020
 % code to simulate the speckle aspect of real Game boy printer
 % image come from function call
 
@@ -36,19 +36,19 @@ for i=1:1:heigth
        d=c+mul-1;
        if IMAGE(i,j)==C(1)
        y=0;
-       x=ceil(39*rand);
+       x=ceil(49*rand);
        burn_dot=pixel_sample(1+20*y:20+20*y,1+20*x:20+20*x,:);
        end
        
        if IMAGE(i,j)==C(2)
        y=1;
-       x=ceil(39*rand);
+       x=ceil(49*rand);
        burn_dot=pixel_sample(1+20*y:20+20*y,1+20*x:20+20*x,:);
        end
        
        if IMAGE(i,j)==C(3)
        y=2;
-       x=ceil(39*rand);
+       x=ceil(49*rand);
        burn_dot=pixel_sample(1+20*y:20+20*y,1+20*x:20+20*x,:);
        end
             
