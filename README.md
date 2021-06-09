@@ -185,3 +185,9 @@ OR
 
 # Some known relaxing scene in all it's pixel glory to end :
 ![](./images/2020-09-10/Z1_e-paper.png)
+
+# Gameboy Printer Paper Simulation V2
+
+* Creation Date: 2021-06-09
+* Author: *Raphaël BOICHOT*
+V3 is just and update to follow V3 of the Game Boy Printer emulator, nothing change compared to V2 for user, enjoy it !
