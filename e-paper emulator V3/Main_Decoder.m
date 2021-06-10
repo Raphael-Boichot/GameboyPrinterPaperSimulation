@@ -11,7 +11,7 @@ clc
 % Here you enter some parameters
 %------------------------------------------------------------------------
 file='Entry_file.txt';% enter text file to decode
-crap_mode=1; %1 for e-paper and pixel perfect, 0 for pixel perfect only;
+crap_mode=0; %1 for e-paper and pixel perfect, 0 for pixel perfect only;
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG
 %4 for CGA
 %------------------------------------------------------------------------
@@ -94,8 +94,8 @@ if COMPRESSION==1
     b=num2str([]);
     while byte_counter<640
     command=hex2dec(a(pos:pos+1));
-    if command>128 %its a compressed run, read the next byte and repeat
-        %disp('Compressed Run')
+    if command>=128 %its a compressed run, read the next byte and repeat
+        disp('Compressed Run')
         length_run=command-128+2;
         byte=a(pos+3:pos+4);
         for i=1:1:length_run
@@ -107,7 +107,7 @@ if COMPRESSION==1
     end
     
     if command<128 %its a classical run, read the n bytes after
-        %disp('Uncompressed Run')
+        disp('Uncompressed Run')
         length_run=command+1;
         byte=a(pos+3:pos+length_run*3+1);
         b=[b,byte,' '];
