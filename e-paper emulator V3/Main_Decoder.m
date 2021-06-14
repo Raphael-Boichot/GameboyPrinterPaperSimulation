@@ -11,7 +11,7 @@ clc
 % Here you enter some parameters
 %------------------------------------------------------------------------
 file='Entry_file.txt';% enter text file to decode
-crap_mode=0; %1 for e-paper and pixel perfect, 0 for pixel perfect only;
+crap_mode=1; %1 for e-paper and pixel perfect, 0 for pixel perfect only;
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG
 %4 for CGA
 %------------------------------------------------------------------------
@@ -54,19 +54,20 @@ COLORS=[bin2dec(PALETTE(7:8)), bin2dec(PALETTE(5:6))...
 MARGIN=dec2bin(hex2dec(a(22:23)),8);
 % the protocol assumes that a margin of 3, '11' in binary is the end of an image
 % data are so printed as a new png file
-if MARGIN(7:8)=='11'
-disp('PRINT DATA TO A NEW FILE DUE TO MARGIN')
-CONTINUE=0;
-PRINTER=1;
-PRINTING=PRINTING+1;
-end
-%If (margin=0), the 'PRNT' command just signals to print a subpart of the image
-%the code continues stacking the sub-images in this case
-if MARGIN(7:8)=='00'
-disp('CONTINUE PRINTING')
-PRINTER=1;
-CONTINUE=1;
-end
+test=bin2dec(MARGIN(7:8));
+    if not(test==0)
+        disp('PRINT DATA TO A NEW FILE DUE TO MARGIN')
+        CONTINUE=0;
+        PRINTER=1;
+        disp(['Margin : ', num2str(test), ' lines'])
+    end
+    %If (margin=0), the 'PRNT' command just signals to print a subpart of the image
+    %the code continues stacking the sub-images in this case
+    if test==0
+        disp('CONTINUE PRINTING...')
+        PRINTER=1;
+        CONTINUE=1;
+    end
 
 end
 
@@ -95,7 +96,7 @@ if COMPRESSION==1
     while byte_counter<640
     command=hex2dec(a(pos:pos+1));
     if command>=128 %its a compressed run, read the next byte and repeat
-        disp('Compressed Run')
+        %disp('Compressed Run')
         length_run=command-128+2;
         byte=a(pos+3:pos+4);
         for i=1:1:length_run
@@ -107,7 +108,7 @@ if COMPRESSION==1
     end
     
     if command<128 %its a classical run, read the n bytes after
-        disp('Uncompressed Run')
+        %disp('Uncompressed Run')
         length_run=command+1;
         byte=a(pos+3:pos+length_run*3+1);
         b=[b,byte,' '];
@@ -226,11 +227,12 @@ end
     figure(1)
     imagesc(output_image)
     colormap(gray)
-    pause(1)   
+    drawnow
     
     if not(CONTINUE==1)
     if not(isempty(frame))
     disp('FLUSH PRINTER')
+    PRINTING=PRINTING+1;
     imwrite(output_image,['Game_Boy_Pixel_perfect_',num2str(PRINTING),'.png'])
     if crap_mode==1
     disp('Creating e-paper image, be patient...')
@@ -252,6 +254,7 @@ end
 % flushed at the end of transmission as a stripe of images.
 if not(isempty(output_image))
     disp('FLUSH PRINTER BY FORCE')
+    PRINTING=PRINTING+1;
     imwrite(output_image,['Game_Boy_Pixel_perfect_',num2str(PRINTING),'.png'])
     if crap_mode==1
     disp('Creating e-paper image, be patient...')
