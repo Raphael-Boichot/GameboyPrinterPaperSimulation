@@ -222,8 +222,10 @@ end
         end
     %converts double into 8 bits integers  
     frame=uint8(frame);
+    if not(isempty(frame))
     output_image=[output_image;frame];
     output_crap=[output_crap;crap_frame];
+    end
     figure(1)
     imagesc(output_image)
     colormap(gray)
@@ -235,10 +237,14 @@ end
     PRINTING=PRINTING+1;
     imwrite(output_image,['Game_Boy_Pixel_perfect_',num2str(PRINTING),'.png'])
     if crap_mode==1
+    if unique(IMAGE)==4;
     disp('Creating e-paper image, be patient...')
     [crap]=Game_Boy_crap_me(output_crap);
     imwrite(crap,['Game_Boy_Printer_e-paper_',num2str(PRINTING),'.png']);    
     disp('Printing e-paper image')
+    else
+    msgbox('The image has less that 4 colors and is not compatible with the e-paper mode')    
+    end    
     end  
     output_image=[]; 
     output_crap=[];
@@ -256,12 +262,14 @@ if not(isempty(output_image))
     disp('FLUSH PRINTER BY FORCE')
     PRINTING=PRINTING+1;
     imwrite(output_image,['Game_Boy_Pixel_perfect_',num2str(PRINTING),'.png'])
-    if crap_mode==1
+    if unique(IMAGE)==4;
     disp('Creating e-paper image, be patient...')
     [crap]=Game_Boy_crap_me(output_crap);
     imwrite(crap,['Game_Boy_Printer_e-paper_',num2str(PRINTING),'.png']);    
     disp('Printing e-paper image')
-    end
+    else
+    msgbox('The image has less that 4 colors and is not compatible with the e-paper mode')    
+    end 
 end
 
 
