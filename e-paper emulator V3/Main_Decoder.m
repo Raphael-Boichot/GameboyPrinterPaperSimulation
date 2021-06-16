@@ -1,7 +1,6 @@
 % Raphaël BOICHOT 15/06/2021 Game Boy printer emulator
 % code can handle compression, palette tricks and multiple images
 % for any question : raphael.boichot@gmail.com
-% code can handle compression and multiple images
 % update V3 to follow compatibility with https://github.com/mofosyne/arduino-gameboy-printer-emulator
 clear
 clc
