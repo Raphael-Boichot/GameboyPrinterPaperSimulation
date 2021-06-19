@@ -191,5 +191,5 @@ OR
 * Creation Date: 2021-06-09
 * Author: *Raphaël BOICHOT*
 
-V3 is just and update to follow V3 of the Game Boy Printer emulator, nothing change compared to V2 for user, enjoy it !
+V3 is just a reboot made fron scratch to follow V3 of the Game Boy Printer emulator, nothing change compared to V2 for user, enjoy it !
 I have removed the possibility to directly transform an image into e-paper as it was source of bugs. Now everything passes through entry text file.
