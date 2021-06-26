@@ -9,13 +9,16 @@ clc
 %------------------------------------------------------------------------
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG
-continuous_printing=1; %0 to separate images, 1 for continuous printing
+continuous_printing=0; %0 to separate images by Timed Out, 1 for continuous printing
 %4 for CGA
 %------------------------------------------------------------------------
 raw_image=[];
 num_image=0;
 fid = fopen(file,'r');
-
+colored=[];
+colored_image=[];
+BandW=[];
+BandW_image=[];
 while ~feof(fid)
     a=fgets(fid);
     % str='88 33 01';
@@ -44,11 +47,14 @@ while ~feof(fid)
     str='88 33 02';
     if not(isempty(strfind(a,str)))&&not(isempty(raw_image))
         disp('PRINT command received')
-        [colored_image, margin]= color_packet(a,raw_image,color_option);
-        [BandW_image, margin]= color_packet(a,raw_image,1);
+        [colored, margin]= color_packet(a,raw_image,color_option);
+        colored_image=[colored_image;colored];
+        [BandW, margin]= color_packet(a,raw_image,1);
+        BandW_image=[BandW_image;BandW];
         [epaper]=epaper_packet(BandW_image);
         disp(['The margin is ',num2str(margin), ' lines'])
         imagesc(epaper)
+        raw_image=[];
         if not(margin==0);
             num_image=num_image+1;
             epaper=imresize(epaper,0.3,'bilinear');
@@ -56,26 +62,35 @@ while ~feof(fid)
             imwrite(colored_image,['GameBoy_',num2str(num_image),'.png'])
             raw_image=[];
             colored_image=[];
+            colored=[];
+            BandW=[];
+            BandW_image=[];
         end
     end
     
     str='Timed Out';
-    if not(isempty(strfind(a,str)))&&not(isempty(raw_image))&&not(continuous_printing)
+    if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&not(continuous_printing)
         disp('Timed Out received')
         num_image=num_image+1;
         imwrite(epaper,['GameBoy_epaper_',num2str(num_image),'.png'])
         imwrite(colored_image,['GameBoy_',num2str(num_image),'.png'])
         raw_image=[];
         colored_image=[];
+        colored=[];
+        BandW=[];
+        BandW_image=[];
         disp('Flush spooler by force')
     end
 end
 
-if not(isempty(raw_image))
+if not(isempty(colored_image))
     num_image=num_image+1;
     imwrite(epaper,['GameBoy_epaper_',num2str(num_image),'.png'])
     imwrite(colored_image,['GameBoy_',num2str(num_image),'.png'])
     raw_image=[];
     colored_image=[];
+    colored=[];
+    BandW=[];
+    BandW_image=[];
     disp('Flush spooler by force')
 end
