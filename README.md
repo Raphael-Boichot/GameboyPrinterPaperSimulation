@@ -11,7 +11,7 @@ The motivation ? As Game Boy Printer paper rolls are more and more difficult to 
 
 The Game Boy printer emulator developped by Brian Khuu was indeed able to capture a stream of serial data, but transforming this stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer, with the tone, noise, granularity and aliasing due to the printer head, was challenging compared to a classical pixel perfect rendering.
 
-My first idea was to do a simulation of printer head by replacing pixels by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. The result was interesting but even by playing on noise... is was not the real thing.
+My first idea was to do a simulation of printer head by replacing pixels by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. The result was interesting for sure.
 
 # Let's play with noisy gaussian dots
 
