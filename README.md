@@ -3,13 +3,15 @@
 * Creation Date: 2020-08-23, last update 2021-06-27
 * Authors: *Raphaël BOICHOT, Brian Khuu*
 
-This project serves as an alternative printing device for https://github.com/mofosyne/arduino-gameboy-printer-emulator
+This project serves as an alternative decoder for https://github.com/mofosyne/arduino-gameboy-printer-emulator that captures text informations only.
 
-The purpose of this octave/matlab project is to mimick the soft paper aspect of a Game Boy Printer from a digital stream of serial data. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. The Game Boy printer emulator developped was indeed able to capture pixel perfect information from a stream of serial data, but transforming this stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer head was challenging.
+The purpose of this octave/matlab project is to mimick the soft paper aspect of a Game Boy Printer from a decoded stream of serial data output by an Arduino. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. 
 
-Here is the idea : as Game Boy Printer paper rolls are more and more difficult to find and subjected to definitive deterioration with time, why not trying to find a way to output directly Game Boy Printer images in a digital format so that they become time insenstive. It should be possible to make an "after converter" that outputs images having the same soft aspect than printed paper, with the tone, noise, granularity and aliasing due to the printer head. 
+The motivation ? As Game Boy Printer paper rolls are more and more difficult to find and subjected to definitive deterioration with time, why not trying to find a way to output directly Game Boy Printer images in a realistic digital format so that they become time insenstive. 
 
-My first idea was to do a simulation of printer head by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. The result was interesting but even by playing on noise... is was not the real thing.
+The Game Boy printer emulator developped by Brian Khuu was indeed able to capture a stream of serial data, but transforming this stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer, with the tone, noise, granularity and aliasing due to the printer head, was challenging compared to a classical pixel perfect rendering.
+
+My first idea was to do a simulation of printer head by replacing pixels by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. The result was interesting but even by playing on noise... is was not the real thing.
 
 # Early attemps to play with noisy gaussian dots
 
@@ -17,13 +19,11 @@ My first idea was to do a simulation of printer head by some sort of Gaussian do
 
 # It must be like the real thing !
 
-After considering many comparisons between the code V1 and real prints obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer adds noise to the image at different length scales due to paper grain.  It was particularly difficult to render this with a code. So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my printer.
+After considering the differences between early outputs and real prints obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer head and paper grain add noise to the image at different length scales. The dots from thermal printer head are not just noisy gaussian circles. They have also a random shape. So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my printer.
 
-Typically, there is no image available to print in Game Boy library that presents perfectly isolated pixels. My idea was to create a test case with my brand new SD Game Boy printer code :
+Typically, there is no image available to print in Game Boy library that presents perfectly isolated pixels in huge quantity. So I have created a test case with my brand new SD Game Boy printer code https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
 
-https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
-
-So I created this test image with isolated pixels of the three different grayscales (white is just ignored) :
+I printed this test image with isolated pixels of the three different grayscales (white is just ignored) :
 ![](./images/2020-09-10/Image_test.png)
 
 Then I scanned a printing of this image at 3600 dpi (sufficient to see the details of pixels, each pixel beeing approx. 20x20 pixels on the scan) :
@@ -52,11 +52,13 @@ Then I ran Octave with the pixel perfect image and here the result :
 - Open Octave/Matlab code "Main_Decoder.m"
 - Choose some options (default are OK)
 - Run and wait
-- Enjoy your images
+- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. It was tested on more than 80 games wwithout any issue.
 
 The Game Boy Printer paper emulator is regularly updated to follow it's companion project, the Game Boy Printer emulator, in terms of compatibility.
 
 # The complete list of games compatible with the Game Boy Printer
+
+Most of these games are compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. See "Game Boy Printer Emulator - Games Support.xlsx" to check the compatibilty list and various hints to print from most of the games, obscure japanese ones included.
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
