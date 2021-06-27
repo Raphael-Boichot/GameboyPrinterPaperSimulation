@@ -11,7 +11,7 @@ Here is the idea : as Game Boy Printer paper rolls are more and more difficult t
 
 My first idea was to do a simulation of printer head by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Pirnter scans at high resolution. The result was interestingbut... is was not the real thing.
 
-### Early attemps with noisy gaussian dots
+# Early attemps with noisy gaussian dots
 
 ![](./images/2020-08-17/attempt4_hardToBeCrapLikeReality.png)
 
