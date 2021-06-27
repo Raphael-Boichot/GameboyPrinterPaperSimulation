@@ -194,7 +194,7 @@ OR
 V3 is just a reboot made fron scratch to follow V3 of the Game Boy Printer emulator, nothing change compared to V2 for user, enjoy it !
 I have removed the possibility to directly transform an image into e-paper as it was source of bugs. Now everything passes through entry text file.
 
-# The complete list of game compatible with the Game Boy Printer
+# The complete list of games compatible with the Game Boy Printer
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
