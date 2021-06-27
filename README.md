@@ -15,7 +15,7 @@ My first idea was to do a simulation of printer head by replacing pixels by some
 
 # Early attemps to play with noisy gaussian dots
 
-![](./images/2020-08-23/octaveSimVsRealZoomed.png)
+![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/octaveSimPixelDithering.png)
 
 Even if was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with the gaussian approach.
 
