@@ -9,7 +9,7 @@ The purpose of this octave/matlab script is to do an accurate simulation of an o
 
 Here is the idea : as Game Boy Printer paper rolls are more and more difficult to find and subjected to definitive deterioration with time, why not trying to find a way to output directly Game Boy Printer images in a digital format so that they become time insenstive. It should be possible to make an "after converter" that outputs images having the same soft aspect that printed paper, with the tone, noise, granularity and aliasing due to the printer head. 
 
-My first idea was to do a simulation of printer head by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Pirnter scans at high resolution. The result was interestingbut... is was not the real thing.
+My first idea was to do a simulation of printer head by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Pirnter scans at high resolution. The result was interesting but even by playing on noise... is was not the real thing.
 
 # Early attemps with noisy gaussian dots
 
@@ -17,7 +17,7 @@ My first idea was to do a simulation of printer head by some sort of Gaussian do
 
 # It must be like the real thing !
 
-After considering many comparisons between the code V1 and real prints obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer adds noise to the image at different length scales, what is particularly difficult to render with a fast code. So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my printer.
+After considering many comparisons between the code V1 and real prints obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer adds noise to the image at different length scales due to paper grain.  It was particularly difficult to render this with a code. So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my printer.
 
 Typically, there is no image available to print in Game Boy library that presents perfectly isolated pixels. My idea was to create a test case with my brand new SD Game Boy printer code :
 
@@ -50,14 +50,11 @@ Then I ran Octave with the pixel perfect image and here the result :
 
 - Copy paste game boy serial data obtained from https://github.com/mofosyne/arduino-gameboy-printer-emulator into Entry_file.txt
 - Open Octave/Matlab code "Main_Decoder.m"
-- Choose some options
+- Choose some options (default are OK)
 - Run and wait
 - Enjoy your images
 
-The Game Boy Printer paper emulator is regularly updated to follow it's companion project in terms of compatibility.
-
-# Some known relaxing scene in all it's pixel glory to end :
-![](./images/2020-09-10/Z1_e-paper.png)
+The Game Boy Printer paper emulator is regularly updated to follow it's companion project, the Game Boy Printer emulator, in terms of compatibility.
 
 # The complete list of games compatible with the Game Boy Printer
 
@@ -161,13 +158,12 @@ The Game Boy Printer paper emulator is regularly updated to follow it's companio
 - *Tsuri Sensei 2 (釣り先生2)*
 
 --------------------------------------------------------------------------------
-
 # Telegram Gameboy Camera Chatroom
-
 Got telegram instant messaging and have some questions or need any advice, or just want to share? Invite link below:
-
 https://t.me/gameboycamera
-
-
 --------------------------------------------------------------------------------
+
+
+# Some known relaxing scene in all it's pixel glory to end :
+![](./images/2020-09-10/Z1_e-paper.png)
 
