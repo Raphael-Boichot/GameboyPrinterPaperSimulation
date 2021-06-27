@@ -158,6 +158,7 @@ The Game Boy Printer paper emulator is regularly updated to follow it's companio
 - *The Little Mermaid 2: Pinball Frenzy (never released in Japan)*
 - *Tony Hawk's Pro Skater 2 (never released in Japan)*
 - *Trade & Battle: Card Hero (トレード&バトル カードヒーロー)*
+- *Tsuri Sensei 2 (釣り先生2)*
 
 --------------------------------------------------------------------------------
 
@@ -169,4 +170,4 @@ https://t.me/gameboycamera
 
 
 --------------------------------------------------------------------------------
--*Tsuri Sensei 2 (釣り先生2)*
+
