@@ -63,7 +63,7 @@ The Game Boy Printer paper emulator is regularly updated to follow it's companio
 
 # The complete list of games compatible with the Game Boy Printer
 
-Most of these games are compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. See "Game Boy Printer Emulator - Games Support.xlsx" to check the compatibilty list and various hints to print from most of the games, obscure japanese ones included.
+Most of these games are compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. See "Game Boy Printer Emulator - Games Support.xlsx" to check the compatibilty list and various hints to print from most of the games, obscure japanese ones included. This list was never published online before june 2021.
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
