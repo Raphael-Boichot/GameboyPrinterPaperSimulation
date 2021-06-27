@@ -166,6 +166,6 @@ https://t.me/gameboycamera
 --------------------------------------------------------------------------------
 
 
-# Some known relaxing scene in all it's pixel glory to end :
+# Some known relaxing scene made with the code to end :
 ![](./images/2020-09-10/Z1_e-paper.png)
 
