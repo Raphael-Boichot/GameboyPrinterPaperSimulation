@@ -1,6 +1,6 @@
 # Gameboy Printer Paper Simulation
 
-* Creation Date: 2020-08-23
+* Creation Date: 2020-08-23, last update 2021-06-27
 * Authors: *Raphaël BOICHOT, Brian Khuu*
 
 This projects serves as output device for https://github.com/mofosyne/arduino-gameboy-printer-emulator
