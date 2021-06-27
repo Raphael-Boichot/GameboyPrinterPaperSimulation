@@ -9,7 +9,7 @@ The purpose of this octave/matlab script is to do an accurate simulation of an o
 
 Here is the idea : as Game Boy Printer paper rolls are more and more difficult to find and subjected to definitive deterioration with time, why not trying to find a way to output directly Game Boy Printer images in a digital format so that they become time insenstive. It should be possible to make an "after converter" that outputs images having the same soft aspect that printed paper, with the tone, noise, granularity and aliasing due to the printer head. 
 
-My first idea was to do a simulation of printer head by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Pirnter scans at high resolution. The result was interesting but even by playing on noise... is was not the real thing.
+My first idea was to do a simulation of printer head by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. The result was interesting but even by playing on noise... is was not the real thing.
 
 # Early attemps to play with noisy gaussian dots
 
