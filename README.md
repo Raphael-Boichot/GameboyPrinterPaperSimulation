@@ -3,11 +3,11 @@
 * Creation Date: 2020-08-23, last update 2021-06-27
 * Authors: *Raphaël BOICHOT, Brian Khuu*
 
-This projects serves as output device for https://github.com/mofosyne/arduino-gameboy-printer-emulator
+This project serves as an alternative printing device for https://github.com/mofosyne/arduino-gameboy-printer-emulator
 
-The purpose of this octave/matlab project is to digitally mimick the effect of the thermal printer head on the Gameboy Printer roll from the output of a Game Boy Printer emulator. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* in Gameboy Camera Club Discord.
+The purpose of this octave/matlab project is to mimick the soft paper aspect of a Game Boy Printer from a digital stream of serial data. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. The Game Boy printer emulator developped was indeed able to capture pixel perfect information from a stream of serial data, but transforming this stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer head was challenging.
 
-Here is the idea : as Game Boy Printer paper rolls are more and more difficult to find and subjected to definitive deterioration with time, why not trying to find a way to output directly Game Boy Printer images in a digital format so that they become time insenstive. It should be possible to make an "after converter" that outputs images having the same soft aspect that printed paper, with the tone, noise, granularity and aliasing due to the printer head. 
+Here is the idea : as Game Boy Printer paper rolls are more and more difficult to find and subjected to definitive deterioration with time, why not trying to find a way to output directly Game Boy Printer images in a digital format so that they become time insenstive. It should be possible to make an "after converter" that outputs images having the same soft aspect than printed paper, with the tone, noise, granularity and aliasing due to the printer head. 
 
 My first idea was to do a simulation of printer head by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. The result was interesting but even by playing on noise... is was not the real thing.
 
