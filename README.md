@@ -5,7 +5,7 @@
 
 This projects serves as output device for https://github.com/mofosyne/arduino-gameboy-printer-emulator
 
-The purpose of this octave/matlab script is to do an accurate simulation of an output of a Game Boy Printer mimicking the effect of the thermal printer head on the Gameboy Printer roll. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* in Gameboy Camera Club in discord.
+The purpose of this octave/matlab script is to do an accurate simulation of an output of a Game Boy Printer mimicking the effect of the thermal printer head on the Gameboy Printer roll. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* in Gameboy Camera Club Discord.
 
 Here is the idea : as Game Boy Printer paper rolls are more and more difficult to find and subjected to definitive deterioration with time, why not trying to find a way to output directly Game Boy Printer images in a digital format so that they become time insenstive. It should be possible to make an "after converter" that outputs images having the same soft aspect that printed paper, with the tone, noise, granularity and aliasing due to the printer head. 
 
