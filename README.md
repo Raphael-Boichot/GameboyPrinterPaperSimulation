@@ -5,9 +5,7 @@
 
 This project serves as an alternative decoder for https://github.com/mofosyne/arduino-gameboy-printer-emulator that captures text informations only.
 
-The purpose of this octave/matlab project is to mimick the soft paper aspect of a Game Boy Printer from a decoded stream of serial data output by an Arduino. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. 
-
-The motivation ? As Game Boy Printer paper rolls are more and more difficult to find and subjected to definitive deterioration with time, why not trying to find a way to output directly Game Boy Printer images in a realistic digital format so that they become time insenstive. 
+The purpose of this octave/matlab project is to output images from an Arduino Game Boy Printer emulator that have the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. The motivation ? As Game Boy Printer paper rolls are becoming difficult to find and subjected to definitive deterioration with time, emulating them is more and more appealing from an heritage conservation point of view.
 
 The Game Boy printer emulator developped by Brian Khuu was indeed able to capture a stream of serial data, but transforming this stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer, with the tone, noise, granularity and aliasing due to the printer head, was challenging compared to a classical pixel perfect rendering.
 
