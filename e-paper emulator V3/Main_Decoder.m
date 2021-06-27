@@ -9,7 +9,7 @@ clc
 %------------------------------------------------------------------------
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG
-continuous_printing=0; %0 to separate images by Timed Out, 1 for continuous printing
+continuous_printing=1; %0 to separate images by Timed Out, 1 for continuous printing
 %4 for CGA
 %------------------------------------------------------------------------
 raw_image=[];
