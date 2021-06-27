@@ -17,6 +17,8 @@ My first idea was to do a simulation of printer head by replacing pixels by some
 
 ![](./images/2020-08-23/octaveSimVsRealZoomed.png)
 
+Even if was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with the gaussian approach.
+
 # It must be like the real thing !
 
 After considering the differences between early outputs and real prints obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer head and paper grain add noise to the image at different length scales. The dots from thermal printer head are not just noisy gaussian circles. They have also a random shape. So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my printer.
