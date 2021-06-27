@@ -13,7 +13,7 @@ My first idea was to do a simulation of printer head by some sort of Gaussian do
 
 # Early attemps with noisy gaussian dots
 
-![](./images/2020-08-17/attempt4_hardToBeCrapLikeReality.png)
+![](./images/2020-08-23/octaveSimVsRealZoomed.png)
 
 # It must be like the real thing !
 
