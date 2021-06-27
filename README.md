@@ -3,7 +3,7 @@
 * Creation Date: 2020-08-23, last update 2021-06-27
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 
-This project serves as an alternative decoder for https://github.com/mofosyne/arduino-gameboy-printer-emulator that captures text informations only (in 2021).
+This project serves as an alternative decoder for https://github.com/mofosyne/arduino-gameboy-printer-emulator that captures text informations only (at least in 2021).
 
 The purpose of this octave/matlab project is to output images from an Arduino Game Boy Printer emulator that have the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project emerges after a discussion between *Raphaël BOICHOT*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. The motivation ? As Game Boy Printer paper is becoming difficult to find and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view.
 
