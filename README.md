@@ -57,7 +57,7 @@ Then I ran Octave with the pixel perfect image and here the result :
 - Open Octave/Matlab code "Main_Decoder.m"
 - Choose some options (default are OK)
 - Run and wait
-- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. It was tested on more than 80 games wwithout any issue.
+- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. It was tested on more than 80 games without any issue.
 
 The Game Boy Printer paper emulator is regularly updated to follow it's companion project, the Game Boy Printer emulator, in terms of compatibility.
 
