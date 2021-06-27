@@ -1,7 +1,7 @@
-# Gameboy Printer Paper Simulation V1
+# Gameboy Printer Paper Simulation
 
 * Creation Date: 2020-08-23
-* Author: *Raphaël BOICHOT*
+* Authors: *Raphaël BOICHOT*
 * Curator: Brian Khuu
 
 Author of this script is *Raphaël BOICHOT* and was posted here with his permission.
