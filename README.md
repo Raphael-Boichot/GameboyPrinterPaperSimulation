@@ -12,15 +12,12 @@ The Game Boy printer emulator developped by Brian Khuu was indeed able to captur
 My first idea was to do a simulation of printer head by replacing pixels by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. The result was interesting for sure.
 
 # Let's play with noisy gaussian dots
-
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/octaveSimPixelDithering.png)
 
-# Example of a pixel perfect image
-
+# The pixel perfect test case :
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/Game_Boy_Pixel_perfect_1.png)
 
 # Example of an early attempt of paper simulation
-
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/Game_Boy_Printer_e-paper_1.png)
 
 Even if was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with this  approach. We need a more agrressive design !
