@@ -196,9 +196,9 @@ I have removed the possibility to directly transform an image into e-paper as it
 
 # The complete list of game compatible with the Game Boy Printer
 
--*1942 (never released in Japan)*
--*Alice in Wonderland (never released in Japan)*
--*Animal Breeder 3 (あにまるぶりーだー3)*
+- *1942 (never released in Japan)*
+- *Alice in Wonderland (never released in Japan)*
+- *Animal Breeder 3 (あにまるぶりーだー3)*
 -*Animal Breeder 4 (あにまるぶり〜だ〜4)*
 -*Aqualife (アクアライフ)*
 -*Asteroids (never released in Japan)*
