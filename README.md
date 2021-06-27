@@ -159,8 +159,10 @@ The Game Boy Printer paper emulator is regularly updated to follow it's companio
 
 --------------------------------------------------------------------------------
 # Telegram Gameboy Camera Chatroom
+
 Got telegram instant messaging and have some questions or need any advice, or just want to share? Invite link below:
 https://t.me/gameboycamera
+
 --------------------------------------------------------------------------------
 
 
