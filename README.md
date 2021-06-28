@@ -155,8 +155,9 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Super Black Bass Pocket 3 (スーパーブラックバスポケット3)*
 - *Super Mario Bros. Deluxe (スーパーマリオブラザーズデラックス)*
 - *Sweet Angel (スウィートアンジェ)*
-- *Sylvanian Families 3 - Hoshi Furu Yoru no Sunadokei (シルバニアファミリー３　星ふる夜のすなどけい)*
 - *Sylvanian Families: Otogi no Kuni no Pendant (シルバニアファミリー 〜おとぎの国のペンダント〜)*
+- *Sylvanian Families 2 - Irozuku Mori no Fantasy (シルバニアファミリー2～色づく森のファンタジー)*
+- *Sylvanian Families 3 - Hoshi Furu Yoru no Sunadokei (シルバニアファミリー３　星ふる夜のすなどけい)*
 - *Tales of Phantasia: Nakiri's Dungeon (テイルズ オブ ファンタジア なりきりダンジョン)*
 - *The Legend of Zelda: Link's Awakening DX (ゼルダの伝説 夢をみる島DX)*
 - *The Little Mermaid 2: Pinball Frenzy (never released in Japan)*
