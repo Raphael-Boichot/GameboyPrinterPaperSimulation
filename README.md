@@ -79,7 +79,7 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Cross Hunter - Monster Hunter Version (クロスハンター モンスター・ハンター・バージョン)*
 - *Cross Hunter - Treasure Hunter (クロスハンター トレジャー・ハンター・バージョン)*
 - *Cross Hunter - X Hunter Version (クロスハンター エックス・ハンター・バージョン)*
-- *Daa! Daa! Daa! - Totsuzen Card de Battle de Uranai de! (だぁ!だぁ!だぁ! とつぜん★カードでバトルで占いで!?)*
+- *Daa! Daa! Daa! Totsuzen ★ Card de Battle de Uranai de!? (だぁ!だぁ!だぁ! とつぜん★カードでバトルで占いで!?)*
 - *Daikaijuu Monogatari: The Miracle of the Zone II (大貝獣物語 ザ・ミラクル オブ ザ・ゾーンII)*
 - *Dejiko no Mahjong Party (でじこの麻雀パーティー)*
 - *Densha de GO! 2 (電車でGO!2)*
