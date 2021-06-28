@@ -9,7 +9,7 @@ The purpose of this octave/matlab project is to output images from an Arduino Ga
 
 The Game Boy printer emulator developped by Brian Khuu was indeed able to capture a stream of serial data, but transforming this stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer, with the tone, noise, granularity and aliasing due to the printer head, was challenging compared to a classical pixel perfect rendering.
 
-My first idea was to do a simulation of printer head by replacing pixels by some sort of Gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. Misalignment of the printer head was also simulated. The result was interesting for sure.
+My first idea was to do a simulation of printer head by replacing pixels by some sort of gaussian dots with lots of noise. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. Misalignment of the printer head was also simulated. The result was interesting for sure.
 
 # Let's play with noisy gaussian dots
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/octaveSimPixelDithering.png)
