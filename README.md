@@ -28,7 +28,7 @@ After considering the differences between early outputs and real prints (scanned
 
 There is no image available to print in Game Boy library that presents perfectly isolated pixels in huge quantity. So I have created a test case with my brand new SD Game Boy printer code https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
 
-I printed this test image with isolated pixels of the three different grayscales (white is just ignored) :
+I first printed this test image with isolated pixels of the three different grayscales (white is just ignored) :
 ![](./images/2020-09-10/Image_test.png)
 
 Then I scanned a printing of this image at 3600 dpi (sufficient to see the details of pixels, each pixel beeing approx. 20x20 pixels on the scan) :
