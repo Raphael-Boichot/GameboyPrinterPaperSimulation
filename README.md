@@ -29,12 +29,14 @@ After considering the differences between early outputs and real prints (scanned
 There is no image available to print in Game Boy library that presents perfectly isolated pixels in huge quantity. So I have created a test case with my brand new SD Game Boy printer code https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
 
 I first printed this test image with isolated pixels of the three different grayscales (white is just ignored) :
+
 ![](./images/2020-09-10/Image_test.png)
 
 Then I scanned a printing of this image at 3600 dpi (sufficient to see the details of pixels, each pixel beeing approx. 20x20 pixels on the scan) :
 ![](./images/2020-09-10/Image_test_printed.png)
 
 And I sampled manually a collection of 50 pixels of each level of grayscale (very boring task but quite rewarding at the end) : 
+
 ![](./images/2020-09-10/Pixel_sample_3600dpi.png)
 
 Then the Octave code just reads a pixel on a pixel perfect image to get its color, picks a random pixel among the 50 of its own "color" and draws it on a new file with some overlapping. 50 pixels of each color is not much, but a pixel is a simple matrix of value. In consequence, to increase randomness each pixel itself is flipped or rotated randomly so that more than 200 different pixels can be generated out of just 50 for each color. Finally, the real printing paper presents fibres that create vertical streaks of "ink" (thermal paper has no ink but you see the idea). So the code randomly decreases the intensity of printing along some streaks of limited length chosen randomly. Of course the code in its present form can be improved, but the result is enough for my poor visual acuity.
