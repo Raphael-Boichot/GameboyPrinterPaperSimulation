@@ -20,7 +20,7 @@ My first idea was to do a simulation of printer head by replacing hard square pi
 # Example of an early attempt of paper simulation
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/Game_Boy_Printer_e-paper_1.png)
 
-Even if was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with this  approach. We need a more agrressive design !
+Even if was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with this  approach. We need a more agressive design !
 
 # It MUST be like the real thermal paper !
 
