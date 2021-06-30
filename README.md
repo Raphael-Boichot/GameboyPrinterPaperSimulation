@@ -91,7 +91,9 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Donkey Kong Country (ドンキーコング2001)*
 - *Doraemon Kart 2 (ドラえもんカート2)*
 - *Doraemon Memories - Nobita no Omoide Daibouken (ドラえもんメモリーズ のび太の想い出大冒険)*
+- *Doraemon no Game Boy de Asobouyo Deluxe 10 (ドラえもんのGBであそぼうよ デラックス10)*
 - *Doraemon no Quiz Boy (ドラえもんのクイズボーイ)*
+- *Dungeon Savior (ダンジョンセイバー)*
 - *E.T.: Digital Companion (never released in Japan)*
 - *Fairy Kitty no Kaiun Jiten: Yousei no Kuni no Uranai Shugyou (フェアリーキティの開運辞典 妖精の国の占い修行)*
 - *Fisher-Price Rescue Heroes: Fire Frenzy (never released in Japan)*
@@ -109,9 +111,11 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Kanji Boy (漢字BOY)*
 - *Karamuchou wa Oosawagi!: Porinkiis to Okashina Nakamatachi (カラムー町は大さわぎ! 〜ポリンキーズとおかしな仲間たち〜)*
 - *Kaseki Sousei Reborn II: Monster Digger (化石創世リボーン2 〜モンスターティガー〜)*
+- *Kettou Transformers Beast Wars - Beast Senshi Saikyou Ketteisen (決闘トランスフォーマービーストウォーズ ビースト戦士最強決定戦)*
 - *Kidou Senkan Nadesico - Ruri Ruri Mahjong (機動戦艦ナデシコ ルリルリ麻雀)*
 - *Kisekae Monogatari (きせかえ物語)*
 - *Klax (never released in Japan)*
+- *Konchuu Hakase 2 (昆虫博士2)*
 - *Little Nicky (never released in Japan)*
 - *Logical (never released in Japan)*
 - *Love Hina Pocket (ラブ ひな)*
@@ -152,6 +156,7 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Roadsters Trophy (never released in Japan)*
 - *Sanrio Timenet: Kako Hen (サンリオタイムネット 過去編)*
 - *Sanrio Timenet: Mirai Hen (サンリオタイムネット 未来編)*
+- *SMARTCOM (never released in Japan)*
 - *Shinseiki Evangelion Mahjong Hokan Keikaku (新世紀エヴァンゲリオン 麻雀補完計画)*
 - *Sōko-ban Densetsu: Hikari to Yami no Kuni (倉庫番伝説 光と闇の国)*
 - *Super Black Bass Pocket 3 (スーパーブラックバスポケット3)*
@@ -166,6 +171,31 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Tony Hawk's Pro Skater 2 (never released in Japan)*
 - *Trade & Battle: Card Hero (トレード&バトル カードヒーロー)*
 - *Tsuri Sensei 2 (釣り先生2)*
+- *VS Lemmings (VS.レミングス)*
+
+# List of games that embed a printer library but without printer support for the player
+
+Code analysis of the Game Boy and Game Boy Color full Romsets revealed that some games (generally sequels of the preceding list) embed a printer library into the code but no printer support for the player. Some of them where clearly intended to use the printer as their gameplay is about unlocking images. The printer support was probably dismissed during game development as most of them are late published Game Boy Color games. Lazy recycling of non-optimized libraries is also not excluded as memory size was less and less critical at this time.
+
+- *Bouken! Dondoko-tou (冒険!ドンドコ島)*
+- *Buffy the Vampire Slayer (never released in Japan)*
+- *Doki x Doki Sasete!! (Doki×Dokiさせて)*
+- *Gekisou Dangun Racer - Onsoku Buster Dangun Dan (激走!ダンガンレーサー 音速バスター DANGUN弾)*
+- *Hamster Club - Awasete Chuu (ハムスター倶楽部 あわせてチュー)*
+- *Hamster Club - Oshiema Chuu (ハムスター倶楽部 おしえまチュー)*
+- *Hamster Club 2 (ハムスター倶楽部2)*
+- *Hamster Paradise 3 (ハムスターパラダイス3)*
+- *Hamster Paradise 4 (ハムスターパラダイス4)*
+- *Konchuu Hakase 3 (昆虫博士3)*
+- *Lemmings (USA version)*
+- *Love Hina Party (ラブひなパーティー)*
+- *Microsoft - The 6 in 1 Puzzle Collection Entertainment Pack (never released in Japan)*
+- *Muteki Ou Tri-Zenon (無敵王トライゼノン)*
+- *Nakayoshi Pet Series 4 - Kawaii Koneko (なかよしペットシリーズ 4 かわいい仔猫)*
+- *Nakayoshi Pet Series 5 - Kawaii Hamster 2 (なかよしペットシリーズ 5 かわいいハムスター 2)*
+- *Watashi no Kitchen (わたしのキッチン)*
+- *Watashi no Restaurant (わたしのレストラン)*
+- *Xena - Warrior Princess (never released in Japan)*
 
 --------------------------------------------------------------------------------
 # Telegram Gameboy Camera Chatroom
