@@ -145,7 +145,7 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Pokémon Card GB2: Great Rocket-Dan Sanjō! (ポケモンカードGB2 GR団参上!)*
 - *Pokémon Crystal (ポケットモンスター クリスタルバージョン)*
 - *Pokémon Gold (ポケットモンスター 金)*
-- *Pokémon Picross (Japan, unreleased)*
+- *Pokémon Picross (ポケモンピクロス, unreleased)*
 - *Pokémon Pinball (ポケモンピンボール)*
 - *Pokémon Silver (ポケットモンスター 銀)*
 - *Pokémon Trading Card Game (ポケモンカードGB)*
