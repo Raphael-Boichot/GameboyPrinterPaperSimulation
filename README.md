@@ -137,7 +137,7 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Nakayoshi Pet Series 3: Kawaii koinu (なかよしペットシリーズ3 かわいい仔犬)*
 - *NFL Blitz (never released in Japan)*
 - *Nintama Rantarou GB: Eawase Challenge Puzzle (忍たま乱太郎GB えあわせチャレンジパズル)*
-- *Ojarumaru: Mitsunegai Jinja no Ennichi de Ojaru! (おじゃる丸 〜満願神社は縁日でおじゃる!〜)*
+- *Ojarumaru: Mitsunegai Jinja no Ennichi de Ojaru! (おじゃる丸 〜満願神社は縁日でおじゃる!)*
 - *Pachinko Data Card - Chou Ataru-kun (Pachinko Data Card ちょ〜あたる君)*
 - *Perfect Dark (never released in Japan)*
 - *Pocket Family 2 (ポケットファミリーGB2)*
