@@ -1,6 +1,6 @@
 # Gameboy Printer Paper Simulation
 
-* Creation Date: 2020-08-23, last update 2021-06-27
+* Creation Date: 2020-08-23, last update 2021-07-17
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 
 This project serves as an alternative decoder for https://github.com/mofosyne/arduino-gameboy-printer-emulator that captures text informations only (at least in 2021).
@@ -65,7 +65,7 @@ This "paper emulator" is regularly updated to follow it's companion project, the
 
 # The complete list of games compatible with the Game Boy Printer (and the paper emulator)
 
-Most of these games are compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. See "Game Boy Printer Emulator - Games Support.xlsx" to check the compatibilty list and various hints to print from most of the games, obscure japanese ones included. This list and the hints were never published online before june 2021. There is in total 106 games compatible.
+Most of these games are compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. See "Game Boy Printer Emulator - Games Support.xlsx" to check the compatibilty list and various hints to print from most of the games, obscure japanese ones included. This list and the hints were never published online before june 2021. There is in total 105 games compatible.
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
