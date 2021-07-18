@@ -110,6 +110,7 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Kakurenbo Battle Monster Tactics (モンスタータクティクス)*
 - *Kanji Boy (漢字BOY)*
 - *Karamuchou wa Oosawagi!: Porinkiis to Okashina Nakamatachi (カラムー町は大さわぎ! 〜ポリンキーズとおかしな仲間たち〜)*
+- *Karamuchou wa Oosawagi!: Okawari! (カラムー町は大さわぎ！おかわりっ！)*
 - *Kaseki Sousei Reborn II: Monster Digger (化石創世リボーン2 〜モンスターティガー〜)*
 - *Kettou Transformers Beast Wars - Beast Senshi Saikyou Ketteisen (決闘トランスフォーマービーストウォーズ ビースト戦士最強決定戦)*
 - *Kidou Senkan Nadesico - Ruri Ruri Mahjong (機動戦艦ナデシコ ルリルリ麻雀)*
@@ -150,14 +151,15 @@ Most of these games are compatible with https://github.com/mofosyne/arduino-game
 - *Pokémon Silver (ポケットモンスター 銀)*
 - *Pokémon Trading Card Game (ポケモンカードGB)*
 - *Pokémon Yellow: Special Pikachu Edition (ポケットモンスター ピカチュウ)*
+- *Pro Mahjong Tsuwamono GB (プロ麻雀兵 GB)*
 - *Purikura Pocket 3 - Talent Debut Daisakusen (プリクラポケット3 〜タレントデビュー大作戦〜)*
 - *Puzzled (never released in Japan)*
 - *Quest for Camelot (never released in Japan)*
 - *Roadsters Trophy (never released in Japan)*
 - *Sanrio Timenet: Kako Hen (サンリオタイムネット 過去編)*
 - *Sanrio Timenet: Mirai Hen (サンリオタイムネット 未来編)*
-- *SMARTCOM (never released in Japan)*
 - *Shinseiki Evangelion Mahjong Hokan Keikaku (新世紀エヴァンゲリオン 麻雀補完計画)*
+- *SMARTCOM (never released in Japan)*
 - *Sōko-ban Densetsu: Hikari to Yami no Kuni (倉庫番伝説 光と闇の国)*
 - *Super Black Bass Pocket 3 (スーパーブラックバスポケット3)*
 - *Super Mario Bros. Deluxe (スーパーマリオブラザーズデラックス)*
