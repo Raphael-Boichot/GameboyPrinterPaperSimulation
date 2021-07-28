@@ -208,7 +208,7 @@ On the 107 games compatible with the Game Boy Printer
 - *28 games communicate with serial protocol in double speed mode*
 - *5 games use a compression in their serial protocol*
 - *4 games use a two color palette on purpose*
-- *3 games use 0x00 as default palette instead of 0xE4
+- *3 games use 0x00 as default palette instead of 0xE4*
 - *1 GAME belongs to the list of games leaked in september 2020 (Pokémon Picross)*
 
 --------------------------------------------------------------------------------
