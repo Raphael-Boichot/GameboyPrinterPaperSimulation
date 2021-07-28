@@ -206,7 +206,7 @@ On the 107 games compatible with the Game Boy Printer
 - *70 games were realeased only in Japan*
 - *33 games use custom palettes (not 0xE4)*
 - *28 games communicate with serial protocol in double speed mode*
-- *5 games use a compression in their serial protocol
+- *5 games use a compression in their serial protocol*
 
 --------------------------------------------------------------------------------
 # Telegram Gameboy Camera Chatroom
