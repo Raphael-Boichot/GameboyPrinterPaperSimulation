@@ -207,7 +207,7 @@ On the 107 games compatible with the Game Boy Printer
 - *33 games use custom palettes (not 0xE4)*
 - *28 games communicate with serial protocol in double speed mode*
 - *5 games use a compression in their serial protocol*
-- *1 belongs to the list of games leaked in september 2020 (Pokémon Picross)
+- *1 belongs to the list of games leaked in september 2020 (Pokémon Picross)*
 
 --------------------------------------------------------------------------------
 # Telegram Gameboy Camera Chatroom
