@@ -207,8 +207,8 @@ On the 107 games compatible with the Game Boy Printer
 - *34 games use custom palettes (not 0xE4)*
 - *28 games communicate with serial protocol in double speed mode*
 - *5 games use a compression in their serial protocol*
-- *4 games use a two color palette on purpose*
-- *3 games use 0x00 as default palette instead of 0xE4*
+- *4 games use a two colors palette on purpose*
+- *3 games use 0x00 as default palette instead of 0xE4 (which is documented is Game Boy programming manual)*
 - *1 game belongs to the list of games leaked in september 2020 (Pokémon Picross)*
 - *1 game uses two palettes in the same image (Alice in Wonderland)*
 
