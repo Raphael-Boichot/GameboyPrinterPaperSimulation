@@ -210,6 +210,7 @@ On the 107 games compatible with the Game Boy Printer
 - *4 games use a two color palette on purpose*
 - *3 games use 0x00 as default palette instead of 0xE4*
 - *1 game belongs to the list of games leaked in september 2020 (Pokémon Picross)*
+- *1 game uses two palettes in the same image (Alice in Wonderland)*
 
 --------------------------------------------------------------------------------
 # Telegram Gameboy Camera Chatroom
