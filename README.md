@@ -204,7 +204,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 On the 107 games compatible with the Game Boy Printer
 - *102 games are fully supported by https://github.com/mofosyne/arduino-gameboy-printer-emulator*
 - *71 games were realeased only in Japan*
-- *34 games use custom palettes (not 0xE4)*
+- *35 games use custom palettes (not 0xE4)*
 - *28 games communicate with serial protocol in double speed mode*
 - *5 games use a compression in their serial protocol*
 - *4 games use a two colors palette on purpose*
