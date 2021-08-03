@@ -2,6 +2,7 @@
 
 * Creation Date: 2020-08-23, last update 2021-08-02
 * Authors: *Raphaël BOICHOT, Brian KHUU*
+* Featured on Hackaday :  https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/
 
 This project serves as an alternative decoder for https://github.com/mofosyne/arduino-gameboy-printer-emulator that captures text informations only (at least in 2021).
 
