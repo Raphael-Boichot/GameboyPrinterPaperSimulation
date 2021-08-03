@@ -202,7 +202,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 # Time for statistics !
 
 On the 107 games compatible with the Game Boy Printer
-- *102 games are fully supported by https://github.com/mofosyne/arduino-gameboy-printer-emulator*
+- *107 games (100%) are fully supported by https://github.com/mofosyne/arduino-gameboy-printer-emulator*
 - *71 games were realeased only in Japan (unlocking printing features being more or less painfull)*
 - *50 games are for Game Boy Color only (clear cartridges)*
 - *49 games are for Game Boy / Game Boy Color (black cartridge)*
