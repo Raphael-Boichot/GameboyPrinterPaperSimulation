@@ -203,10 +203,11 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 
 On the 107 games compatible with the Game Boy Printer
 - *102 games are fully supported by https://github.com/mofosyne/arduino-gameboy-printer-emulator*
-- *71 games were realeased only in Japan*
+- *71 games were realeased only in Japan (unlocking printing features being more or less painfull)*
 - *35 games use custom palettes (not 0xE4)*
 - *28 games communicate with serial protocol in double speed mode*
 - *5 games use a compression in their serial protocol*
+- *5 games exploit an undocumented issue of printer command 0x0F*
 - *4 games use a two colors palette on purpose*
 - *3 games use 0x00 as default palette instead of 0xE4 (which is documented is Game Boy programming manual)*
 - *1 game belongs to the list of games leaked in september 2020 (Pokémon Picross)*
