@@ -98,7 +98,7 @@ All these games are compatible with https://github.com/mofosyne/arduino-gameboy-
 - *E.T.: Digital Companion (never released in Japan)*
 - *Fairy Kitty no Kaiun Jiten: Yousei no Kuni no Uranai Shugyou (フェアリーキティの開運辞典 妖精の国の占い修行)*
 - *Fisher-Price Rescue Heroes: Fire Frenzy (never released in Japan)*
-- *Game Boy Camera (ポケットカメラ)*
+- *Game Boy Camera or Pocket Camera (ポケットカメラ)*
 - *Golf Ou: The King of Golf (ゴルフ王)*
 - *Hamster Club (ハムスター倶楽部)*
 - *Hamster Paradise (ハムスターパラダイス)*
