@@ -106,7 +106,7 @@ All these games are compatible with https://github.com/mofosyne/arduino-gameboy-
 - *Harvest Moon 2 (牧場物語GB2)*
 - *Hello Kitty no Beads Koubou (ハローキティのビーズ工房)*
 - *Hello Kitty no magical museum (ハローキティのマジカルミュージアム)*
-- *Hello Kitty Pocket Camera (Japan, unreleased)*
+- *Hello Kitty no Pocket Camera (ハローキティのポケットカメラ)*
 - *Jinsei Game Tomodachi takusan Tsukurou Yo! (人生ゲーム 友達たくさんつくろうよ!)*
 - *Kakurenbo Battle Monster Tactics (モンスタータクティクス)*
 - *Kanji Boy (漢字BOY)*
