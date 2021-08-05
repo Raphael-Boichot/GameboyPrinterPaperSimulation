@@ -8,7 +8,7 @@ clc
 % Here you enter some parameters
 %------------------------------------------------------------------------
 file='Entry_file.txt';% enter text file to decode
-color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA
+color_option=2; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA
 %------------------------------------------------------------------------
 
 %continuous_printing=1;  %0 to separate images automatically if margin >0
@@ -66,7 +66,7 @@ while ~feof(fid)
         [BandW, margin]= color_packet(a,raw_image,1);
         BandW_image=[BandW_image;BandW];
         [epaper]=epaper_packet(BandW_image);
-        disp(['The margin is 0x',num2str(dec2hex(margin))])
+        disp(['The after margin is 0x',num2str(dec2hex(margin))])
         imagesc(epaper)
         raw_image=[];
         if not(margin==0)&&not(continuous_printing);

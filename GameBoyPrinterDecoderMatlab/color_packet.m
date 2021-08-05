@@ -6,8 +6,9 @@ disp(['The color palette is 0x',a(25:26)])
 if PALETTE=='00000000';PALETTE='11100100';end;
 %3 = black, 2 = dark gray, 1 = light gray, 0 = white
 COLORS=[bin2dec(PALETTE(7:8)), bin2dec(PALETTE(5:6))...
-    bin2dec(PALETTE(3:4)), bin2dec(PALETTE(1:2))];
-margin=hex2dec(a(22:23));
+ bin2dec(PALETTE(3:4)), bin2dec(PALETTE(1:2))];
+%margin=hex2dec(a(22:23));
+margin=hex2dec(a(23));
 
 colors=[255 255 255 168 168 168 84 84 84 0 0 0;%Black and white
         215 247 215 130 222 73 6 75 145 0 19 26;%Game Boy Color
