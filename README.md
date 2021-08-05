@@ -145,7 +145,7 @@ This list was never published online before june 2021. There is in total 107 gam
 - *Harvest Moon 2 (牧場物語GB2)*
 - *Hello Kitty no Beads Koubou (ハローキティのビーズ工房)*
 - *Hello Kitty no Magical Museum (ハローキティのマジカルミュージアム)*
-- *Hello Kitty no Pocket Camera (ハローキティのポケットカメラ)*
+- *Hello Kitty Pocket Camera (ハローキティのポケットカメラ)*
 - *Jinsei Game Tomodachi takusan Tsukurou Yo! (人生ゲーム 友達たくさんつくろうよ!)*
 - *Kakurenbo Battle Monster Tactics (モンスタータクティクス)*
 - *Kanji Boy (漢字BOY)*
