@@ -72,7 +72,7 @@ The pinout have been modified in consequence. The SOUT pin have been moved to D5
 
 # How to use the Game Boy Printer paper emulation ?
 
-You will need: the cheapest push button of any kind, the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
+You will need: the cheapest push button of any kind, the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
 - Install the last Arduino IDE (https://www.arduino.cc/en/software) and load the .ino file.
 - Install the free GNU Octave (https://www.gnu.org/software/octave/index) or use your pricey Matlab license and run the decoder.m.
