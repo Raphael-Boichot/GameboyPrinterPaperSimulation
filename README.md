@@ -79,9 +79,11 @@ The pinout have been modified in consequence. The SOUT pin have been moved to D5
 Now let's detail the new features.
 
 **Automatic mode**
+
 Automatic mode is the mode by default : do not touch anything on the Arduino and images will be separeted by the decoder if a margin different from zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. If you do not solder the pushbutton on the Arduino, automatic mode is the only mode available. The Matlab decoder is OK with that.
 
 **Manual mode**
+
 In manual mode, as long as you print in the serial output from Arduino, the decoder will output only one image file. Press the pushbutton after a print and a message is sent to the serial console to indicate to the decoder that "paper have been cut" and that a new output file have to be made. It can be made inbetween each print and will give the same result that automatic mode. It can be made after many printings and you will get a big strand of data or a banner. If the decoder detects that pushbutton have been pressed once, all the printing session will be considered as manual mode.
 
 Game that can take advantage from the manual mode : 
