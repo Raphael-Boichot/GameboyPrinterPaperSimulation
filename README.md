@@ -57,22 +57,22 @@ Then I ran Octave with the pixel perfect image and here the result :
 # The e-paper image obtained with Octave :
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-09-10/Direct_e-paper.png)
 
-# Which Game Boy Printer emulator to use with the decoder ?
+# Which Game Boy Printer emulator using with the decoder ?
 
-The Matlab decoder is of course natively backward compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. However, I've added some new features to the original Game Boy Printer emulator after fruitful discussions with Rafael Zenaro from the Game boy Camera Club :
+The Octave/Matlab decoder is of course natively backward compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. However, I've added some new features to the original Game Boy Printer emulator after fruitful discussions with Rafael Zenaro from the Game boy Camera Club :
 
 - *The game compatibility have been increased to 100% by applying two simple rules to the error packets sent by the Printer emulator to games: the error packet is always 0x00 before printing (the games clearly do not mind this error byte most of the time) except when an empty data packet is received, where it becomes 0x04 (image data full). This allows triggering the print command for certain rare games that require this. The post-printing commands are still the ones from the original project, except some increase of the number of busy state commands.*
 
 - *A push button have been added to the project to allow an alternative mode of printing that mimicks the use of a real printer with a roll of paper: printings are buffered as long as a the push button is not pressed briefly, wich gives a signal of "paper cutting" to the decoder. This allows printing banners for games that allows this*
 
-The pinout have been modified in consequence. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add an LED at pin D13 to allow the Arduino to indicate flashing and acknowledgement of the manual press button action.
+The pinout have been modified in consequence. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add an LED at pin D13 to allow the Arduino to indicate flashing and acknowledgement of the manual push button action.
 
 ![](./images/Arduino_pinout.png)
 
 
 # How to use the Game Boy Printer paper emulation ?
 
-You will need: the cheapest pushbutton of any kind, the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10. Wire all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
+You will need: the cheapest push button of any kind, the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
 - Install the last Arduino IDE (https://www.arduino.cc/en/software) and load the .ino file.
 - Install the free GNU Octave (https://www.gnu.org/software/octave/index) or use your pricey Matlab license and run the decoder.m.
@@ -87,11 +87,11 @@ Now let's detail the new features.
 
 **Automatic mode**
 
-Automatic mode is the mode by default : do not touch anything on the Arduino and images will be separeted by the decoder if a margin different from zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. If you do not solder the pushbutton on the Arduino pin D7, automatic mode is the only mode available. The Matlab/Octave decoder is OK with that. Fot most of the users this mode will be enough.
+Automatic mode is the mode by default : do not touch anything on the Arduino and images will be separeted by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. If you do not solder the push button on the Arduino pin D7, automatic mode is the only mode available. The Matlab/Octave decoder is OK with that. For most of the users this mode will be enough.
 
 **Manual mode**
 
-In Manual mode, as long as you print in the serial output from Arduino, the decoder will output only one image file. Press the pushbutton after a print and a message is sent to the serial console to indicate to the decoder that "paper have been cut" and that a new output file have to be made. It can be made inbetween each print and will give the same result that automatic mode. It can be made after many printings and you will get a big strand of data or a banner. If the decoder detects that pushbutton have been pressed once, all the printing session will be considered as Manual mode (Manual mode, if used, has a priority on Automatic mode). In consequence, avoid mixing both modes in the same printing session (or same output text file). To know when to press the pushbutton, rely on the Game Boy music to ensure that the current printing is finished.
+In Manual mode, as long as you print in the serial output from Arduino, the decoder will output only one image file. Press the push button inbetween two prints and a message is sent to the serial console to indicate to the decoder that "paper have been cut" and that a new output file have to be made. It can be made inbetween each print and will in this cave give the same result that automatic mode. It can be made after many printings and you will get a big strand of data or a banner. If the decoder detects that push button have been pressed once in a session, all the printing session will be considered as Manual mode (Manual mode, if used, has a priority on Automatic mode). In consequence, avoid mixing both modes in the same printing session (or same output text file). To know when to press the pushbutton, rely on the Game Boy music to ensure that the current printing is finished.
 
 Games that can take advantage from the Manual mode are: 
 - *All the games from the Nakayoshi Cooking series, Hello Kitty no Magical Museum, Mc Donald's Monogatari and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to margin non equal to zero used during the images transmission. Printing in Manual Mode is mandatory with these games.*
@@ -101,11 +101,11 @@ Games that can take advantage from the Manual mode are:
 
 **100% game compatibility**
 
-The combo emulator + decoder have been tested on all the games on earth compatible with the Game Boy Printer, they all worked !
+The combo Arduino emulator + 0ctave/Matlab decoder have been tested on all the games on earth compatible with the Game Boy Printer, they all printed perfectly !
 
 # The complete list of games compatible with the Game Boy Printer Emulator
 
-This list and the hints were never published online before june 2021. There is in total 107 games compatible with the Game Boy Printer (and emulator). I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! The zip file contains 100% or any% saves ready to use with printer features unlocked for most of the games. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from most of the games, obscure japanese and totally WTF ones included. 
+This list was never published online before june 2021. There is in total 107 games compatible with the Game Boy Printer (and emulator). I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! The zip file contains 100% or any% saves ready to use with printer features unlocked for most of the games. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from most of the games, obscure japanese and totally WTF ones included. This complete list was established by cross-checking english and japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list published on internet. 
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
