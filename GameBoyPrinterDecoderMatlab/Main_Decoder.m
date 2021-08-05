@@ -25,8 +25,7 @@ while ~feof(fid)
     end
 end
 fclose(fid);
-time_str=datestr(datetime)
-DateString = [time_str(1:14),'h',time_str(16:17),'m',time_str(19:20),'s']
+DateString = date;
 raw_image=[];
 num_image=0;
 colored=[];
