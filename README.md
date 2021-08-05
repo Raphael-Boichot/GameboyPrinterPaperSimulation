@@ -71,7 +71,9 @@ The pinout have been modified in consequence. The SOUT pin have been moved to D5
 
 Two modes of use: 
 
-###Automatic mode
+**Automatic mode**
+
+**Manual mode**
 
 - Copy paste game boy serial data obtained from https://github.com/mofosyne/arduino-gameboy-printer-emulator into Entry_file.txt
 - Open Octave/Matlab code "Main_Decoder.m"
