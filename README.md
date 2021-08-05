@@ -86,14 +86,15 @@ Automatic mode is the mode by default : do not touch anything on the Arduino and
 
 In manual mode, as long as you print in the serial output from Arduino, the decoder will output only one image file. Press the pushbutton after a print and a message is sent to the serial console to indicate to the decoder that "paper have been cut" and that a new output file have to be made. It can be made inbetween each print and will give the same result that automatic mode. It can be made after many printings and you will get a big strand of data or a banner. If the decoder detects that pushbutton have been pressed once, all the printing session will be considered as manual mode.
 
-Game that can take advantage from the manual mode : 
-- *All the games from the Nakayoshi Cooking series, Hello Kitty no Magical Museum, Mc Donald's Monogatari and Nintama Rantarou GB: Eawase Challenge Puzzle generate splitted image files in Automatic mode. Printing in Manual Mode is mandatori with these games.*
-- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion print images with no margin by default. Using Manual mode is advised.*
-- *Super Mario Bros Deluxe and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.
+Games that can take advantage from the manual mode are: 
+- *All the games from the Nakayoshi Cooking series, Hello Kitty no Magical Museum, Mc Donald's Monogatari and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to margin non equal to zero used during the images transmission. Printing in Manual Mode is mandatory with these games.*
+- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion print images with no margin by default. Using Manual mode is also advised.*
+- *Super Mario Bros Deluxe, The Card Captor Sakura series and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.
+- *In general, each time you used Automatic mode, if the images decoded are splitted or ill-assembled, use Manual mode*.
 
 # The complete list of games compatible with the Game Boy Printer (and the paper emulator)
 
-All these games are compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. See "Game Boy Printer Emulator - Games Support.xlsx" to check the compatibilty list and various hints to print from most of the games, obscure japanese ones included. This list and the hints were never published online before june 2021. There is in total 107 games compatible with the Game Boy Printer. I've tested all of them and can certify the printer support, even if some printing features are very tricky to reach ! See the Excel spreadsheet for hints and the zip file for 100% or any% saves ready to use with printer features unlocked.
+See "Game Boy Printer Emulator - Games Support.xlsx" to check the compatibilty list and various hints to print from most of the games, obscure japanese ones included. This list and the hints were never published online before june 2021. There is in total 107 games compatible with the Game Boy Printer. I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! See the Excel spreadsheet for hints and the zip file for 100% or any% saves ready to use with printer features unlocked.
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
@@ -230,7 +231,8 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 # Time for statistics !
 
 On the 107 games compatible with the Game Boy Printer
-- *107 games (100%) are fully supported by https://github.com/mofosyne/arduino-gameboy-printer-emulator*
+
+- *97 games works perfectly in Automatic mode, 10 must use Manual mode, 4 can use both*
 - *71 games were realeased only in Japan (unlocking printing features being more or less painfull)*
 - *50 games are for Game Boy Color only (clear cartridges)*
 - *49 games are for Game Boy / Game Boy Color (black cartridge)*
@@ -238,7 +240,6 @@ On the 107 games compatible with the Game Boy Printer
 - *35 games use custom palettes (not 0xE4)*
 - *28 games communicate with serial protocol in double speed mode*
 - *5 games use an RLE compression in their serial protocol*
-- *5 games exploit an undocumented issue of printer command 0x0F*
 - *4 games use a two colors palette on purpose*
 - *3 games use 0x00 as default palette instead of 0xE4 (which is documented is Game Boy programming manual)*
 - *2 games belongs to the list of games leaked in september 2020 (Pokémon Picross and Hello Kitty no Pocket Camera)*
