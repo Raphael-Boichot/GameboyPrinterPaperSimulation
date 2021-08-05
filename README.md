@@ -54,7 +54,7 @@ Then I ran Octave with the pixel perfect image and here the result :
 # The e-paper image obtained with Octave :
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-09-10/Direct_e-paper.png)
 
-# Which Game Boy Printer emulator emulator to use with the decoder ?
+# Which Game Boy Printer emulator to use with the decoder ?
 
 The Matlab decoder is of course natively backward compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. However, I've added some new features to the original Game Boy Printer emulator :
 
