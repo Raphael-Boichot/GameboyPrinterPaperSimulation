@@ -89,8 +89,8 @@ In manual mode, as long as you print in the serial output from Arduino, the deco
 Games that can take advantage from the manual mode are: 
 - *All the games from the Nakayoshi Cooking series, Hello Kitty no Magical Museum, Mc Donald's Monogatari and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to margin non equal to zero used during the images transmission. Printing in Manual Mode is mandatory with these games.*
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion print images with no margin by default. Using Manual mode is also advised.*
-- *Super Mario Bros Deluxe, The Card Captor Sakura series and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.
-- *In general, each time you used Automatic mode, if the images decoded are splitted or ill-assembled, use Manual mode*.
+- *Super Mario Bros Deluxe, The Card Captor Sakura series and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.*
+- *In general, each time you used Automatic mode, if the images decoded are splitted or ill-assembled, use Manual mode instead.*
 
 # The complete list of games compatible with the Game Boy Printer (and the paper emulator)
 
