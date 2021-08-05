@@ -62,11 +62,16 @@ The Matlab decoder is of course natively backward compatible with https://github
 
 - *A push button have been added to the project to allow an alternative mode of printing that mimicks the use of a real printer with a roll of paper: printings are buffered as long as a the push button is not pressed briefly, wich gives a signal of "paper cutting" to the decoder. This allows printing banners for games that allows this*
 
+The pinout have been modified in consequence. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add an LED at pin D13 to allow the Arduino to indicate flashing and acknowledgement of the manual press button action.
 
 ![](./images/Arduino_pinout.png)
 
 
 # How to use the Game Boy Printer paper emulation ?
+
+Two modes of use: 
+
+###Automatic mode
 
 - Copy paste game boy serial data obtained from https://github.com/mofosyne/arduino-gameboy-printer-emulator into Entry_file.txt
 - Open Octave/Matlab code "Main_Decoder.m"
