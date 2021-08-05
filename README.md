@@ -52,7 +52,7 @@ I then scanned this printing at 3600 dpi (after some contrast enhancement, the p
 
 Then I ran Octave with the pixel perfect image and here the result : 
 # The e-paper image obtained with Octave :
-![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Chip%20chip.png)
+![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-09-10/Direct_e-paper.png)
 
 # How to use the Game Boy Printer paper emulation ?
 
