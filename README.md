@@ -5,6 +5,7 @@
 * Featured on Hackaday :  https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/
 * Companion project from : https://github.com/zenaro147/wifi-gbp-emulator/tree/feature/v3
 * Companion project from : https://github.com/HerrZatacke/wifi-gbp-emulator
+* Companion project from : https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
 
 This project originates from https://github.com/mofosyne/arduino-gameboy-printer-emulator. This is now a fork of the Arduino Game Boy Printer emulator that increases game compatility to 100% and allows new printing features.
 
