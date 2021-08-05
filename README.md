@@ -96,9 +96,13 @@ Games that can take advantage from the manual mode are:
 - *Super Mario Bros Deluxe, The Card Captor Sakura series and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect, use Manual mode instead.*
 
+**100% game compatibility**
+
+The combo emulator + decoder have been tested on all the games on earth compatible with the Game Boy Printer, they all worked !
+
 # The complete list of games compatible with the Game Boy Printer Emulator
 
-It's simple, 100% of the game compatibles with a real printer are compatible with the emulator ! See "Game Boy Printer Emulator - Games Support.xlsx" to check the compatibilty list and various hints to print from most of the games, obscure japanese and totally WTF ones included. This list and the hints were never published online before june 2021. There is in total 107 games compatible with the Game Boy Printer (and emulator). I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! The zip file contains 100% or any% saves ready to use with printer features unlocked for most of the games.
+This list and the hints were never published online before june 2021. There is in total 107 games compatible with the Game Boy Printer (and emulator). I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! The zip file contains 100% or any% saves ready to use with printer features unlocked for most of the games. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from most of the games, obscure japanese and totally WTF ones included. 
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
