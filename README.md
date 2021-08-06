@@ -216,6 +216,12 @@ There is in total 107 games compatible with the Game Boy Printer (and emulator).
 - *Tsuri Sensei 2 (釣り先生2)*
 - *VS Lemmings (VS.レミングス)*
 
+# Example of printer output from the whole library
+
+![](./images/Wall_of_fame1.png)
+
+![](./images/Wall_of_fame2.png)
+
 # List of games that embed a printer library but without printer support for the player
 
 Code analysis of the Game Boy and Game Boy Color romsets revealed that some games (generally sequels of the preceding list) embed a printer library into the code but no printer support for the player. Some of them where clearly intended to use the printer as their gameplay is about unlocking images. The printer support was probably dismissed during game development as most of them are late published Game Boy Color games. Lazy recycling of non-optimized graphical libraries is also not excluded as memory size was less and less critical at this time.
