@@ -241,7 +241,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 
 # Time for statistics !
 
-On the 107 games compatible with the Game Boy Printer
+On the 107 games compatible with the Game Boy Printer:
 
 - *97 games works perfectly in Automatic mode, 10 must use Manual mode, 4 can use both*
 - *71 games were realeased only in Japan (unlocking printing features being more or less painfull)*
@@ -253,7 +253,7 @@ On the 107 games compatible with the Game Boy Printer
 - *5 games use an RLE compression in their serial protocol*
 - *4 games use a two colors palette on purpose*
 - *3 games use 0x00 as default palette instead of 0xE4 (which is documented is Game Boy programming manual)*
-- *2 games belongs to the list of games leaked in september 2020 (Pokémon Picross and Hello Kitty no Pocket Camera)*
+- *2 games belongs to the list of games leaked in september 2020 (Pokémon Picross and Hello Kitty Pocket Camera)*
 - *1 game uses two palettes in the same image (Alice in Wonderland)*
 - *1 game uses a three colors palette on purpose (Pokémon Pinball)*
 
