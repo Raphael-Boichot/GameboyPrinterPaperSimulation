@@ -65,7 +65,7 @@ The Octave/Matlab decoder is of course natively backward compatible with https:/
 
 - *A push button have been added to the project to allow an alternative mode of printing that mimicks the use of a real printer with a roll of paper: printings are buffered as long as a the push button is not pressed briefly, wich gives a signal of "paper cutting" to the decoder. This allows printing banners for games that allows this*
 
-The pinout have been modified in consequence. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add an LED at pin D13 to allow the Arduino to indicate flashing and acknowledgement of the manual push button action.
+The pinout have been slightly modified in consequence. A push button was added on D7, the SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and acknowledgement of the manual push button action.
 
 ![](./images/Arduino_pinout.png)
 
@@ -79,11 +79,11 @@ You will need: the cheapest push button of any kind, the cheapest Arduino Uno, t
 - Connect your Game Boy to Arduino with serial cable, open the serial console in 115200 bauds and print as with a real Game Boy Printer.
 - Copy paste text obtained from the Arduino serial output into Entry_file.txt
 - Open Octave/Matlab code "Main_Decoder.m"
-- Choose some color palettes (default are OK).
+- Choose some color palettes (default is OK).
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
 
-Now let's detail the new features.
+Now let's detail the new features available with this version of emulator:
 
 **Automatic mode**
 
