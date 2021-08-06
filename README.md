@@ -69,6 +69,7 @@ The pinout have been slightly modified in consequence. A push button was added o
 
 ![](./images/Arduino_pinout.png)
 
+![](./images/Arduino_pinout2.png)
 
 # How to use the Game Boy Printer paper emulation ?
 
