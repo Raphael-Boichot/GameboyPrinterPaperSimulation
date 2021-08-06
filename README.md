@@ -96,8 +96,8 @@ In Manual mode, as long as you print in the serial output from Arduino, the deco
 
 Games that can take advantage from the Manual mode are: 
 - *All the games from the Nakayoshi Cooking series, Mc Donald's Monogatari and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to margin non equal to zero used during the images transmission. Printing in Manual Mode is mandatory with these games.*
-- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the inverse problem : they always print images with no margin by default. Using Manual mode is so advised but to split different images.*
-- *Super Mario Bros Deluxe, The Card Captor Sakura series and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.*
+- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Manual mode is so advised but to split different images.*
+- *Super Mario Bros Deluxe and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode instead of Automatic mode.*
 
 **100% game compatibility**
