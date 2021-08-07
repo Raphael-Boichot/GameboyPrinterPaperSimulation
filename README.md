@@ -250,7 +250,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 
 On the 107 games compatible with the Game Boy Printer:
 
-- *97 games works perfectly in Automatic mode, 10 must use Manual mode, 4 can use both*
+- *100 games works perfectly in Automatic mode, 7 must use Manual mode, 4 can use both*
 - *71 games were realeased only in Japan (unlocking printing features being more or less painfull)*
 - *50 games are for Game Boy Color only (clear cartridges)*
 - *49 games are for Game Boy / Game Boy Color (black cartridge)*
