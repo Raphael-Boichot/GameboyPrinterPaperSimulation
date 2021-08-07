@@ -216,7 +216,7 @@ There is in total 107 games compatible with the Game Boy Printer (and emulator).
 - *Tsuri Sensei 2 (釣り先生2)*
 - *VS Lemmings (VS.レミングス)*
 
-# Example of printer output from the whole library
+# Example of printer output from the whole library made with the codes
 
 ![](./images/Wall_of_fame1.png)
 
