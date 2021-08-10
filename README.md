@@ -86,24 +86,21 @@ You will need: the cheapest push button of any kind, the cheapest Arduino Uno, t
 
 Now let's detail the new features available with this version of emulator:
 
-**Automatic mode**
+**Automatic mode or print with margins**
 
 Automatic mode is the mode by default : do not touch anything on the Arduino and images will be separeted by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. If you do not solder the push button on the Arduino pin D7, automatic mode is the only mode available. The Matlab/Octave decoder is OK with that. For 99% of the users this mode will be enough. The txt output is also comptaible with https://github.com/HerrZatacke/wifi-gbp-emulator.
 
-**Manual mode**
+**Manual mode or print with Timeout**
 
 Manual mode is by default deactivated. Uncomment line 270 of the *.ino file to activate it. In Manual mode, as long as you print in the serial output from Arduino, the decoder will output only one image file. Press the push button inbetween two prints and a message is sent to the serial console to indicate to the decoder that "paper have been cut" and that a new output file have to be made. It can be made inbetween each print and will in this case gives the same result that automatic mode. It can be made after many printings and you will get a big strand of data or a banner. If the decoder detects that push button have been pressed once in a session, all the printing session will be considered as Manual mode (Manual mode, if used, has a priority on Automatic mode). In consequence, avoid mixing both modes in the same printing session (or same output text file). To know when to press the pushbutton, rely on the Game Boy music to ensure that the current printing is finished. The Arduino serial output must be idle (TimeOut" received) when receiving the manual cutting signal.
 
 Games that can take advantage from the Manual mode are: 
 - *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol. Printing in Manual Mode is mandatory with these games.*
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Manual mode is so advised to split different images.*
-- *Super Mario Bros Deluxe and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode instead of Automatic mode.*
-- *However, the Manual mode can render printing unstable with games in double speed mode. If you obtain jam into the Arduino.serial, come back to Automatic mode by commenting line 270 of the .ino*
 
 **Known issues**
 
-- *Printing with Manual mode always activated by default can lead to some crashes. Compile in Manual mode only when necessary and stay Automatic by default.*
 - *Chaining prints in Love Hina Pocket is possible only by unpluging and pluging again serial cable between prints.*
 
 # The complete list of games compatible with the Game Boy Printer Emulator
