@@ -104,7 +104,7 @@ Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
 In Manual mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial before making another print. This allows the decoder to know how to assemble images that contains inner margins. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
 
-Games that can take advantage from the "TimeOut" or Manual mode are: 
+Games that can take advantage from the "TimeOut" or Manual mode are (for example): 
 - *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari, Hello Kitty no Magical museum and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol with very long lag times in-between chunks of images and/or inner margins.*
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Manual mode is so advised to split different images.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
