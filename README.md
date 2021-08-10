@@ -63,9 +63,9 @@ The Octave/Matlab decoder is of course natively backward compatible with https:/
 
 - *The game compatibility have been increased to 100% by applying two simple rules to the error packets sent by the Printer emulator to games: the error packet is always 0x00 before printing (the games clearly do not mind this error byte most of the time) except when an empty data packet is received, where it becomes 0x04 (image data full). This allows triggering the print command for certain rare games that require this. The post-printing commands are still the ones from the original project, except some increase of the number of busy state commands.*
 
-- *A push button have been added to the project to allow an alternative mode of printing that mimicks the use of a real printer with a roll of paper: printings are buffered as long as a the push button is not pressed briefly, wich gives a signal of "paper cutting" to the decoder. This allows printing banners for games that allows this*
+- *Assembling automatically the images is challenging with some games so a modification of both the emulator and the decoder is proposed to ensure proper printing for a dozen of "difficult" games. This will be called Automatic or "TimeOut" mode in opposition to the default Automatic mode using margins to separate images*
 
-The pinout have been slightly modified in consequence. A push button was added on D7, the SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and acknowledgement of the manual push button action.
+The pinout have been slightly modified. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and acknowledgement of the manual push button action.
 
 ![](./images/Arduino_pinout.png)
 
@@ -73,7 +73,7 @@ The pinout have been slightly modified in consequence. A push button was added o
 
 # How to use the Game Boy Printer paper emulation ?
 
-You will need: the cheapest push button of any kind, the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
+You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
 - Install the last Arduino IDE (https://www.arduino.cc/en/software) and load the .ino file.
 - Install the free GNU Octave (https://www.gnu.org/software/octave/index) or use your pricey Matlab license and run the decoder.m.
@@ -90,22 +90,22 @@ Now let's detail the new features available with this version of emulator:
 
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
-    #define GBP_PKT10_TIMEOUT_MS 650 in gbp_serial_io.cpp
-    continuous_printing=0;  in Main_Decoder.m
+    #define GBP_PKT10_TIMEOUT_MS 650 in gbp_serial_io.cpp line 39
+    continuous_printing=0;  in Main_Decoder.m line 12
     
-Automatic mode is the mode by default : use default settings and images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For 99% of the users this mode will be enough. The Game Boy Camera is happy in this mode.
+Automatic mode is the mode by default : use default settings and images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For 99% of the users this mode will be enough.
 
 **Manual mode or print with Timeout**
 
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
-    #define GBP_PKT10_TIMEOUT_MS 15000 in gbp_serial_io.cpp
-    continuous_printing=1;  in Main_Decoder.m
+    #define GBP_PKT10_TIMEOUT_MS 15000 in gbp_serial_io.cpp line 39
+    continuous_printing=1;  in Main_Decoder.m line 12
 
-In Manual mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial before making another print. This allows the decoder to know how to assemble images that contains inner margins. Remind that the printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
+In Manual mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial before making another print. This allows the decoder to know how to assemble images that contains inner margins. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
 
-Games that can take advantage from the "TimeOut" command are: 
-- *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol with very long lag times in-between chunks of images and/or inner margins.*
+Games that can take advantage from the "TimeOut" or Manual mode are: 
+- *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari, Hello Kitty no Magical museum and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol with very long lag times in-between chunks of images and/or inner margins.*
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Manual mode is so advised to split different images.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
 
