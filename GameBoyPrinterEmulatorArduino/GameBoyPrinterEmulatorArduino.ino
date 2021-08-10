@@ -268,23 +268,23 @@ void loop()
   };
 //////////////////////////////////////////////////////////Raphaël BOICHOT fix 4 August 2021/////////////////////////////////////////////////////////////////////////////////
   // read the state of the pushbutton value:
-int  buttonState = digitalRead(CUT_PAPER);
-
-  // control LED according to the state of button
-  if(buttonState == LOW)         // If button is pressing
-  {
-    for (int i = 0; i <=10; i++){
-    digitalWrite(LED_STATUS_PIN, HIGH); // turn on LED
-    delay(25);
-    digitalWrite(LED_STATUS_PIN, LOW);  // turn off LED
-    delay(25);
-    }
-    
-    Serial.println();
-    Serial.println("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV--Cut Paper here--VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
-    Serial.println();
-    
-  }
+//int  buttonState = digitalRead(CUT_PAPER);
+//
+//  // control LED according to the state of button
+//if(digitalRead(CUT_PAPER) == LOW)         // If button is pressing
+//{
+//    for (int i = 0; i <=10; i++){
+//    digitalWrite(LED_STATUS_PIN, HIGH); // turn on LED
+//    delay(25);
+//    digitalWrite(LED_STATUS_PIN, LOW);  // turn off LED
+//    delay(25);
+//    }
+//    
+//    Serial.println();
+//    Serial.println("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV--Cut Paper here--VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
+//    Serial.println();
+//    
+//}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
 } // loop()
