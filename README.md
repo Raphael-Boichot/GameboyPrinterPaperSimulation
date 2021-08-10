@@ -99,7 +99,7 @@ Games that can take advantage from the Manual mode are:
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Manual mode is so advised to split different images.*
 - *Super Mario Bros Deluxe and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode instead of Automatic mode.*
-- *However, the Manual mode can render printing unstable with games in double speed mode. If you obtain jam into the Arduino.serial, come back to Automatic mode by commenting line 270 of the *.ino*
+- *However, the Manual mode can render printing unstable with games in double speed mode. If you obtain jam into the Arduino.serial, come back to Automatic mode by commenting line 270 of the .ino*
 
 **Known issues**
 
