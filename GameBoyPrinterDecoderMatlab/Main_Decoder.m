@@ -1,4 +1,4 @@
-% RaphaÃ«l BOICHOT 05/08/2021 Game Boy printer emulator
+% Raphaël BOICHOT 10/08/2021 Game Boy printer emulator
 % code can handle compression, palette tricks and multiple images
 % for any question : raphael.boichot@gmail.com
 % update V3 to follow compatibility with https://github.com/mofosyne/arduino-gameboy-printer-emulator
@@ -9,22 +9,11 @@ clc
 %------------------------------------------------------------------------
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA
+continuous_printing=0;  %0 to separate images automatically if margin >0
+                        %1 for continuous printing with TimeOut or Manual dode, ignore margin > 0);
 %------------------------------------------------------------------------
 
-%continuous_printing=1;  %0 to separate images automatically if margin >0
-                        %1 for continuous printing with manual separation
-                        %(ignore margin > 0);
-%this part of code detect if manual printing was used duting the session
-fid = fopen(file,'r');
-str='Cut Paper here';
-continuous_printing=0;
-while ~feof(fid)
-    a=fgets(fid);
-    if not(isempty(strfind(a,str)))
-        continuous_printing=1;
-    end
-end
-fclose(fid);
+
 DateString = date;
 raw_image=[];
 num_image=0;
@@ -82,7 +71,7 @@ while ~feof(fid)
         end
     end
     
-    str='Cut Paper here';
+    str='Timed Out';
     if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(continuous_printing)
         disp('Cut paper command received')
         num_image=num_image+1;
