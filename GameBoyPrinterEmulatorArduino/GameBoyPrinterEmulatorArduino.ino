@@ -77,7 +77,7 @@
 #define GBP_SC_PIN        2       // Pin 5            : Serial Clock (Interrupt)
 #define GBP_GND_PIN               // Pin 6            : GND (Attach to GND Pin)
 #define LED_STATUS_PIN   13       // Internal LED blink on packet reception
-//////////////////////////////////////////////////////////Raphaël BOICHOT fix 4 August 2021/////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////Raphaël BOICHOT fix 10 August 2021/////////////////////////////////////////////////////////////////////////////////
 #define CUT_PAPER         7       // use as paper cutter in manual mode
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #endif
@@ -165,7 +165,7 @@ void setup(void)
   pinMode(GBP_SC_PIN, INPUT);
   pinMode(GBP_SO_PIN, INPUT);
   pinMode(GBP_SI_PIN, OUTPUT);
-  ///////////////////////////////////////////////////////Raphaël BOICHOT fix 4 August 2021//////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////Raphaël BOICHOT fix 10 August 2021//////////////////////////////////////////////////////////////////////
   pinMode(CUT_PAPER, INPUT_PULLUP);
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /* Default link serial out pin state */
@@ -213,7 +213,6 @@ void setup(void)
 void loop()
 {
   static uint16_t sioWaterline = 0;
-
 #ifdef GBP_FEATURE_PACKET_CAPTURE_MODE
   gbp_packet_capture_loop();
 #endif
@@ -226,9 +225,10 @@ void loop()
   uint32_t curr_millis = millis();
   if (curr_millis > last_millis)
   {
-    uint32_t elapsed_ms = curr_millis - last_millis;
+   uint32_t elapsed_ms = curr_millis - last_millis;
     if (gbp_serial_io_timeout_handler(elapsed_ms))
     {
+
       Serial.println("");
       Serial.print("// Timed Out ");
       Serial.print("(Memory Waterline: ");
@@ -266,27 +266,9 @@ void loop()
         break;
     }
   };
-//////////////////////////////////////////////////////////Raphaël BOICHOT fix 4 August 2021/////////////////////////////////////////////////////////////////////////////////
-  // read the state of the pushbutton value:
-//int  buttonState = digitalRead(CUT_PAPER);
-//
-//  // control LED according to the state of button
-//if(digitalRead(CUT_PAPER) == LOW)         // If button is pressing
-//{
-//    for (int i = 0; i <=10; i++){
-//    digitalWrite(LED_STATUS_PIN, HIGH); // turn on LED
-//    delay(25);
-//    digitalWrite(LED_STATUS_PIN, LOW);  // turn off LED
-//    delay(25);
-//    }
-//    
-//    Serial.println();
-//    Serial.println("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV--Cut Paper here--VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
-//    Serial.println();
-//    
-//}
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
+///////////////////////////////////////////////////////Raphaël BOICHOT fix 10 August 2021//////////////////////////////////////////////////////////////////////
+//pushbutton();//Uncomment here to activate Manual mode
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 } // loop()
 
 /******************************************************************************/
@@ -405,6 +387,8 @@ inline void gbp_parse_packet_loop(void)
 }
 #endif
 
+
+
 #ifdef GBP_FEATURE_PACKET_CAPTURE_MODE
 inline void gbp_packet_capture_loop()
 {
@@ -433,7 +417,10 @@ inline void gbp_packet_capture_loop()
         Serial.print(pktTotalCount);
         Serial.print(" : ");
         Serial.println(gbpCommand_toStr(gbp_serial_io_dataBuff_getByte_Peek(2)));
+
+      
 #endif
+        
         digitalWrite(LED_STATUS_PIN, HIGH);
       }
       // Print Hex Byte
@@ -457,4 +444,19 @@ inline void gbp_packet_capture_loop()
     }
   }
 }
+
 #endif
+//
+void pushbutton() {
+int state=digitalRead(CUT_PAPER);
+   if(state == LOW)        // If button is pressing
+      {
+      digitalWrite(LED_STATUS_PIN, HIGH); // turn on LED
+      delay(500);
+      digitalWrite(LED_STATUS_PIN, LOW);  // turn off LED
+      Serial.println("");
+      Serial.println("--Cut Paper here--");
+      Serial.println("");
+      }
+      return;
+}
