@@ -100,9 +100,10 @@ Games that can take advantage from the Manual mode are:
 - *Super Mario Bros Deluxe and Donkey Kong Country offer the possibility to print banners made of multiple images than each contains margin not equal to zero. To benefit from this feature, Manual mode is mandatory.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode instead of Automatic mode.*
 
-**100% game compatibility**
+**Known issues**
 
-The combo Arduino emulator + Octave/Matlab decoder have been tested on all the games on earth compatible with the Game Boy Printer, they all printed perfectly !
+- *Printing with Hamster Club is unstable if Manual mode feature is active (I do not understabnd why). Comment line XX of GameBoyPrinterEmulatorArduino.ino to remove the Manual mode and recompile the code to fix this.*
+- *Chaining prints in Love Hina Pocket sometimes make the game stall with error #02. Unplug and replug serial cable to continue printing.*
 
 # The complete list of games compatible with the Game Boy Printer Emulator
 
