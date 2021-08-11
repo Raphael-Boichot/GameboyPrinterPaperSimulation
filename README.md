@@ -112,7 +112,7 @@ Games that can take advantage from the "TimeOut" or Manual mode are (for example
 **Known issues**
 
 - *Chaining prints in Love Hina Pocket is possible only by physically unpluging and pluging again serial cable between prints.*
-- *The higher the number of prints accumulated in the Arduino Serial, the higher the probability of crashing, so make chunks after dozens of printings. Game Boy Camera 30 prints in a single run are OK.*
+- *Printing with Hamster Club is easily prone to crash due to spamming of the serial console with 0F command in double speed mode*
 
 # The complete list of games compatible with the Game Boy Printer Emulator
 
