@@ -110,7 +110,7 @@ Games that can take advantage from the "TimeOut" or Manual mode are (for example
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
 
 
-**Direct printing from Matlab without using the Arduino IDE**
+**Direct printing from Matlab without using the Arduino IDE !**
 
 Are you the happy owner of a regular Matlab License or a vilain hacker stealing other's work ? You can run Read_directly_from_arduino.m directly from Matlab to acquire data and decode them in the same run. It behaves like the Arduino Serial output but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. This code does not natively works on Arduino (for the moment).
 
