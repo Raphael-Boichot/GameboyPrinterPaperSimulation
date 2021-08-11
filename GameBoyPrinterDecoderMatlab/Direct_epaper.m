@@ -2,6 +2,7 @@
 % direct epaper encoder from image
 %image must be [0 84 168 255], which is the native output format in this
 %project
+%Must use black and white image as input
 clear
 clc
 
