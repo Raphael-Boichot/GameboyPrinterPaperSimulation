@@ -90,7 +90,7 @@ Now let's detail the new features available with this version of emulator:
 
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
-    #define GBP_PKT10_TIMEOUT_MS 650 in gbp_serial_io.cpp line 39
+    #define GBP_PKT10_TIMEOUT_MS 400 in gbp_serial_io.cpp line 39
     continuous_printing=0;  in Main_Decoder.m line 12
     
 Automatic mode is the mode by default : use default settings and images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For 99% of the users this mode will be enough.
@@ -116,7 +116,6 @@ Are you the happy owner of a regular Matlab License or a vilain hacker stealing 
 
 **Known issues related to the printer emulator, Arduino side**
 
-- *Chaining prints in Love Hina Pocket is possible only by physically unpluging and pluging again serial cable between prints.*
 - *Printing with Hamster Club is easily prone to crash due to spamming of the serial console with 0F command in double speed mode*
 
 # The complete list of games compatible with the Game Boy Printer Emulator
