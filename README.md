@@ -63,9 +63,9 @@ The Octave/Matlab decoder is of course natively backward compatible with https:/
 
 - *The game compatibility have been increased to 100% by applying two simple rules to the error packets sent by the Printer emulator to games: the error packet is always 0x00 before printing (the games clearly do not mind this error byte most of the time) except when an empty data packet is received, where it becomes 0x04 (image data full). This allows triggering the print command for certain rare games that require this. The post-printing commands are still the ones from the original project, except some increase of the number of busy state commands.*
 
-- *Assembling automatically the images is challenging with some games so a modification of both the emulator and the decoder is proposed to ensure proper printing for a dozen of "difficult" games. This will be called Automatic or "TimeOut" mode in opposition to the default Automatic mode using margins to separate images*
+- *Assembling automatically the images is challenging with some games so a modification of both the emulator and the decoder is proposed to ensure proper printing for a dozen of "difficult" games. This will be called Manual or "TimeOut" mode in opposition to the default Automatic mode using margins to separate images*
 
-The pinout have been slightly modified. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and acknowledgement of the manual push button action.
+The pinout have been slightly modified. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and packet transmission.
 
 ![](./images/Arduino_pinout.png)
 
@@ -83,6 +83,7 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Choose some color palettes and printing options (default are OK).
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
+- The .txt output can also be processed with https://github.com/HerrZatacke/wifi-gbp-emulator
 
 Now let's detail the new features available with this version of emulator:
 
@@ -110,9 +111,17 @@ Games that can take advantage from the "TimeOut" or Manual mode are (for example
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
 
 
-**Direct printing from Matlab without using the Arduino IDE !**
+**Direct printing from Matlab (nearly) without using the Arduino IDE !**
 
-Are you the happy owner of a regular Matlab License or a vilain hacker stealing other's work ? You can run Read_directly_from_arduino.m directly from Matlab to acquire data and decode them in the same run. It behaves like the Arduino Serial output but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. This code does not natively works on Octave (for the moment).
+Are you the happy owner of a regular Matlab License or a vilain hacker stealing other's work ? You can run "Read_directly_from_arduino.m" directly from Matlab to acquire data and decode them in the same run. It behaves like the Arduino Serial output but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. This code does not natively works on Octave (for the moment). How to use it : 
+
+- Install the last Arduino IDE (https://www.arduino.cc/en/software) and compile/load the .ino file with the TimeOut parameter you need. Note the USB port number, close the IDE, you won't need it.
+- Use your pricey Matlab license and modify the "Read_directly_from_arduino.m" with the correct port number and run it.
+- Connect your Game Boy to Arduino with serial cable, it must be like the Arduino serial console but into the Matlab Command window.
+- Print your images as usual.
+- When you're done, reboot the Arduino, it will indicate to Matlab that transmission is over and will run the decoder automatically.
+- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
+- Code generates an output .txt file that you can process again with the classical decoder "Main_Decoder.m" or with https://github.com/HerrZatacke/wifi-gbp-emulator
 
 **Known issues related to the printer emulator, Arduino side**
 
