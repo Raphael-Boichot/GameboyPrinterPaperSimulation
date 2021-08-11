@@ -114,7 +114,7 @@ Games that can take advantage from the "TimeOut" or Manual mode are (for example
 
 Are you the happy owner of a regular Matlab License or a vilain hacker stealing other's work ? You can run Read_directly_from_arduino.m directly from Matlab to acquire data and decode them in the same run. It behaves like the Arduino Serial output but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. This code does not natively works on Octave (for the moment).
 
-**Known issues**
+**Known issues related to the printer emulator, Arduino side**
 
 - *Chaining prints in Love Hina Pocket is possible only by physically unpluging and pluging again serial cable between prints.*
 - *Printing with Hamster Club is easily prone to crash due to spamming of the serial console with 0F command in double speed mode*
