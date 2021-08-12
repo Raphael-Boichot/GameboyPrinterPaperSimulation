@@ -5,9 +5,10 @@
 %Must use black and white image as input
 clear
 clc
-
+paper_color=3;% 3=blue, 2=yellow or 1=regular
+watermarking='Raphaël BOICHOT 2021';
 DateString = date;
-BandW_image=imread('BBY_0001.png');
+BandW_image=imread('GameBoy pixel perfect 3 12-Aug-2021.png');
 map=BandW_image(:,:,1);
 C=unique(map);
 switch length(C)
@@ -15,7 +16,6 @@ switch length(C)
     case 3; map=(map==C(1))*0+(map==C(2))*84+(map==C(3))*255;    
     case 2; map=(map==C(1))*0+(map==C(2))*255;  
 end;
-[epaper]=epaper_packet(map);
-epaper=imresize(epaper,0.3,'bilinear'); % this improves visual aspect
-imwrite(epaper,['GameBoy epaper ',DateString,'.png'])
+[epaper, alpha]=epaper_packet(map,paper_color);
+imwrite(epaper,['GameBoy epaper ',DateString,'.png'],'Alpha',alpha,'Author',watermarking);
 disp('Done !')

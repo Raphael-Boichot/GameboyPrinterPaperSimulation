@@ -1,9 +1,12 @@
-function [output]=epaper_packet(input)
+function [output, alpha]=epaper_packet(input,paper_color)
 % Raphaël BOICHOT 10-09-2020
 % code to simulate the speckle aspect of real Game boy printer
 % image come from function call
 
 pixel_sample=imread('Pixel_sample_3600dpi_contrast.png');
+num_borders=8;
+border_1=imread(['./Borders/Border_',num2str(ceil(num_borders*rand)),'.png']);
+border_2=imread(['./Borders/Border_',num2str(ceil(num_borders*rand)),'.png']);
 IMAGE=input;
 
 mul=20;%size of the mask
@@ -56,5 +59,50 @@ for i=1:1:heigth
        end
 end
 end
-imagesc(speckle_image);
+%centering image on paper, The width of the print should be 27.09mm compared to the paper at 38mm
+[V,W,~]=size(speckle_image);
+add_col=round((W*38/27.9)-W)/2;
+vert_borders=255*ones(V,add_col,3);
+speckle_image=[vert_borders,speckle_image,vert_borders];
+horz_borders=255*ones(add_col,add_col*2+W,3);
+speckle_image=[horz_borders;speckle_image;horz_borders];
+[V,W,~]=size(speckle_image);
+
+[X,Y,~]=size(border_1);
+border1_resized=imresize(border_1,[round((X/Y)*W),W],'bilinear');
+[X,Y,~]=size(border_2);
+border2_resized=imresize(border_2,[round((X/Y)*W),W],'bilinear');
+
+resize_ratio=0.3; %1 for full image, 0.3 for nice looking image
+border1_resized=imresize(border1_resized,resize_ratio,'bilinear');
+if rand<0.5,border1_resized=fliplr(border1_resized);end;
+border2_resized=imresize(border2_resized,resize_ratio,'bilinear');
+if rand<0.5,border2_resized=fliplr(border2_resized);end;
+speckle_image=imresize(speckle_image,resize_ratio,'bilinear');
+[V,W,~]=size(speckle_image);
+alpha_layer1=(border1_resized(:,:,1));
+alpha_layer2=(border2_resized(:,:,1));
+alpha_central=255*ones(V,W);
+speckle_image=[fliplr(flipud(border1_resized));speckle_image;border2_resized];
+alpha=[fliplr(flipud(alpha_layer1));alpha_central;alpha_layer2];
+
+
+if (paper_color==4)
+speckle_image(:,:,1)=speckle_image(:,:,1)*(255/255);
+speckle_image(:,:,2)=speckle_image(:,:,2)*(221/255);
+speckle_image(:,:,3)=speckle_image(:,:,3)*(232/255);
+end
+if (paper_color==3)
+speckle_image(:,:,1)=speckle_image(:,:,1)*(220/255);
+speckle_image(:,:,2)=speckle_image(:,:,2)*(250/255);
+speckle_image(:,:,3)=speckle_image(:,:,3)*(242/255);
+end
+if (paper_color==2)
+speckle_image(:,:,1)=speckle_image(:,:,1)*(247/255);
+speckle_image(:,:,2)=speckle_image(:,:,2)*(250/255);
+speckle_image(:,:,3)=speckle_image(:,:,3)*(220/255);
+end
+if (paper_color==1)
+end
 output=speckle_image;
+
