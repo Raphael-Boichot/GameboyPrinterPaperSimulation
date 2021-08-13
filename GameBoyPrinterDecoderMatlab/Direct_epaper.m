@@ -1,11 +1,11 @@
-% Raphaël BOICHOT 11/08/2021 Game Boy printer emulator
+% RaphaÃ«l BOICHOT 11/08/2021 Game Boy printer emulator
 % direct epaper encoder from image
 %image must be 4 colors maximum, which is the native output format in this
 %project
 %Must use black and white image as input
 clear
 clc
-paper_color=4;% 3=pink, 3=blue, 2=yellow or 1=regular
+paper_color=4;% 4=pink, 3=blue, 2=yellow or 1=regular
 %watermarking='Raphael BOICHOT 2021';
 [ID]=get_unique_ID(8);
 DateString = date;
