@@ -5,8 +5,9 @@
 %Must use black and white image as input
 clear
 clc
-paper_color=3;% 3=blue, 2=yellow or 1=regular
+paper_color=4;% 3=pink, 3=blue, 2=yellow or 1=regular
 %watermarking='Raphael BOICHOT 2021';
+[ID]=get_unique_ID(8);
 DateString = date;
 BandW_image=imread('GameBoy pixel perfect 3 12-Aug-2021.png');
 map=BandW_image(:,:,1);
@@ -18,5 +19,6 @@ switch length(C)
 end;
 [epaper, alpha]=epaper_packet(map,paper_color);
 %imwrite(epaper,['GameBoy epaper ',DateString,'.png'],'Alpha',alpha,'Author',watermarking);
-imwrite(epaper,['GameBoy epaper ',DateString,'.png'],'Alpha',alpha);
+unique_ID=num2str(rand,16);
+imwrite(epaper,['GameBoy epaper_',DateString,'_',ID,'.png'],'Alpha',alpha);
 disp('Done !')

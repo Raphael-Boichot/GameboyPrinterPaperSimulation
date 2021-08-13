@@ -7,7 +7,7 @@ clc
 
 % Here you enter some parameters
 %------------------------------------------------------------------------
-paper_color=3;% 3=blue, 2=yellow or 1=regular, for epaper output
+paper_color=2;% 4=pink, 3=blue, 2=yellow or 1=regular, for epaper output
 %watermarking='Raphaël BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, for pixel perfect output
@@ -15,7 +15,7 @@ continuous_printing=0;  %0 to separate images automatically if margin >0
                         %1 for continuous printing with TimeOut or Manual dode, ignore margin > 0);
 %------------------------------------------------------------------------
 
-
+[ID]=get_unique_ID(8);
 DateString = date;
 raw_image=[];
 num_image=0;
@@ -62,8 +62,8 @@ while ~feof(fid)
         raw_image=[];
         if not(margin==0)&&not(continuous_printing);
             num_image=num_image+1;
-            imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha)
-            imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'])
+            imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+            imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
             disp('Images written')
             raw_image=[];
             colored_image=[];
@@ -77,8 +77,8 @@ while ~feof(fid)
     if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(continuous_printing)
         disp('Cut paper command received')
         num_image=num_image+1;
-        imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha)
-        imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'])
+        imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+        imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
         disp('Images written')
         raw_image=[];
         colored_image=[];
@@ -91,8 +91,8 @@ end
 
 if not(isempty(colored_image))
     num_image=num_image+1;
-    imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha)
-    imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'])
+    imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+    imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
     disp('Images written')
     raw_image=[];
     colored_image=[];
