@@ -1,6 +1,6 @@
 # Gameboy Printer Paper Simulation
 
-* Creation Date: 2020-08-23, last update 2021-08-05
+* Creation Date: 2020-08-23, last update 2021-08-13
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 * Featured on Hackaday :  https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/
 * Companion project from : https://github.com/zenaro147/wifi-gbp-emulator/tree/feature/v3
