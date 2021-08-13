@@ -19,6 +19,6 @@ switch length(C)
 end;
 [epaper, alpha]=epaper_packet(map,paper_color);
 %imwrite(epaper,['GameBoy epaper ',DateString,'.png'],'Alpha',alpha,'Author',watermarking);
-unique_ID=num2str(rand,16);
+%unique_ID=num2str(rand,16);
 imwrite(epaper,['GameBoy epaper_',DateString,'_',ID,'.png'],'Alpha',alpha);
 disp('Done !')
