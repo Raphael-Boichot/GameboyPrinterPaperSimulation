@@ -6,7 +6,7 @@
 clear
 clc
 paper_color=3;% 3=blue, 2=yellow or 1=regular
-watermarking='Raphaël BOICHOT 2021';
+%watermarking='Raphael BOICHOT 2021';
 DateString = date;
 BandW_image=imread('GameBoy pixel perfect 3 12-Aug-2021.png');
 map=BandW_image(:,:,1);
@@ -17,5 +17,6 @@ switch length(C)
     case 2; map=(map==C(1))*0+(map==C(2))*255;  
 end;
 [epaper, alpha]=epaper_packet(map,paper_color);
-imwrite(epaper,['GameBoy epaper ',DateString,'.png'],'Alpha',alpha,'Author',watermarking);
+%imwrite(epaper,['GameBoy epaper ',DateString,'.png'],'Alpha',alpha,'Author',watermarking);
+imwrite(epaper,['GameBoy epaper ',DateString,'.png'],'Alpha',alpha);
 disp('Done !')

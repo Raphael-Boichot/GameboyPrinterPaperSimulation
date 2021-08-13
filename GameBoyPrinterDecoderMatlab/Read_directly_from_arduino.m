@@ -5,6 +5,7 @@
 
 clear
 clc
+disp('Beware, this code is not yet compatible with Octave !!!')
 arduinoObj = serialport("COM4",115200); %set the Arduino com port here
 configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);

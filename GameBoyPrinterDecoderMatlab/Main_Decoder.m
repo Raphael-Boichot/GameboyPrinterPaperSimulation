@@ -7,8 +7,8 @@ clc
 
 % Here you enter some parameters
 %------------------------------------------------------------------------
-paper_color=1;% 3=blue, 2=yellow or 1=regular, for epaper output
-watermarking='Raphaël BOICHOT 2021';
+paper_color=3;% 3=blue, 2=yellow or 1=regular, for epaper output
+%watermarking='Raphaël BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, for pixel perfect output
 continuous_printing=0;  %0 to separate images automatically if margin >0
@@ -44,7 +44,7 @@ while ~feof(fid)
             disp('DATA packet to process received')
             packet=decode_packet(a);
             raw_image=[raw_image;packet];
-            imagesc(raw_image);
+            %imagesc(raw_image);
             drawnow
         end
     end
@@ -58,12 +58,13 @@ while ~feof(fid)
         BandW_image=[BandW_image;BandW];
         [epaper,alpha]=epaper_packet(BandW_image,paper_color);
         disp(['The after margin is 0x',num2str(dec2hex(margin))])
-        imagesc(epaper)
+        %imagesc(epaper)
         raw_image=[];
         if not(margin==0)&&not(continuous_printing);
             num_image=num_image+1;
-            imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha,'Author',watermarking)
-            imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'],'Author',watermarking)
+            imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha)
+            imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'])
+            disp('Images written')
             raw_image=[];
             colored_image=[];
             colored=[];
@@ -76,8 +77,9 @@ while ~feof(fid)
     if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(continuous_printing)
         disp('Cut paper command received')
         num_image=num_image+1;
-        imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha,'Author',watermarking)
-        imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'],'Author',watermarking)
+        imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha)
+        imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'])
+        disp('Images written')
         raw_image=[];
         colored_image=[];
         colored=[];
@@ -89,8 +91,9 @@ end
 
 if not(isempty(colored_image))
     num_image=num_image+1;
-    imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha,'Author',watermarking)
-    imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'],'Author',watermarking)
+    imwrite(epaper,['GameBoy e-paper ',num2str(num_image),' ',DateString,'.png'],'Alpha',alpha)
+    imwrite(colored_image,['GameBoy pixel perfect ',num2str(num_image),' ',DateString,'.png'])
+    disp('Images written')
     raw_image=[];
     colored_image=[];
     colored=[];
@@ -99,3 +102,4 @@ if not(isempty(colored_image))
     disp('Flush spooler by force')
 end
 fclose(fid);
+disp('Normal termination')
