@@ -7,7 +7,7 @@ clc
 % Here you enter some parameters
 %------------------------------------------------------------------------
 paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
-%watermarking='Raphaël BOICHOT 2021';
+%watermarking='RaphaÃ«l BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, for pixel perfect output
 continuous_printing=0;  %0 to separate images automatically if margin >0
@@ -16,7 +16,7 @@ continuous_printing=0;  %0 to separate images automatically if margin >0
 
 [ID]=get_unique_ID(8);
 DateString = date;
-copyfile (file,['backups/',DateString,'_',ID,'.txt']);
+copyfile (file,['Backups/',DateString,'_',ID,'.txt']);
 raw_image=[];
 num_image=0;
 colored=[];
