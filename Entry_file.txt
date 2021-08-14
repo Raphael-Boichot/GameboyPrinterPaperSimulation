@@ -1,0 +1,9 @@
+// Note: Each byte is from each GBP packet is from the gameboy
+//       except for the last two bytes which is from the printer
+// JS Raw Packet Decoder: https://mofosyne.github.io/arduino-gameboy-printer-emulator/GameBoyPrinterDecoderJS/gameboy_printer_js_raw_decoder.html
+// --- GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 ---
+// This program comes with ABSOLUTELY NO WARRANTY;
+// This is free software, and you are welcome to redistribute it
+// under certain conditions. Refer to LICENSE file for detail.
+// ---
+// GAMEBOY PRINTER Packet Capture V3 (Brian Khuu 2020)
