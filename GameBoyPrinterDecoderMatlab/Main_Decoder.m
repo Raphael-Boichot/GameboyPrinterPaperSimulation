@@ -1,13 +1,12 @@
-% Raphaël BOICHOT 10/08/2021 Game Boy printer emulator
+% Raphael BOICHOT 10/08/2021 Game Boy printer emulator
 % code can handle compression, palette tricks and multiple images
 % for any question : raphael.boichot@gmail.com
 % update V3 to follow compatibility with https://github.com/mofosyne/arduino-gameboy-printer-emulator
 clear
 clc
-
 % Here you enter some parameters
 %------------------------------------------------------------------------
-paper_color=2;% 4=pink, 3=blue, 2=yellow or 1=regular, for epaper output
+paper_color=1;%5=purple, 4=pink, 3=blue, 2=yellow or 1=regular
 %watermarking='Raphaël BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, for pixel perfect output

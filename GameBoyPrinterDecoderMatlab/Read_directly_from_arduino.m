@@ -1,11 +1,15 @@
-% Raphaël BOICHOT 11/08/2021 Game Boy printer emulator
+% Raphael BOICHOT 11/08/2021 Game Boy printer emulator
 % This script directly handle the Arduino from Matlab
 % for any question : raphael.boichot@gmail.com
 % for end of transmission, simply reboot the Arduino
 
 clear
 clc
-disp('Beware, this code is not yet compatible with Octave !!!')
+disp('-----------------------------------------------------------')
+disp('|Beware, this code is not yet compatible with Octave !!!  |')
+disp('|Beware, this code is not yet compatible Matlab Mobile !!!|')
+disp('|Reboot Arduino to end transmission                       |')
+disp('-----------------------------------------------------------')
 arduinoObj = serialport("COM4",115200); %set the Arduino com port here
 configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);

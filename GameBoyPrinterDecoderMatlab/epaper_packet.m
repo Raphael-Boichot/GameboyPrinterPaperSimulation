@@ -1,5 +1,5 @@
 function [output, alpha]=epaper_packet(input,paper_color)
-% Raphaël BOICHOT 10-09-2020
+% Raphael BOICHOT 10-09-2020
 % code to simulate the speckle aspect of real Game boy printer
 % image come from function call
 
@@ -94,6 +94,11 @@ alpha_central=255*ones(V,W);
 speckle_image=[fliplr(flipud(border1_resized));speckle_image;border2_resized];
 alpha=[fliplr(flipud(alpha_layer1));alpha_central;alpha_layer2];
 %coloring the paper
+if (paper_color==5)
+speckle_image(:,:,1)=speckle_image(:,:,1)*(242/255);
+speckle_image(:,:,2)=speckle_image(:,:,2)*(230/255);
+speckle_image(:,:,3)=speckle_image(:,:,3)*(255/255);
+end
 if (paper_color==4)
 speckle_image(:,:,1)=speckle_image(:,:,1)*(255/255);
 speckle_image(:,:,2)=speckle_image(:,:,2)*(221/255);
