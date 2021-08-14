@@ -122,9 +122,11 @@ Are you the happy owner of a regular Matlab License or a vilain hacker stealing 
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
 - Code generates an output .txt file that you can process again with the classical decoder "Main_Decoder.m" or with https://github.com/HerrZatacke/wifi-gbp-emulator
 
-**Printing on the go !**
+**Mobile printing !**
 
 With an OTG cable, you can plug, power and control the Arduino directly from your mobile Android phone with Arduinodroid App. Simply copy the output from serial console, paste to Entry_file.txt and decode the images with Matlab Mobile (The App is free with limited cloud storage for unlicensed user, but enough for our case). Matlab Mobile is however not yet able to control directly the Arduino (contrary to PC), perhaps in a future release.
+
+![](./images/On the go.JPG)
 
 **Known issues related to the printer emulator, Arduino side**
 
