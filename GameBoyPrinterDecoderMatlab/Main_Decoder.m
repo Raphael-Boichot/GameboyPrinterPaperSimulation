@@ -16,6 +16,7 @@ continuous_printing=0;  %0 to separate images automatically if margin >0
 
 [ID]=get_unique_ID(8);
 DateString = date;
+copyfile (file,['backups\',DateString,'_',ID,'.txt']);
 raw_image=[];
 num_image=0;
 colored=[];
