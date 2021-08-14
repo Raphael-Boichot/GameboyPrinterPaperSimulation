@@ -5,7 +5,7 @@
 %Must use black and white image as input
 clear
 clc
-paper_color=1;%5=purple, 4=pink, 3=blue, 2=yellow or 1=regular
+paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
 %watermarking='Raphael BOICHOT 2021';
 [ID]=get_unique_ID(8);
 DateString = date;

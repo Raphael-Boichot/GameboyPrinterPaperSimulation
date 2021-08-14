@@ -6,7 +6,7 @@ clear
 clc
 % Here you enter some parameters
 %------------------------------------------------------------------------
-paper_color=1;%5=purple, 4=pink, 3=blue, 2=yellow or 1=regular
+paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
 %watermarking='Raphaël BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, for pixel perfect output
