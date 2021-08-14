@@ -92,7 +92,7 @@ Now let's detail the new features available with this version of emulator:
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
     #define GBP_PKT10_TIMEOUT_MS 400 in gbp_serial_io.cpp line 39
-    continuous_printing=0;  in Main_Decoder.m line 12
+    continuous_printing=0;  in Main_Decoder.m line 13
     
 Automatic mode is the mode by default : use default settings and images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For 99% of the users this mode will be enough.
 
@@ -101,7 +101,7 @@ Automatic mode is the mode by default : use default settings and images will be 
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
     #define GBP_PKT10_TIMEOUT_MS 15000 in gbp_serial_io.cpp line 39
-    continuous_printing=1;  in Main_Decoder.m line 12
+    continuous_printing=1;  in Main_Decoder.m line 13
 
 In Manual mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial before making another print. This allows the decoder to know how to assemble images that contains inner margins. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
 
@@ -109,7 +109,6 @@ Games that can take advantage from the "TimeOut" or Manual mode are (for example
 - *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari, Hello Kitty no Magical museum and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol with very long lag times in-between chunks of images and/or inner margins.*
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Manual mode is so advised to split different images.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, ill-assembled or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
-
 
 **Direct printing from Matlab (nearly) without using the Arduino IDE !**
 
@@ -122,6 +121,10 @@ Are you the happy owner of a regular Matlab License or a vilain hacker stealing 
 - When you're done, reboot the Arduino, it will indicate to Matlab that transmission is over and will run the decoder automatically.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
 - Code generates an output .txt file that you can process again with the classical decoder "Main_Decoder.m" or with https://github.com/HerrZatacke/wifi-gbp-emulator
+
+**Printing on the go !**
+
+With an OTG cable, you can plug, power and control the Arduino directly from your mobile Android phone with Arduinodroid App. Simply copy the output from serial console, paste to Entry_file.txt and decode the images with Matlab Mobile (The App is free with limited cloud storage for unlicensed user, but enough for our case). Matlab Mobile is however not yet able to control directly the Arduino (contrary to PC), perhaps in a future release.
 
 **Known issues related to the printer emulator, Arduino side**
 
