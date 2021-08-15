@@ -122,9 +122,9 @@ You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino
 - Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
 - Connect your Game Boy to Arduino with serial cable, it must be like the Arduino serial console but into the Matlab Command window.
 - Print your images as usual.
-- When you're done, reboot the Arduino, it will indicate to Matlab that transmission is over and will run the decoder automatically.
+- When you're done, reboot the Arduino, it will indicate to Octave/Matlab that transmission is over and will run the decoder automatically.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
-- Code generates an output .txt file that you can process again with the classical decoder "Main_Decoder.m" or with https://github.com/HerrZatacke/wifi-gbp-emulator
+- Code generates an output .txt file that you can process again later with the classical decoder "Main_Decoder.m" or with https://github.com/HerrZatacke/wifi-gbp-emulator
 
 **Mobile printing !**
 
