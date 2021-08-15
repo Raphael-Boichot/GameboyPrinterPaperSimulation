@@ -278,6 +278,13 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
 
+# List of games that display a printer support on the box but without any printing confirmed
+
+These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them: 
+
+- *Grand Theft Auto (USA version)
+- *The Muppet (USA version)
+
 # Time for statistics !
 
 On the 107 games compatible with the Game Boy Printer:
