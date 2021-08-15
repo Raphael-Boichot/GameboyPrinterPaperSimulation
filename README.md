@@ -146,6 +146,9 @@ The code is of course fully open to modifications. Edit "color_packet.m" and add
 Then just edit "color_packet.m" to seek to the new palette by its line number in "color_packet.m"
             
     color_option=5; %5 for your palette
+    
+# Example of default palette outputs:
+![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Palettes.png)
 
 **Known issues related to the printer emulator, Arduino side**
 
