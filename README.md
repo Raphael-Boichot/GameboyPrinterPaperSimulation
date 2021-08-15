@@ -132,6 +132,20 @@ With an OTG cable, you can plug, power and control the Arduino directly from you
 
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/On%20the%20go.png)
 
+**Can I modify the palette of the pixel perfect images ?**
+
+The code is of course fully open to modifications. Edit "color_packet.m" and add your desired RGB triplets:
+
+    colors=[255 255 255 168 168 168 84 84 84 0 0 0;%Black and white
+            215 247 215 130 222 73 6 75 145 0 19 26;%Game Boy Color
+            120 169 59 93 150 78 70 131 89 56 110 86;%Game Boy DMG
+            255 255 255 89 255 252 239 42 248 0 0 0;%CGA
+ (R G B for white) (R G B for light gray) (R G B for drak gray) (R G B for black)];%Your palette
+            
+Then just edit "color_packet.m" to indicate a new palette by its line number in "color_packet.m"
+            
+    color_option=5; %5 for your palette
+
 **Known issues related to the printer emulator, Arduino side**
 
 - *Printing with Hamster Club is easily prone to crash due to spamming of the serial console with 0F command in double speed mode.*
