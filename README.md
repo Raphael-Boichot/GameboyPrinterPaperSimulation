@@ -134,15 +134,16 @@ With an OTG cable, you can plug, power and control the Arduino directly from you
 
 **Can I modify the palette of the pixel perfect images ?**
 
-The code is of course fully open to modifications. Edit "color_packet.m" and add your desired RGB triplets:
+The code is of course fully open to modifications. Edit "color_packet.m" and add a new line indicating your desired RGB triplets:
 
     colors=[255 255 255 168 168 168 84 84 84 0 0 0;%Black and white
             215 247 215 130 222 73 6 75 145 0 19 26;%Game Boy Color
             120 169 59 93 150 78 70 131 89 56 110 86;%Game Boy DMG
-            255 255 255 89 255 252 239 42 248 0 0 0;%CGA
+            255 255 255 89 255 252 239 42 248 0 0 0];%CGA
+            
  (R G B for white) (R G B for light gray) (R G B for drak gray) (R G B for black)];%Your palette
             
-Then just edit "color_packet.m" to indicate a new palette by its line number in "color_packet.m"
+Then just edit "color_packet.m" to seek to the new palette by its line number in "color_packet.m"
             
     color_option=5; %5 for your palette
 
