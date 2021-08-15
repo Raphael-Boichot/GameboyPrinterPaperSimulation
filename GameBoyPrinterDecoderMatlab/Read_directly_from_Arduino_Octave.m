@@ -7,19 +7,19 @@ clear
 clc
 pkg load image
 pkg load instrument-control
-disp('-----------------------------------------------------------')
-disp('|Beware, this code is for Octave ONLY                !!!  |')
-disp('|Reboot Arduino to end transmission                       |')
-disp('-----------------------------------------------------------')
-arduinoObj = serialport("COM4",115200); %set the Arduino com port here
+disp('--------------------------------------------')
+disp('|Beware, this code is for Octave ONLY !!!  |')
+disp('|Reboot Arduino to end transmission        |')
+disp('--------------------------------------------')
+arduinoObj = serialport("COM4",'baudrate',115200,'timeout',-1); %set the Arduino com port here
 %configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);
 
 set(arduinoObj, 'timeout',60);
 flag=0;
- str='Packet Capture V3';
+str='Packet Capture V3';
 while flag==0
-data = ReadToTermination(arduinoObj,char(10));
+data = ReadToTermination(arduinoObj);
 disp(data)
     if not(isempty(strfind(data,str)))
         flag=1;
