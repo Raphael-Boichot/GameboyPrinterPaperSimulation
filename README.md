@@ -278,7 +278,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
 
-# List of games that display a printer support on the box but without any printing confirmed
+# List of games that display a printer support on the box but without any printing feature confirmed by players
 
 These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them: 
 
