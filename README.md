@@ -134,7 +134,11 @@ With an OTG cable, you can plug, power and control the Arduino directly from you
 
 **Known issues related to the printer emulator, Arduino side**
 
-- *Printing with Hamster Club is easily prone to crash due to spamming of the serial console with 0F command in double speed mode*
+- *Printing with Hamster Club is easily prone to crash due to spamming of the serial console with 0F command in double speed mode.*
+
+**Known issues related to the decoder, Matlab/Octave side**
+
+- *Direct printing from Matlab/Octave without using the Arduino IDE may crash if Game Boy reboots into the printing session. The best is to reboot Arduino to flush decoder text output between games.*
 
 # The complete list of games compatible with the Game Boy Printer Emulator
 
