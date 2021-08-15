@@ -57,7 +57,7 @@ Then I ran Octave with the pixel perfect image and here the result :
 # The e-paper image obtained with Octave:
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-09-10/Direct_e-paper.png)
 
-# Final output of the decosder (what you will get) with correct ratio image/paper, paper hue and borders:
+# Final output of the decoder (what you will get) with correct ratio image/paper, blue paper hue and borders:
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Chip_chip_paper.png)
 
 # Which Game Boy Printer emulator using with the Matlab/Octave decoder ?
