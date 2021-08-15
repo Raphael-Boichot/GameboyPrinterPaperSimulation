@@ -79,6 +79,19 @@ speckle_image=[horz_borders;speckle_image;horz_borders];
 border1_resized=imresize(border_1,[round((X/Y)*W),W],'bilinear');
 [X,Y,~]=size(border_2);
 border2_resized=imresize(border_2,[round((X/Y)*W),W],'bilinear');
+%adding some subtle image noise
+surface_in_pixels=V*W;
+dot_rate=surface_in_pixels/200000;
+for i=1:1:dot_rate
+    I=ceil(rand*(V-mul));
+    J=ceil(rand*(W-mul));
+    y=2;
+    x=ceil(49*rand);
+    burn_dot=pixel_sample(1+20*y:20+20*y,1+20*x:20+20*x,:)+100;
+    if rand<0.5; burn_dot=flip(burn_dot,ceil(2*rand));end;
+    burn_dot=rot90(burn_dot,ceil(2*rand)-2);
+    speckle_image(I:I+mul-1,J:J+mul-1,:)=min(burn_dot,speckle_image(I:I+mul-1,J:J+mul-1,:));
+end
 %resizing everything
 resize_ratio=0.3; %1 for full image, 0.3 for nice looking image
 border1_resized=imresize(border1_resized,resize_ratio,'bilinear');
