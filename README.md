@@ -114,12 +114,12 @@ Games that can take advantage from the "TimeOut" or Manual mode are (for example
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Manual mode is so advised to split different images.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, stuck together or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
 
-**Direct printing from Matlab (nearly) without using the Arduino IDE !**
+**Direct printing from Matlab/Octave (nearly) without using the Arduino IDE !**
 
-Are you the happy owner of a regular Matlab License or a vilain hacker stealing other's work ? You can run "Read_directly_from_arduino.m" directly from Matlab to acquire data and decode them in the same run. It behaves like the Arduino Serial output but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. This code does not natively works on Octave (for the moment). How to use it : 
+You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino_Octave.m" directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
 
 - Install the last Arduino IDE (https://www.arduino.cc/en/software) and compile/load the .ino file with the TimeOut parameter you need. Note the USB port number, close the IDE, you won't need it.
-- Use your pricey Matlab license and modify the "Read_directly_from_arduino.m" with the correct port number and run it.
+- Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
 - Connect your Game Boy to Arduino with serial cable, it must be like the Arduino serial console but into the Matlab Command window.
 - Print your images as usual.
 - When you're done, reboot the Arduino, it will indicate to Matlab that transmission is over and will run the decoder automatically.
