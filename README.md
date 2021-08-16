@@ -86,8 +86,7 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Open Octave/Matlab code "Main_Decoder.m"
 - Choose some color palettes and printing options (default are OK).
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
-- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
-- The .txt output can also be processed with https://github.com/HerrZatacke/wifi-gbp-emulator
+- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example https://github.com/HerrZatacke/wifi-gbp-emulator
 
 Now let's detail the new features available with this version of emulator:
 
@@ -167,7 +166,7 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 
 **Known issues related to the decoder, Matlab/Octave side**
 
-- *Direct printing from Matlab/Octave without using the Arduino IDE may crash if Game Boy reboots into the printing session. The best is to reboot Arduino to flush decoder text output between games.*
+- *Direct printing from Matlab/Octave without using the Arduino IDE may crash if the Game Boy reboots into the printing session. The best is to reboot Arduino before the Game Boy to flush decoder text output between each games. Printing with the copy-paste method from the Arduino IDE is totally stable but requires more steps.*
 
 # The complete list of games compatible with the Game Boy Printer and the Printer Emulator
 
