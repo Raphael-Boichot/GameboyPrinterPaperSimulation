@@ -158,7 +158,7 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 
     paper_color=X; %X your custome palette
 
-# Example of default palette outputs:
+# Examples of default palette output from the code:
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Palettes.png)
 
 **Known issues related to the printer emulator, Arduino side**
