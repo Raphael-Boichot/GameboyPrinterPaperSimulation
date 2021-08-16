@@ -114,9 +114,9 @@ Games that can take advantage from the "TimeOut" or Manual mode are (for example
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Manual mode is so advised to split different images.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, stuck together or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
 
-**Direct printing from Matlab/Octave (nearly) without using the Arduino IDE !**
+**Direct printing from Matlab/Octave without using the Arduino IDE !**
 
-You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino_Octave.m" directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
+You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino_Octave.m" directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output form the IDE but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
 
 - Install the last Arduino IDE (https://www.arduino.cc/en/software) and compile/load the .ino file with the TimeOut parameter you need. Note the USB port number, close the IDE, you won't need it.
 - Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
@@ -140,7 +140,7 @@ The code is of course fully open to modifications. Edit "color_packet.m" and add
             215 247 215 130 222 73 6 75 145 0 19 26;%Game Boy Color
             120 169 59 93 150 78 70 131 89 56 110 86;%Game Boy DMG
             255 255 255 89 255 252 239 42 248 0 0 0];%CGA
- (R G B for white) (R G B for light gray) (R G B for drak gray) (R G B for black)];%Your palette
+ (R G B for white) (R G B for light gray) (R G B for dark gray) (R G B for black)];%Your palette
             
 Then just edit "color_packet.m" to seek to the new palette by its line number in "color_packet.m"
         
@@ -154,7 +154,7 @@ Same for the paper output, edit "epaper_packet.m" and seek for these commands:
     speckle_image(:,:,3)=speckle_image(:,:,3)*(B/255);
     end
     
-X is the number of the e-paper palette and RGB the color levels applied to the whole image. Then just edit "color_packet.m" to seek to the new palette by its line number in "color_packet.m"
+X is the number of the e-paper palette and RGB the color levels applied to the whole image. Then just edit "color_packet.m" to seek to the new palette by its number in "Main_decoder.m"
 
     paper_color=X; %X your custome palette
 
