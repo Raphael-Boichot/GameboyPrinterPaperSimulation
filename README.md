@@ -318,6 +318,8 @@ These games display a printer support logo on their box but I did not find any e
 - *Grand Theft Auto (USA version)*
 - *The Muppet (USA version)*
 
+In consequence, I won't include them in the official list.
+
 # Time for statistics !
 
 On the 107 games compatible with the Game Boy Printer:
