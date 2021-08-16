@@ -169,9 +169,9 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 
 - *Direct printing from Matlab/Octave without using the Arduino IDE may crash if Game Boy reboots into the printing session. The best is to reboot Arduino to flush decoder text output between games.*
 
-# The complete list of games compatible with the Game Boy Printer Emulator
+# The complete list of games compatible with the Game Boy Printer and the Printer Emulator
 
-There is in total 107 games compatible with the Game Boy Printer (and printer emulator). I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! The zip file contains 100% or any% saves ready to use with printer features unlocked for most of the games. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from most of the games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list published on internet. This list was never published online before june 2021: 
+There is in total 107 games compatible with the Game Boy Printer (and printer emulator). I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! The zip file contains 100% or any% saves ready to use with printer features unlocked for most of the games. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from most of the games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer: 
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
@@ -313,7 +313,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
-These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them: 
+These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them since more than 20 years: 
 
 - *Grand Theft Auto (USA version)*
 - *The Muppet (USA version)*
