@@ -132,7 +132,7 @@ With an OTG cable, you can plug, power and control the Arduino directly from you
 
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/On%20the%20go.png)
 
-**Can I modify the palette of the pixel perfect images ?**
+**Can I modify the palettes of the pixel perfect images or e-paper outputs ?**
 
 The code is of course fully open to modifications. Edit "color_packet.m" and add a new line indicating your desired RGB triplets:
 
@@ -140,13 +140,24 @@ The code is of course fully open to modifications. Edit "color_packet.m" and add
             215 247 215 130 222 73 6 75 145 0 19 26;%Game Boy Color
             120 169 59 93 150 78 70 131 89 56 110 86;%Game Boy DMG
             255 255 255 89 255 252 239 42 248 0 0 0];%CGA
-            
  (R G B for white) (R G B for light gray) (R G B for drak gray) (R G B for black)];%Your palette
             
 Then just edit "color_packet.m" to seek to the new palette by its line number in "color_packet.m"
-            
-    color_option=5; %5 for your palette
+        
+    color_option=X; %X your custom palette
+
+Same for the paper output, edit "epaper_packet.m" and seek for these commands: 
+
+    if (paper_color==X)
+    speckle_image(:,:,1)=speckle_image(:,:,1)*(R/255);
+    speckle_image(:,:,2)=speckle_image(:,:,2)*(G/255);
+    speckle_image(:,:,3)=speckle_image(:,:,3)*(B/255);
+    end
     
+X is the number of the e-paper palette and RGB the color levels applied to the whole image. Then just edit "color_packet.m" to seek to the new palette by its line number in "color_packet.m"
+
+    paper_color=X; %X your custome palette
+
 # Example of default palette outputs:
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Palettes.png)
 
