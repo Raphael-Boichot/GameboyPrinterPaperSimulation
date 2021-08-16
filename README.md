@@ -162,11 +162,13 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 
 **Known issues related to the printer emulator, Arduino side**
 
-- *Printing with Hamster Club is easily prone to crash due to spamming of the serial console with 0F command in double speed mode.*
+- *Printing with Hamster Club may crash after a certain number of images due to spamming of the serial console with 0F command in double speed mode. If you absolutely want to print the 88 hamsters pictures of this games, split your work in a dozen of printing sessions.*
 
 **Known issues related to the decoder, Matlab/Octave side**
 
 - *Direct printing from Matlab/Octave without using the Arduino IDE may crash if the Game Boy reboots into the printing session. The best is to reboot Arduino before the Game Boy to flush decoder text output between each games. Printing with the copy-paste method from the Arduino IDE is totally stable but requires more steps.*
+- *The graphical objects (figures) from Octave are very slow to display contrary to Matlab (codes being the sames), so I deactivate graphical outputs during decoding to speed up the process for Octave users.*
+- *Finally, the way he serial port is handled under Matlab and Octave is not the same, so I had to split the direct printing codes in two versions. All others codes are exactly the sames. I hope the two versions will be merged in a future release.*
 
 # The complete list of games compatible with the Game Boy Printer and the Printer Emulator
 
@@ -317,7 +319,7 @@ These games display a printer support logo on their box but I did not find any e
 - *Grand Theft Auto (USA version)*
 - *The Muppet (USA version)*
 
-In consequence, I won't include them in the official list. The printer logo on the box is very probably a dumb copy-paste made from a generic template for graphists. These two games beeing very average, their cover is a the image of their content.
+In consequence, I won't include them in the official list. The printer logo on the box is very probably a dumb copy-paste made from a generic template for graphists. These two games beeing very average, their cover is at the image of their content.
 
 # Time for statistics !
 
