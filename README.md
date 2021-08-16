@@ -111,7 +111,7 @@ In Manual mode, the printing command from the Game Boy is not taken into account
 
 Games that can take advantage from the "TimeOut" or Manual mode are (for example): 
 - *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari, Hello Kitty no Magical museum and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol with very long lag times in-between chunks of images and/or inner margins.*
-- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using Timeout image splitting is so advised. TimeOut can be 400 ms in these two cases.*
+- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using TimeOut image splitting is so advised. TimeOut can be just 400 in these two cases, just change continuous_printing to 1 in "Main_decoder.m"*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, stuck together or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
 
 **Direct printing from Matlab/Octave without using the Arduino IDE !**
