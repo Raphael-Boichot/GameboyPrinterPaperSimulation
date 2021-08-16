@@ -318,7 +318,7 @@ These games display a printer support logo on their box but I did not find any e
 - *Grand Theft Auto (USA version)*
 - *The Muppet (USA version)*
 
-In consequence, I won't include them in the official list. The printer logo on the box is very probably a dumb copy-paste made from a generic template for graphists. These two games beeing notably bad, their cover is a the image of their content.
+In consequence, I won't include them in the official list. The printer logo on the box is very probably a dumb copy-paste made from a generic template for graphists. These two games beeing very average, their cover is a the image of their content.
 
 # Time for statistics !
 
