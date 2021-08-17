@@ -95,7 +95,7 @@ Now let's detail the new features available with this version of emulator:
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
     #define GBP_PKT10_TIMEOUT_MS 400 in gbp_serial_io.cpp line 39
-    continuous_printing=0;  in Main_Decoder.m line 13
+    Timeout_printing=0;  in Main_Decoder.m line 13
     
 Automatic mode is the mode by default : use default settings and images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For 99% of the users this mode will be enough.
 
@@ -104,7 +104,7 @@ Automatic mode is the mode by default : use default settings and images will be 
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
     #define GBP_PKT10_TIMEOUT_MS 15000 in gbp_serial_io.cpp line 39
-    continuous_printing=1;  in Main_Decoder.m line 13
+    Timeout_printing=1;  in Main_Decoder.m line 13
 
 In Manual mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial before making another print. This allows the decoder to know how to assemble images that contains inner margins. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
 
