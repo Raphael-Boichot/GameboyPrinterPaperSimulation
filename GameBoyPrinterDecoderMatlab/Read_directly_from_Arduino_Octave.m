@@ -5,12 +5,12 @@
 
 clear
 clc
-pkg load image
-pkg load instrument-control
 disp('--------------------------------------------')
 disp('|Beware, this code is for Octave ONLY !!!  |')
 disp('|Reboot Arduino to end transmission        |')
 disp('--------------------------------------------')
+pkg load image
+pkg load instrument-control
 arduinoObj = serialport("COM4",'baudrate',115200,'timeout',-1); %set the Arduino com port here
 %configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);
