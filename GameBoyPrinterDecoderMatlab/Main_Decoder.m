@@ -7,10 +7,10 @@ clc
 % Here you enter some parameters
 %------------------------------------------------------------------------
 paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
-%watermarking='RaphaÃ«l BOICHOT 2021';
+%watermarking='Raphaël BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, for pixel perfect output
-continuous_printing=0;  %0 to separate images automatically if margin >0
+Timeout_printing=1;  %0 to separate images automatically if margin >0
                         %1 for continuous printing with TimeOut or Manual dode, ignore margin > 0);
 %------------------------------------------------------------------------
 
@@ -60,7 +60,7 @@ while ~feof(fid)
         disp(['The after margin is 0x',num2str(dec2hex(margin))])
         %imagesc(epaper)
         raw_image=[];
-        if not(margin==0)&&not(continuous_printing);
+        if not(margin==0)&&not(Timeout_printing);
             num_image=num_image+1;
             imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
             imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
@@ -74,7 +74,7 @@ while ~feof(fid)
     end
     
     str='Timed Out';
-    if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(continuous_printing)
+    if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(Timeout_printing)
         disp('Cut paper command received')
         num_image=num_image+1;
         imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
