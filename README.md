@@ -9,7 +9,7 @@
 
 This project originates from https://github.com/mofosyne/arduino-gameboy-printer-emulator. This is now a fork of the Arduino Game Boy Printer emulator that increases game compatility to 100% and allows new printing features.
 
-The purpose of this Octave/Matlab project is to output images from an Arduino Game Boy Printer emulator that have the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project emerges after a discussion between *Raphaël BOICHOT*, *mofosyne*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. The motivation ? As Game Boy Printer paper is becoming difficult to find and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. Fresh thermal paper used in this study was graciously sent to me by *R.A.Helllord* from the Game Boy Camera Club Discord. 
+The purpose of this GNU Octave/Matlab project is to output images from an Arduino Game Boy Printer emulator that have the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project emerges after a discussion between *Raphaël BOICHOT*, *mofosyne*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. The motivation ? As Game Boy Printer paper is becoming difficult to find and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. Fresh thermal paper used in this study was graciously sent to me by *R.A.Helllord* from the Game Boy Camera Club Discord. 
 
 The Game Boy printer emulator developped by Brian Khuu is able to capture a stream of serial data under text form, but transforming this stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer, with the tone, noise, granularity and aliasing due to the printer head, was challenging compared to a classical pixel perfect rendering. And what is challenging is fun.
 
@@ -44,7 +44,7 @@ And I sampled manually a collection of 50 pixels of each level of grayscale (ver
 
 ![](./images/2020-09-10/Pixel_sample_3600dpi.png)
 
-Then the Octave code just reads a pixel on a pixel perfect image to get its color, picks a random pixel among the 50 of its own "color" and draws it on a new file with some overlapping. 50 pixels of each color is not much, but a pixel is a simple matrix of value. In consequence, to increase randomness each pixel itself is flipped or rotated randomly so that more than 200 different pixels can be generated out of just 50 for each color. Finally, the real printing paper presents fibres that create vertical streaks of "ink" (thermal paper has no ink but you see the idea). So the code randomly decreases the intensity of printing along some streaks of limited length chosen randomly. Of course the code in its present form can be improved, but the result is enough for my poor visual acuity.
+Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to get its color, picks a random pixel among the 50 of its own "color" and draws it on a new file with some overlapping. 50 pixels of each color is not much, but a pixel is a simple matrix of value. In consequence, to increase randomness each pixel itself is flipped or rotated randomly so that more than 200 different pixels can be generated out of just 50 for each color. Finally, the real printing paper presents fibres that create vertical streaks of "ink" (thermal paper has no ink but you see the idea). So the code randomly decreases the intensity of printing along some streaks of limited length chosen randomly. Of course the code in its present form can be improved, but the result is enough for my poor visual acuity.
 
 I choose to make a test case with a Chip Chip printed from Super Mario Deluxe:
 # The pixel perfect test case:
@@ -54,7 +54,7 @@ I then scanned this printing at 3600 dpi (after some contrast enhancement, the p
 # A scan of printed image on a real Game Boy Printer:
 ![](./images/2020-09-10/Printed.png)
 
-Then I ran Octave with the pixel perfect image and here the result: 
+Then I ran GNU Octave/Matlab with the pixel perfect image and here the result: 
 # The e-paper image obtained with Octave:
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-09-10/Direct_e-paper.png)
 
@@ -67,7 +67,7 @@ The Octave/Matlab decoder is of course natively backward compatible with https:/
 
 - *The game compatibility have been increased to 100% by applying two simple rules to the error packets sent by the Printer emulator to games: the error packet is always 0x00 before printing (the games clearly do not mind this error byte most of the time) except when an empty data packet is received, where it becomes 0x04 (image data full). This allows triggering the print command for certain rare games that require this. The post-printing commands are still the ones from the original project, except some increase of the number of busy state commands.*
 
-- *Assembling automatically the images is challenging with some games so a modification of both the emulator and the decoder is proposed to ensure proper printing for a dozen of "difficult" games. This will be called Manual or "TimeOut" mode in opposition to the default Automatic mode using margins to separate images*
+- *Assembling automatically the images is challenging with some games so a modification of both the emulator and the decoder is proposed to ensure proper printing for a dozen of "difficult" games. This will be called "TimeOut" mode in opposition to the default "margin" mode using post-printing margins information to separate images*
 
 The pinout have been slightly modified. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and packet transmission.
 
@@ -80,7 +80,7 @@ The pinout have been slightly modified. The SOUT pin have been moved to D5 to al
 You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
 - Install the last Arduino IDE (https://www.arduino.cc/en/software) and load the .ino file.
-- Install the free GNU Octave (https://www.gnu.org/software/octave/index) or use your pricey Matlab license and run the decoder.m.
+- Install the open-source GNU Octave (https://www.gnu.org/software/octave/index) or use your pricey Matlab license and run the decoder.m.
 - Connect your Game Boy to Arduino with serial cable, open the serial console in 115200 bauds and print as with a real Game Boy Printer.
 - Copy paste text obtained from the Arduino serial output into Entry_file.txt
 - Open Octave/Matlab code "Main_Decoder.m"
@@ -90,30 +90,30 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 
 Now let's detail the new features available with this version of emulator:
 
-**Automatic mode or print with margins**
+**Automatic mode or printing with margins**
 
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
     #define GBP_PKT10_TIMEOUT_MS 400 in gbp_serial_io.cpp line 39
     Timeout_printing=0;  in Main_Decoder.m line 13
     
-Automatic mode is the mode by default : use default settings and images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For 99% of the users this mode will be enough.
+This is the mode by default: with this settings images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For 99% of the users this mode will be enough, no need to go farther.
 
-**Manual mode or print with Timeout**
+**Idle mode or printing with Timeout message**
 
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
     #define GBP_PKT10_TIMEOUT_MS 15000 in gbp_serial_io.cpp line 39
     Timeout_printing=1;  in Main_Decoder.m line 13
 
-In Manual mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial before making another print. This allows the decoder to know how to assemble images that contains inner margins. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
+In idle mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial before making another print (which means that the serial is idle). This allows the decoder to know how to assemble images that contains inner margins. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
 
-Games that can take advantage from the "TimeOut" or Manual mode are (for example): 
+Games that can take advantage from the "TimeOut" or idle mode are (for example): 
 - *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari, Hello Kitty no Magical museum and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol with very long lag times in-between chunks of images and/or inner margins.*
-- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using TimeOut image splitting is so advised. TimeOut can be just 400 in these two cases, just change continuous_printing to 1 in "Main_decoder.m"*
-- *In general, each time you used the Automatic mode, if the images decoded are splitted, stuck together or in brief, not what you expect in terms of assembly, use Manual mode with TimeOut separator.*
+- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using TimeOut image splitting is so advised. TimeOut can be just 400 in these two cases, just set Timeout_printing=1 in "Main_decoder.m"*
+- *In general, each time you used the Automatic mode, if the images decoded are splitted, stuck together or in brief, not what you expect in terms of assembly, use idle mode with TimeOut separator to print.*
 
-**Direct printing from Matlab/Octave without using the Arduino IDE !**
+**Direct printing from Matlab/GNU Octave without using the Arduino IDE !**
 
 You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino_Octave.m" directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output form the IDE but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
 
@@ -121,7 +121,7 @@ You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino
 - Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
 - Connect your Game Boy to Arduino with serial cable, it must be like the Arduino serial console but into the Matlab Command window.
 - Print your images as usual.
-- When you're done, reboot the Arduino, it will indicate to Octave/Matlab that transmission is over and will run the decoder automatically.
+- When you're done, reboot the Arduino, it will indicate to GNU Octave/Matlab that transmission is over and will run the decoder automatically.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
 - Code generates an output .txt file that you can process again later with the classical decoder "Main_Decoder.m" or with https://github.com/HerrZatacke/wifi-gbp-emulator
 
@@ -164,12 +164,12 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 
 - *Printing with Hamster Club may crash after a certain number of images due to spamming of the serial console with 0F command in double speed mode. If you absolutely want to print the 88 hamsters pictures of this games, split your work in a dozen of printing sessions.*
 
-**Known issues related to the decoder, Matlab/Octave side**
+**Known issues related to the decoder, Matlab/GNU Octave side**
 
-- *Direct printing from Matlab/Octave without using the Arduino IDE may crash if the Game Boy reboots into the printing session. The best is to reboot Arduino before the Game Boy to flush decoder text output between each games. Printing with the copy-paste method from the Arduino IDE is totally stable but requires more steps.*
-- *The graphical objects (figures) from Octave are very slow to display contrary to Matlab (codes being the sames), so I have deactivated graphical outputs during decoding to speed up the process for Octave users.*
-- *Finally, the way he serial port is handled under Matlab and Octave is not the same, so I had to split the direct printing codes in two versions. All others codes are exactly the sames. I hope the two versions will be merged in a future release.*
-- *The direct printing mode is not yet compatible with Matlab Mobile or Octave for Android which is still a prototype. So the only mobile solution is to chain a mobile USB/Serial sniffer App with Matlab Mobile. This is not as elegant as a single code, single App solution*
+- *Direct printing from Matlab/GNU Octave without using the Arduino IDE may crash if the Game Boy reboots into the printing session. The best is to reboot Arduino before the Game Boy to flush decoder text output between each games. Printing with the copy-paste method from the Arduino IDE is totally stable but requires more steps.*
+- *The graphical objects (figures) from GNU Octave are very slow to display contrary to Matlab (codes being the sames), so I have deactivated graphical outputs during decoding to speed up the process for GNU Octave users.*
+- *Finally, the way he serial port is handled under Matlab and GNU Octave is not the same, so I had to split the direct printing codes in two versions. All others codes are exactly the sames. I hope the two versions will be merged in a future release.*
+- *The direct printing mode is not yet compatible with Matlab Mobile or GNU Octave for Android which is still a prototype. So the only mobile solution is to chain a mobile USB/Serial sniffer App with Matlab Mobile. This is not as elegant as a single code, single App solution.*
 
 # The complete list of games compatible with the Game Boy Printer and the Printer Emulator
 
