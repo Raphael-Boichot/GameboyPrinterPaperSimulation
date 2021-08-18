@@ -163,6 +163,7 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 **Known issues related to the printer emulator, Arduino side**
 
 - *Printing with Hamster Club may crash after a certain number of images due to spamming of the serial console with 0F command in double speed mode. If you absolutely want to print the 88 hamsters pictures of this games, split your work in a dozen of printing sessions.*
+- *Tsuri Sensei 2 (釣り先生2) does not respect the busy state of the printer so mashing the printing button leads to communication issue with an infinite busy loop. Print slowly with this one. Exiting the printing menu also leads to an undesired state of the emulator, so stay in the image menu to print.
 
 **Known issues related to the decoder, Matlab/GNU Octave side**
 
