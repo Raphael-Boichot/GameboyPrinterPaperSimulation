@@ -160,12 +160,12 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 # Examples of default palette output from the code:
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Palettes.png)
 
-**Known issues related to the printer emulator, Arduino side**
+**Known minor issues related to the printer emulator, Arduino side**
 
-- *Printing with Hamster Club may crash after a certain number of images due to spamming of the serial console with 0F command in double speed mode. If you absolutely want to print the 88 hamsters pictures of this games, split your work in a dozen of printing sessions.*
-- *Tsuri Sensei 2 (釣り先生2) does not respect the busy state of the printer so mashing the printing button leads to communication issue with an infinite busy loop. Print slowly with this one. Exiting the printing menu also leads to an undesired state of the emulator, so stay in the image menu to print.*
+- *Printing with Hamster Club may crash after a certain number of images due to spamming of the serial console with 0F command in double speed mode. Apart from that, printing with this game is rather stable*
+- *Game Boy Camera have an escape command during packet transmission (push B to avoid pixellated porn images to be printed in front of your parents). This command, which have no interest now that we fully assume to print sexual images, is not supported by the emulator*
 
-**Known issues related to the decoder, Matlab/GNU Octave side**
+**Known minor issues related to the decoder, Matlab/GNU Octave side**
 
 - *Direct printing from Matlab/GNU Octave without using the Arduino IDE may crash if the Game Boy reboots into the printing session. The best is to reboot Arduino before the Game Boy to flush decoder text output between each games. Printing with the copy-paste method from the Arduino IDE is totally stable but requires more steps.*
 - *The graphical objects (figures) from GNU Octave are very slow to display contrary to Matlab (codes being the sames), so I have deactivated graphical outputs during decoding to speed up the process for GNU Octave users.*
