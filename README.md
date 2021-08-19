@@ -163,7 +163,7 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 **Known minor issues related to the printer emulator, Arduino side**
 
 - *Printing with Hamster Club may crash after a certain number of images due to spamming of the serial console with 0F command in double speed mode. Apart from that, printing with this game is rather stable.*
-- *Game Boy Camera have an escape command during packet transmission (push B to avoid pixellated porn images to be printed in front of your parents). This command, which have no interest now that we fully assume to print sexual images, is not supported by the emulator.*
+- *Game Boy Camera have an escape command during packet transmission (push B to avoid cringe images to be printed in front of your parents). This command, which have no interest with an emulator, is not supported.*
 
 **Known minor issues related to the decoder, Matlab/GNU Octave side**
 
