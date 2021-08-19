@@ -24,6 +24,7 @@
  *   along with Arduino Gameboy Printer Emulator.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
+//void(* resetFunc) (void) = 0;
 
 #define GBP_OUTPUT_RAW_PACKETS true // by default, packets are parsed. if enabled, output will change to raw data packets for parsing and decompressing later
 #define GBP_USE_PARSE_DECOMPRESSOR false // embedded decompressor can be enabled for use with parse mode but it requires fast hardware (SAMD21, SAMD51, ESP8266, ESP32)
@@ -231,7 +232,8 @@ void loop()
       Serial.print(gbp_serial_io_dataBuff_max());
       Serial.println("B)");
       digitalWrite(LED_STATUS_PIN, LOW);
-
+      //resetFunc();
+           
 #ifdef GBP_FEATURE_PARSE_PACKET_MODE
       gbp_pkt_reset(&gbp_pktState);
 #ifdef GBP_FEATURE_PARSE_PACKET_USE_DECOMPRESSOR
