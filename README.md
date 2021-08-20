@@ -318,12 +318,12 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
-These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them since more than 20 years: 
+These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them since more than 20 years. The consensus is that these game do not have printer support: 
 
 - *Grand Theft Auto (USA version)*
 - *The Muppet (USA version)*
 
-In consequence, I won't include them in the official list. The printer logo on the box is very probably a dumb copy-paste made from a generic template for graphists. These two games beeing very average, their cover is at the image of their content.
+In consequence, I won't include them in the official list. The printer logo on the box is very probably a dumb copy-paste made from a generic template for graphists.
 
 # Time for statistics !
 
