@@ -1,6 +1,6 @@
 # Gameboy Printer Paper Simulation
 
-* Creation Date: 2020-08-23, last update 2021-08-13
+* Creation Date: 2020-08-23, last update 2021-08-21
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 * Featured on Hackaday :  https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/
 * Companion project from : https://github.com/zenaro147/wifi-gbp-emulator/tree/feature/v3
@@ -318,7 +318,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
-These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them since more than 20 years. The consensus is that these game do not have printer support: 
+These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them since more than 20 years. The consensus in 2021 is that these games do not have printer support: 
 
 - *Grand Theft Auto (USA version)*
 - *The Muppet (USA version)*
