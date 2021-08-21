@@ -174,7 +174,7 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 
 # The complete list of games compatible with the Game Boy Printer and the Printer Emulator
 
-There is in total 107 games compatible with the Game Boy Printer (and printer emulator). I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! The zip file contains 100% or any% saves ready to use with printer features unlocked for most of the games. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from most of the games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer: 
+There is in total 110 games compatible with the Game Boy Printer (and printer emulator). I've tested all of them and can certify the printer support with emulator, even if some printing features are very tricky to reach ! The zip file contains 100% or any% saves ready to use with printer features unlocked for most of the games. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from most of the games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer: 
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
@@ -184,6 +184,8 @@ There is in total 107 games compatible with the Game Boy Printer (and printer em
 - *Asteroids (never released in Japan)*
 - *Austin Powers: Oh, Behave! (never released in Japan)*
 - *Austin Powers: Welcome to My Underground Lair! (never released in Japan)*
+- *Austin Power Episode 3 - Yeah Baby Yeah (unreleased rom CGBBA3P0.3)*
+- *Austin Power Episode 4 - Why Make Millions (unreleased rom CGBBA4P0.0)*
 - *Cardcaptor Sakura: Itsumo Sakura-chan to Issho! (カードキャプターさくら 〜いつもさくらちゃんと一緒〜)*
 - *Cardcaptor Sakura: Tomoe Shōgakkō Daiundōkai (カードキャプターさくら 〜友枝小学校大運動会〜)*
 - *Chee-Chai Alien (ちっちゃいエイリアン)*
@@ -214,7 +216,7 @@ There is in total 107 games compatible with the Game Boy Printer (and printer em
 - *Harvest Moon 2 (牧場物語GB2)*
 - *Hello Kitty no Beads Koubou (ハローキティのビーズ工房)*
 - *Hello Kitty no Magical Museum (ハローキティのマジカルミュージアム)*
-- *Hello Kitty Pocket Camera (ハローキティのポケットカメラ)*
+- *Hello Kitty Pocket Camera (ハローキティのポケットカメラ, unreleased rom GBDHKAJ0.2)*
 - *Jinsei Game Tomodachi takusan Tsukurou Yo! (人生ゲーム 友達たくさんつくろうよ!)*
 - *Kakurenbo Battle Monster Tactics (モンスタータクティクス)*
 - *Kanji Boy (漢字BOY)*
@@ -251,11 +253,12 @@ There is in total 107 games compatible with the Game Boy Printer (and printer em
 - *Pachinko Data Card - Chou Ataru-kun (Pachinko Data Card ちょ〜あたる君〜)*
 - *Perfect Dark (never released in Japan)*
 - *Pocket Family 2 (ポケットファミリーGB2)*
+- *Pocket Kanjirou (ポケット漢字郎)*
 - *Pocket Puyo Puyo-n (ぽけっとぷよぷよ〜ん)*
 - *Pokémon Card GB2: Great Rocket-Dan Sanjō! (ポケモンカードGB2 GR団参上!)*
 - *Pokémon Crystal (ポケットモンスター クリスタルバージョン)*
 - *Pokémon Gold (ポケットモンスター 金)*
-- *Pokémon Picross (ポケモンピクロス, unreleased)*
+- *Pokémon Picross (ポケモンピクロス, unreleased rom DMGAKVJ0.1)*
 - *Pokémon Pinball (ポケモンピンボール)*
 - *Pokémon Silver (ポケットモンスター 銀)*
 - *Pokémon Trading Card Game (ポケモンカードGB)*
@@ -327,19 +330,19 @@ In consequence, I won't include them in the official list. The printer logo on t
 
 # Time for statistics !
 
-On the 107 games compatible with the Game Boy Printer:
+On the 110 games compatible with the Game Boy Printer:
 
-- *100 games use regular printing protocol, 7 games use very weird variations*
-- *71 games were realeased only in Japan (unlocking printing features being more or less painfull)*
-- *50 games are for Game Boy Color only (clear cartridges)*
+- *106 got a physical release in cartridge*
+- *72 games were realeased only in Japan (unlocking printing features being more or less painfull)*
+- *52 games are for Game Boy Color only (clear cartridges)*
 - *49 games are for Game Boy / Game Boy Color (black cartridge)*
-- *8 games are for Game Boy only (no color features)*
+- *9 games are for Game Boy only (no color features)*
 - *35 games use custom palettes (not 0xE4)*
 - *28 games communicate with serial protocol in double speed mode*
 - *5 games use an RLE compression in their serial protocol*
 - *4 games use a two colors palette on purpose*
 - *3 games use 0x00 as default palette instead of 0xE4 (which is documented is Game Boy programming manual)*
-- *2 games belongs to the list of games leaked in september 2020 (Pokémon Picross and Hello Kitty Pocket Camera)*
+- *4 games belongs to the games leaked in september 2020*
 - *1 game uses two palettes in the same image (Alice in Wonderland)*
 - *1 game uses a three colors palette on purpose (Pokémon Pinball)*
 
