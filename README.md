@@ -123,7 +123,7 @@ You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino
 - Print your images as usual.
 - When you're done, reboot the Arduino, it will indicate to GNU Octave/Matlab that transmission is over and will run the decoder automatically.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
-- Code generates an output .txt file that you can process again later with the classical decoder "Main_Decoder.m" or with https://github.com/HerrZatacke/wifi-gbp-emulator
+- Code generates an output .txt file that you can process again later with the classical decoder "Main_Decoder.m" or with https://github.com/HerrZatacke/wifi-gbp-emulator. The text output is also automatically backuped with a unique ID so that you would never lost your prints.
 
 **Mobile printing !**
 
