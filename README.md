@@ -333,7 +333,7 @@ In consequence, I won't include them in the official list. The printer logo on t
 On the 110 games compatible with the Game Boy Printer:
 
 - *106 got a physical release in cartridge*
-- *72 games were realeased only in Japan (unlocking printing features being more or less painfull)*
+- *72 games were released only in Japan (unlocking printing features being more or less painfull)*
 - *52 games are for Game Boy Color only (clear cartridges)*
 - *49 games are for Game Boy / Game Boy Color (black cartridge)*
 - *9 games are for Game Boy only (no color features)*
