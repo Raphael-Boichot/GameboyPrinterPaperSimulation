@@ -290,7 +290,7 @@ There is in total 110 games compatible with the Game Boy Printer (and printer em
 
 Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Game Boy Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% to unlock printing features, but hey, it's for science !
 
-Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and cradit you.
+**Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you.**
 
 # Example of printer output from random games made with the codes
 
