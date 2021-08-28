@@ -169,7 +169,7 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 **Known minor issues related to the decoder, Matlab/GNU Octave side**
 
 - *Direct printing from Matlab/GNU Octave without using the Arduino IDE may crash if the Game Boy reboots into the printing session. The best is to reboot Arduino before the Game Boy to flush decoder text output between each games. Printing with the copy-paste method from the Arduino IDE is totally stable but requires more steps.*
-- *The graphical objects (figures) from GNU Octave are very slow to display contrary to Matlab (codes being the sames), so I have deactivated graphical outputs during decoding to speed up the process for GNU Octave users.*
+- *The graphical objects (figures) from GNU Octave are very slow to display contrary to Matlab (codes being the sames).*
 - *Finally, the way he serial port is handled under Matlab and GNU Octave is not the same, so I had to split the direct printing codes in two versions. All others codes are exactly the sames. I hope the two versions will be merged in a future release.*
 - *The direct printing mode is not yet compatible with Matlab Mobile or GNU Octave for Android which is still a prototype. So the only mobile solution is to chain a mobile USB/Serial sniffer App with Matlab Mobile. This is not as elegant as a single code, single App solution, but it works.*
 
