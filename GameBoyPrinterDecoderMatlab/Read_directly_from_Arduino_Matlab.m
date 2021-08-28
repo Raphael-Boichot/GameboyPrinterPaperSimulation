@@ -14,7 +14,6 @@ arduinoObj = serialport("COM4",115200,'TimeOut',3600); %set the Arduino com port
 configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);
 arduinoObj.UserData = struct("Data",[],"Count",1);
-set(arduinoObj, 'timeout',60);
 flag=0;
  str='Packet Capture V3';
 while flag==0
