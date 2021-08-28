@@ -10,6 +10,7 @@ disp('|Beware, this code is for Matlab ONLY !!!                 |')
 disp('|Beware, this code is not yet compatible Matlab Mobile !!!|')
 disp('|Reboot Arduino to end transmission                       |')
 disp('-----------------------------------------------------------')
+rng('shuffle');
 arduinoObj = serialport("COM4",115200,'TimeOut',3600); %set the Arduino com port here
 configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);
