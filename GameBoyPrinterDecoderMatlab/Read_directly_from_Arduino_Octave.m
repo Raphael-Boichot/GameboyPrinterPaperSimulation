@@ -15,7 +15,7 @@ arduinoObj = serialport("COM4",'baudrate',115200,'timeout',-1); %set the Arduino
 %configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);
 
-set(arduinoObj, 'timeout',60);
+set(arduinoObj, 'timeout',-1);
 flag=0;
 str='Packet Capture V3';
 while flag==0
