@@ -71,6 +71,7 @@ while ~feof(fid)
             colored=[];
             BandW=[];
             BandW_image=[];
+            disp('Flush spooler by Print command')
         end
     end
     
@@ -88,7 +89,7 @@ while ~feof(fid)
         colored=[];
         BandW=[];
         BandW_image=[];
-        disp('Flush spooler by force')
+        disp('Flush spooler by Timed Out')
     end
 end
 
@@ -97,6 +98,8 @@ if not(isempty(colored_image))
     imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
     imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
     disp('Images written')
+    imagesc(colored_image)
+    pause(1)
     raw_image=[];
     colored_image=[];
     colored=[];
