@@ -58,12 +58,13 @@ while ~feof(fid)
         BandW_image=[BandW_image;BandW];
         [epaper,alpha]=epaper_packet(BandW_image,paper_color);
         disp(['The after margin is 0x',num2str(dec2hex(margin))])
-        %imagesc(epaper)
         raw_image=[];
         if not(margin==0)&&not(Timeout_printing);
             num_image=num_image+1;
             imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
             imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
+            imagesc(colored_image)
+            pause(1)
             disp('Images written')
             raw_image=[];
             colored_image=[];
@@ -80,6 +81,8 @@ while ~feof(fid)
         imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
         imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
         disp('Images written')
+        imagesc(colored_image)
+        pause(1)
         raw_image=[];
         colored_image=[];
         colored=[];
