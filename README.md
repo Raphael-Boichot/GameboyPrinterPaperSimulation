@@ -294,7 +294,7 @@ Tips for printing with japanese games : search for these characters: プリン�
 
 **Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a handful of games to be lacking in the list but I have no idea how to find them.**
 
-# Example of printer output from random games made with the codes
+# Example of printer output from various games made with the printer emulator
 
 ![](./images/Wall_of_fame1.png)
 
