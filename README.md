@@ -121,7 +121,7 @@ You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino
 
 - Install the last Arduino IDE (https://www.arduino.cc/en/software) and compile/load the .ino file with the TimeOut parameter you need. Note the USB port number, close the IDE, you won't need it.
 - Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
-- Connect your Game Boy to Arduino with serial cable, it must be like the Arduino serial console but into the GNU Octave/Matlab Command window.
+- Connect your Game Boy to Arduino with serial cable and print. It must behave like with the Arduino serial console but into the GNU Octave/Matlab Command window.
 - Print your images as usual.
 - When you're done, reboot the Arduino, it will indicate to GNU Octave/Matlab that transmission is over and will run the decoder automatically.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
