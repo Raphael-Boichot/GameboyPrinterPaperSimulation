@@ -292,7 +292,7 @@ The .zip file in the repo contains 100% or any% saves ready to use with printer 
 - *Tsuri Sensei 2 (釣り先生2)*
 - *VS Lemmings (VS.レミングス)*
 
-Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Game Boy Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% to unlock printing features, but hey, it's for science !
+Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Game Boy Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion to unlock printing features, but hey, it's for science !
 
 **Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a handful of games to be lacking in the list but I have no idea how to find them.**
 
