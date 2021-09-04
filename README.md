@@ -163,7 +163,7 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 # Examples of default palette output from the code:
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Palettes.png)
 
-White, blue and yellow paper have the regular tones of official Nintendo papers. Pink is an invented tone that would have been cool.
+White, blue and yellow papers have the regular tones of official Nintendo papers. Pink is an invented tone that would have been cool in the series.
 
 **Known minor issues related to the printer emulator, Arduino side**
 
