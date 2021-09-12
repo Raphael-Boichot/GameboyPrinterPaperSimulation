@@ -193,8 +193,8 @@ The .zip file in the repo contains 100% or any% saves ready to use with printer 
 - *Asteroids (never released in Japan)*
 - *Austin Powers: Oh, Behave! (never released in Japan)*
 - *Austin Powers: Welcome to My Underground Lair! (never released in Japan)*
-- *Austin Power Episode 3 - Yeah Baby Yeah (unreleased rom CGBBA3P0.3)*
-- *Austin Power Episode 4 - Why Make Millions (unreleased rom CGBBA4P0.0)*
+- *Austin Power Episode 3 - Yeah Baby Yeah (unreleased, rom CGBBA3P0.3)*
+- *Austin Power Episode 4 - Why Make Millions (unreleased, rom CGBBA4P0.0)*
 - *Cardcaptor Sakura: Itsumo Sakura-chan to Issho! (カードキャプターさくら 〜いつもさくらちゃんと一緒〜)*
 - *Cardcaptor Sakura: Tomoe Shōgakkō Daiundōkai (カードキャプターさくら 〜友枝小学校大運動会〜)*
 - *Chee-Chai Alien (ちっちゃいエイリアン)*
@@ -225,7 +225,7 @@ The .zip file in the repo contains 100% or any% saves ready to use with printer 
 - *Harvest Moon 2 (牧場物語GB2)*
 - *Hello Kitty no Beads Koubou (ハローキティのビーズ工房)*
 - *Hello Kitty no Magical Museum (ハローキティのマジカルミュージアム)*
-- *Hello Kitty Pocket Camera (ハローキティのポケットカメラ, unreleased rom GBDHKAJ0.2)*
+- *Hello Kitty Pocket Camera (ハローキティのポケットカメラ, unreleased, rom GBDHKAJ0.2)*
 - *Jinsei Game Tomodachi takusan Tsukurou Yo! (人生ゲーム 友達たくさんつくろうよ!)*
 - *Kakurenbo Battle Monster Tactics (モンスタータクティクス)*
 - *Kanji Boy (漢字BOY)*
@@ -267,7 +267,7 @@ The .zip file in the repo contains 100% or any% saves ready to use with printer 
 - *Pokémon Card GB2: Great Rocket-Dan Sanjō! (ポケモンカードGB2 GR団参上!)*
 - *Pokémon Crystal (ポケットモンスター クリスタルバージョン)*
 - *Pokémon Gold (ポケットモンスター 金)*
-- *Pokémon Picross (ポケモンピクロス, unreleased rom DMGAKVJ0.1)*
+- *Pokémon Picross (ポケモンピクロス, unreleased, rom DMGAKVJ0.1)*
 - *Pokémon Pinball (ポケモンピンボール)*
 - *Pokémon Silver (ポケットモンスター 銀)*
 - *Pokémon Trading Card Game (ポケモンカードGB)*
