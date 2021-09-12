@@ -180,6 +180,7 @@ White, blue and yellow papers have the regular tones of official Nintendo papers
 - *The direct printing mode is not yet compatible with Matlab Mobile or GNU Octave for Android which is still a prototype. So the only mobile solution is to chain a mobile USB/Serial sniffer App with Matlab Mobile. This is not as elegant as a single code, single App solution, but it works.*
 
 # The complete list of games compatible with the Game Boy Printer and the Printer Emulator
+# ポケットプリンタ - 対応ソフト
 
 There is in total 110 games compatible with the Game Boy Printer (and printer emulator). I've tested all of them on real hardware (both GB, GBC and GBA, serial plugged to the Arduino to print) and can certify the printer support with printer emulator, even if some printing features are very tricky to reach ! I used a general purpose flash cartridge (EZ-FLASH Junior) for testing the games I do not own. Some rare games require the original cartridge (one game uses the uncommon HuC-3 mapper) or another flash cartridge for no obvious reasons (two games with common mappers are only compatible with the GB SMART 32M). One "game" (SMARTCOM) required a rom hack to counterpass a boot sequence trick. 
 
