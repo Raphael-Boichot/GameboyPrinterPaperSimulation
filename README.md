@@ -11,7 +11,7 @@ This project originates from https://github.com/mofosyne/arduino-gameboy-printer
 
 Author want to thanks Frédéric Mercier for the find of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
 
-The purpose of this Arduino/GNU Octave/Matlab project is to output images from a Game Boy Printer emulator with the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project comes with a fork of the game boy printer emulator that allows to print with any of the 110 games compatible with the Game Boy Printer. Compression and custom palettes are supported by the decoder.
+The purpose of this Arduino/GNU Octave/Matlab project is to output images from a Game Boy Printer emulator with the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project comes with a fork of the game boy printer emulator that allows to print with any of the **110 games compatible with the Game Boy Printer**. Compression and custom palettes are supported by the decoder. The project also proposes for the first time the probable **complete list of games compatible with the Game Boy Printer.**
 
 The project emerges after a discussion between *Raphaël BOICHOT*, *mofosyne*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. The motivation ? As Game Boy Printer paper is becoming difficult to find and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. Fresh thermal paper used in this study was graciously sent to me by *R.A.Helllord* from the Game Boy Camera Club Discord. 
 
