@@ -299,7 +299,7 @@ The .zip file in the repo contains 100% or any% saves ready to use with printer 
 
 Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Game Boy Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
 
-**Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a handful of games to be lacking in the list but I have no idea how to find them.**
+**Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a small handful of games to be lacking in the list but I have no other idea to find them now.**
 
 # Example of printer output from various games made with the printer emulator
 
