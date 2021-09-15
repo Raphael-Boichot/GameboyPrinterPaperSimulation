@@ -331,6 +331,8 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
 
+Nevertheless, Xena - Warrior Princess and Buffy the Vampire Slayer are so bad that I wonder if anybody on earth have ever played them long enough to see any printing feature... I won't inflict myself the excruciating pain of finishing them 100% to be sure, even for science.
+
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
 These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them since more than 20 years. The consensus in 2021 is that these games do not have printer support: 
@@ -338,7 +340,7 @@ These games display a printer support logo on their box but I did not find any e
 - *Grand Theft Auto (USA version)*
 - *The Muppet (USA version)*
 
-In consequence, I won't include them in the official list. The printer logo on the box is very probably a dumb copy-paste made from a generic template for graphists.
+In consequence, I won't include them in the official list. The printer logo on the box is very probably a copy-paste from a generic template made by an *I-don't-give-a-shit-of-this-game* graphist.
 
 # Time for statistics !
 
