@@ -301,7 +301,7 @@ Tips for printing with japanese games : search for these characters: プリン�
 
 **Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a small handful of games to be lacking in the list but I have no other idea to find them now.**
 
-# Example of printer outputs from various games made with the printer emulator and real hardware
+# Example of printer outputs from various games made with the printer emulator from real hardware
 
 ![](./images/Wall_of_fame1.png)
 
@@ -360,15 +360,7 @@ On the 110 games compatible with the Game Boy Printer:
 - *1 game uses two palettes in the same image (Alice in Wonderland)*
 - *1 game uses a three colors palette on purpose (Pokémon Pinball)*
 
---------------------------------------------------------------------------------
-# Telegram Gameboy Camera Chatroom
+# Some known relaxing scene made with the code to end.
 
-Got telegram instant messaging and have some questions or need any advice, or just want to share? Invite link below:
-https://t.me/gameboycamera
-
---------------------------------------------------------------------------------
-
-
-# Some known relaxing scene made with the code to end :
 ![](./images/2020-09-10/Z1_e-paper.png)
 
