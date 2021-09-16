@@ -11,7 +11,7 @@ This project originates from https://github.com/mofosyne/arduino-gameboy-printer
 
 Author want to thanks Frédéric Mercier for the find of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
 
-The purpose of this Arduino/GNU Octave/Matlab project is to output images from a Game Boy Printer emulator with the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project comes with a fork of the game boy printer emulator that allows to print with any of the **110 games compatible with the Game Boy Printer**. Compression and custom palettes are supported by the decoder. The project also proposes for the first time the probable **complete list of games compatible with the Game Boy Printer with output examples from every known game and 100% and any% saves ready to use with printer.**
+The purpose of this Arduino/GNU Octave/Matlab project is to output images from a Game Boy Printer emulator with the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project comes with a fork of the game boy printer emulator that allows to print with any of the **110 games compatible with the Game Boy Printer**. Compression and custom palettes are supported by the decoder. The project also proposes for the first time the probable **complete list of games compatible with the Game Boy Printer with printing examples from every known game and 100% or any% saves for most of them.**
 
 The project emerges after a discussion between *Raphaël BOICHOT*, *mofosyne*, *maxs - thatguywithagameboycamera*, *herr_zatacke (@herr_gack)*, *Björn (@gameboycameramaniac)*, *R.A.Helllord* and *crizzlycruz (@23kpixels)* on the Gameboy Camera Club Discord. The motivation ? As Game Boy Printer paper is becoming difficult to find and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. Fresh thermal paper used in this study was graciously sent to me by *R.A.Helllord* from the Game Boy Camera Club Discord. 
 
@@ -301,7 +301,7 @@ Tips for printing with japanese games : search for these characters: プリン�
 
 **Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a small handful of games to be lacking in the list but I have no other idea to find them now.**
 
-# Example of printer output from various games made with the printer emulator
+# Example of printer outputs from various games made with the printer emulator and real hardware
 
 ![](./images/Wall_of_fame1.png)
 
@@ -331,7 +331,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
 
-Nevertheless, Xena - Warrior Princess and Buffy the Vampire Slayer are so bad that I wonder if anybody on earth have ever played them long enough to see any printing feature... I won't inflict myself the excruciating pain of finishing them 100% to be sure, even for science.
+Nevertheless, Xena - Warrior Princess and Buffy the Vampire Slayer are so bad that I wonder if anybody on earth had ever played them long enough to experience any printing feature... I won't inflict myself the excruciating pain of trying a 100% with these pieces of crap to be sure, even for science.
 
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
