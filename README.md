@@ -331,7 +331,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
 
-Nevertheless, Xena - Warrior Princess and Buffy the Vampire Slayer are so bad that I wonder if anybody on earth had ever played them long enough to experience any printing feature... I won't inflict myself the excruciating pain of trying a 100% with these pieces of crap to be sure, even for science.
+Nevertheless, Xena - Warrior Princess and Buffy the Vampire Slayer are so bad that I wonder if anybody on earth had ever played them long enough on real hardware to experience any printing feature... I won't inflict myself the excruciating pain of trying a 100% with these pieces of crap to be sure, even for science.
 
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
