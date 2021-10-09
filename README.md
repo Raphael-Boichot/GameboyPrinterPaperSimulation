@@ -185,7 +185,9 @@ White, blue and yellow papers have the regular tones of official Nintendo papers
 
 There is in total 110 games compatible with the Game Boy Printer (and printer emulator). I've tested them on various machines (original GB, GBC, GBA and the Chinese GB Boy Colour clone, serial plugged to the Arduino to print) and can certify the printer support with printer emulator, even if some printing features are very tricky to reach ! I used a general purpose flash cartridge (EZ-FLASH Junior) for testing the games I do not own. Some rare games require the original cartridge (one game uses the uncommon HuC-3 mapper) or another flash cartridge for no obvious reasons (two games with common mappers are only compatible with the GB SMART 32M). One "game" (SMARTCOM) required a deep rom hack to counterpass a boot sequence trick and allow printing with real hardware. Timing to assess single or double speed mode in protocol was recorded with an analog oscilloscope probing the clock pin. 
 
-The .zip file in the repo contains 100% or any% saves ready to use with printer features unlocked for most of the games, as well as examples of printer emulator output and prints for each of them. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from these games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer: 
+The .zip file in the repo contains 100% or any% saves ready to use with printer features unlocked for most of the games, as well as examples of printer emulator output and prints for each of them. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from these games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer.
+
+So, here the game list:
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
@@ -298,7 +300,7 @@ The .zip file in the repo contains 100% or any% saves ready to use with printer 
 - *Tsuri Sensei 2 (釣り先生2)*
 - *VS Lemmings (VS.レミングス)*
 
-Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Game Boy Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
+Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Pocket Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
 
 **Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a small handful of games to be lacking in the list but I have no other idea to find them now.**
 
