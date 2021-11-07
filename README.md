@@ -3,7 +3,7 @@
 * Creation Date: 2020-08-23, last update 2021-09-02
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 * Featured on Hackaday :  https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/
-* Companion project from : https://github.com/zenaro147/wifi-gbp-emulator/tree/feature/v3
+* Companion project from : https://github.com/zenaro147/NeoGB-Printer
 * Companion project from : https://github.com/HerrZatacke/wifi-gbp-emulator
 * Companion project from : https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
 
