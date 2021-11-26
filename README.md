@@ -5,6 +5,7 @@
 * Featured on Hackaday :  https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/
 * Companion project from : https://github.com/zenaro147/NeoGB-Printer
 * Companion project from : https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
+* Companion project from : https://github.com/mtouzot/GameBEye
 
 This project originates from https://github.com/mofosyne/arduino-gameboy-printer-emulator. This is now a fork of the Arduino Game Boy Printer emulator that increases game compatility to 100% and allows new printing features.
 
