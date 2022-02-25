@@ -33,7 +33,7 @@ Even if was not bad at all, pixels were too regularly spaced and paper fibers th
 
 After considering the differences between early outputs and real prints (scanned at 3600 dpi) obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer head and paper grain add noise to the image at different length scales. Moreover, the needles from thermal printer head do not just create noisy gaussian dots. These dots also have a random shape (typically due to fibers in paper). So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my Game Boy Printer. 
 
-There is no image available to print in Game Boy library that presents perfectly isolated pixels in huge quantity. So I have created a test case with my brand new SD Game Boy printer code https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer
+There is no image available to print in Game Boy library that presents perfectly isolated pixels in huge quantity. So I have created a test case with my brand new [SD Game Boy printer code](https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer)
 
 I first printed this test image with isolated pixels of the three different grayscales (white is just ignored):
 
@@ -66,13 +66,13 @@ Then I ran GNU Octave/Matlab with the pixel perfect image and here the result:
 
 # Which Game Boy Printer emulator using with the Matlab/Octave decoder ?
 
-The Octave/Matlab decoder is of course natively backward compatible with https://github.com/mofosyne/arduino-gameboy-printer-emulator. However, I've added some new features to the original Game Boy Printer emulator after fruitful discussions with Rafael Zenaro from the Game boy Camera Club :
+The Octave/Matlab decoder is of course natively backward compatible with the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator). However, I've added some new features to the original Game Boy Printer emulator after fruitful discussions with Rafael Zenaro from the Game boy Camera Club :
 
 - *The game compatibility have been increased to 100% by applying two simple rules to the error packets sent by the Printer emulator to games: the error packet is always 0x00 before printing (the games clearly do not mind this error byte most of the time) except when an empty data packet is received, where it becomes 0x04 (image data full). This allows triggering the print command for certain rare games that require this. The post-printing commands are still the ones from the original project, except some increase of the number of busy state commands.*
 
 - *Assembling automatically the images is challenging with some games so a modification of both the emulator and the decoder is proposed to ensure proper printing for a dozen of "difficult" games. This will be called "TimeOut" mode in opposition to the default "margin" mode using post-printing margins information to separate images*
 
-The pinout have been slightly modified. The SOUT pin have been moved to D5 to allow direct pin compatibility with this other project: https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer. It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and packet transmission.
+The pinout have been slightly modified. The SOUT pin have been moved to D5 to allow direct pin compatibility with this [other project](https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer). It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and packet transmission.
 
 ![](./images/Arduino_pinout.png)
 
