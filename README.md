@@ -1,6 +1,6 @@
 # Gameboy Printer Paper Simulation
 
-* Creation Date: 2020-08-23, last update 2021-09-02
+* Creation Date: 2020-08-23, last update 2022-02-25
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 * Featured on [Hackaday](https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/) and companion project from the [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer), the [Arduino SD Game Boy Printer](https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer) and the [GameBEye](https://github.com/mtouzot/GameBEye).
 
@@ -21,11 +21,8 @@ My first idea was to do a simulation of printer head by replacing hard square pi
 # Let's play with noisy gaussian dots
 ![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/octaveSimPixelDithering.png)
 
-# The pixel perfect test case :
-![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/Game_Boy_Pixel_perfect_1.png)
-
 # Example of an early attempt of paper simulation
-![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/Game_Boy_Printer_e-paper_1.png)
+![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Early_fake_print.png)
 
 Even if was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with this  approach. We need a more agressive design !
 
