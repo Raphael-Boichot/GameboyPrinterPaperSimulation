@@ -82,14 +82,14 @@ The pinout have been slightly modified. The SOUT pin have been moved to D5 to al
 
 You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
-- Install the last Arduino IDE (https://www.arduino.cc/en/software) and load the .ino file to the board.
-- Install the open-source GNU Octave (https://www.gnu.org/software/octave/index) or enjoy your pricey Matlab license.
+- Install the last [Arduino IDE](https://www.arduino.cc/en/software) and load the .ino file to the board.
+- Install the open-source [GNU Octave](https://www.gnu.org/software/octave/index) or enjoy your pricey Matlab license.
 - Connect your Game Boy to Arduino with serial cable, open the serial console in 115200 bauds and print as with a real Game Boy Printer.
 - Copy paste text obtained from the Arduino serial output into Entry_file.txt
 - Open Octave/Matlab code "Main_Decoder.m"
 - Choose some color palettes and printing options (default are OK).
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
-- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example https://github.com/HerrZatacke/wifi-gbp-emulator
+- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator).
 
 Now let's detail the new features available with this version of emulator:
 
@@ -184,7 +184,7 @@ There is in total 110 games compatible with the Game Boy Printer (and printer em
 
 The .zip file in the repo contains 100% or any% saves ready to use with printer features unlocked for most of the games, as well as examples of printer emulator output and prints for each of them. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from these games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer. 
 
-The projet https://github.com/zenaro147/NeoGB-Printer uses the same engine and have exactly the same compatibility with games. It even adds some serial protocol analysis to automate automatic/timeout modes.
+The [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer) uses the same engine and have exactly the same compatibility with games. It even adds some serial protocol analysis to automate automatic/timeout modes.
 
 So, here the game list:
 
