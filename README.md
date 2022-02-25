@@ -311,7 +311,7 @@ Tips for printing with japanese games : search for these characters: プリン�
 
 # List of games that embed a printer library but without printer support for the player
 
-Code analysis of the Game Boy and Game Boy Color romsets revealed that some games (generally sequels of the preceding list) embed a printer library into the code but no printer support for the player. Some of them where clearly intended to use the printer as their gameplay is about unlocking images. The printer support was probably dismissed during game development as most of them are late published Game Boy Color games. Lazy recycling of non-optimized graphical libraries is also not excluded as memory size was less and less critical at this time. Sadly for the fetishists of furs, there was a bunch of hamster related games with printer support removed...
+Code analysis of the Game Boy and Game Boy Color romsets revealed that some games (generally sequels of the preceding list) embed a printer library into the code but no printer support for the player. Some of them where clearly intended to use the printer as their gameplay is about unlocking images. The printer support was probably dismissed during game development as most of them are late published Game Boy Color games. Lazy recycling of non-optimized graphical libraries is also not excluded as maskrom size was less and less critical at this time. Sadly for the fetishists of furs, there was a bunch of hamster related games with printer support removed...
 
 - *Bouken! Dondoko-tou (冒険!ドンドコ島)*
 - *Buffy the Vampire Slayer (never released in Japan)*
