@@ -7,7 +7,7 @@ clc
 % Here you enter some parameters
 %------------------------------------------------------------------------
 paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
-%watermarking='Raphaël BOICHOT 2021';
+%watermarking='RaphaÃ«l BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, 5 for salmon, for pixel perfect output
 Timeout_printing=0;  %0 to separate images automatically if margin >0
@@ -73,7 +73,7 @@ while ~feof(fid)
             disp('Flush spooler by Print command')
         end
     end
-    
+    %str='Completed'; use this line instead of the next for GAMEBOY PRINTER EMULATION PROJECT V3.2.1 compatibility
     str='Timed Out';
     if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(Timeout_printing)
         disp('Cut paper command received')
