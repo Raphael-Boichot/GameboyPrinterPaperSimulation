@@ -330,6 +330,10 @@ These games display a printer support logo on their box but I did not find any e
 
 In consequence, I won't include them in the official list. The printer logo on the box is very probably a copy-paste from a generic template made by an *I-don't-give-a-shit-of-this-game* graphist.
 
+# A particular case
+
+*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased 64GB Cable ([or the transfer pak](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" used as intermediate. As I cannot verify physically any of these informations, as a rom of this "Game Boy Printer cartridge" was never leaked and as I cannot cross-reference this information, the status of this "compatible game" is dubious.
+
 # Time for statistics !
 
 On the 110 games compatible with the Game Boy Printer:
