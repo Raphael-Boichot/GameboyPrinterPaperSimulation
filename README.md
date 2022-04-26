@@ -319,7 +319,11 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
 
-Nevertheless, Xena - Warrior Princess and Buffy the Vampire Slayer are so bad that I wonder if anybody on earth had ever played them long enough on real hardware to experience any printing feature... I won't inflict myself the excruciating pain of trying a 100% with these pieces of crap to be sure, even for science.
+There is nevertheless perhaps a particular case: 
+
+- *Mario Artist Paint Studio*
+
+*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB Cable" ([or the transfer pak](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. As I cannot verify physically any of these informations with real hardware or official documentation, as a rom of this "Game Boy Printer cartridge" was never leaked and as I cannot cross-reference these informations, considering Mario Artist Paint Studio or the elusive "Game Boy Printer cartridge" as games compatible with the printer is dubious to me. It stays in this category of games where printer support was dismissed during developpment.
 
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
@@ -329,10 +333,6 @@ These games display a printer support logo on their box but I did not find any e
 - *The Muppet (USA version)*
 
 In consequence, I won't include them in the official list. The printer logo on the box is very probably a copy-paste from a generic template made by an *I-don't-give-a-shit-of-this-game* graphist.
-
-# A particular case
-
-*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB Cable" ([or the transfer pak](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as intermediate. As I cannot verify physically any of these informations with real hardware, as a rom of this "Game Boy Printer cartridge" was never leaked and as I cannot cross-reference these informations, considering Mario Artist Paint Studio or the elusive "Game Boy Printer cartridge" as games compatible with the printer is dubious to me. It stays at the same level than the games embedding a printer library but without printer support for the player (printer support dismissed during dev).
 
 # Time for statistics !
 
