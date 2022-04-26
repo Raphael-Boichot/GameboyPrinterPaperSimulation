@@ -332,7 +332,7 @@ In consequence, I won't include them in the official list. The printer logo on t
 
 # A particular case
 
-*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB Cable" ([or the transfer pak](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as intermediate. As I cannot verify physically any of these informations with real hardware, as a rom of this "Game Boy Printer cartridge" was never leaked and as I cannot cross-reference these informations, the status of Mario Artist Paint Studio or of the "Game Boy Printer cartridge" as game compatible with the printer is dubious.
+*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB Cable" ([or the transfer pak](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as intermediate. As I cannot verify physically any of these informations with real hardware, as a rom of this "Game Boy Printer cartridge" was never leaked and as I cannot cross-reference these informations, considering Mario Artist Paint Studio or the elusive "Game Boy Printer cartridge" as games compatible with the printer is dubious to me. It stays at the same level than the games embedding a printer library but without printer support for the player (printer support dismissed during dev).
 
 # Time for statistics !
 
