@@ -319,7 +319,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
 
-There is nevertheless perhaps a particular case: 
+There is nevertheless perhaps a debatable case: 
 
 - *Mario Artist Paint Studio*
 
