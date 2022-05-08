@@ -323,9 +323,7 @@ There is nevertheless perhaps a debatable case:
 
 - *Mario Artist Paint Studio*
 
-*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. As I cannot verify physically any of these informations with real hardware or official documentation, as a rom of this "Game Boy Printer cartridge" was never leaked, considering Mario Artist Paint Studio or the elusive "Game Boy Printer cartridge" as games compatible with the printer is dubious to me. It stays in this category of games where printer support was dismissed during developpment (very lately however).
-
-The fact is that Mario Artist Paint Studio contains a complete printer libray in its code and contains menus for using the Pocket Printer.
+*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. Mario Artist Paint Studio being compatible with the Game Boy Camera natively via the Transfer Pak, the said printer is probably the unreleased elusive color printer. Anyway, Mario Artist Paint Studio contains a complete printer libray in its code and contains menus for using a Printer, but perhaps not the one expected.
 
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
