@@ -285,6 +285,12 @@ So, here the game list:
 - *Tsuri Sensei 2 (釣り先生2)*
 - *VS Lemmings (VS.レミングス)*
 
+There is nevertheless a debatable case: 
+
+- *Mario Artist Paint Studio for N64*
+
+*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. Mario Artist Paint Studio contains a complete printer libray and menus for using printers, both grayscale and color. So this game is intended to use the printer but without any physical possibility to do this, an essential piece of hardware (the transfer stuff) beeing lacking.
+
 Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Pocket Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
 
 **Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a small handful of games to be lacking in the list but I have no other idea to find them now.**
@@ -318,12 +324,6 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Kitchen (わたしのキッチン)*
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
-
-There is nevertheless perhaps a debatable case: 
-
-- *Mario Artist Paint Studio*
-
-*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. Mario Artist Paint Studio being compatible with the Game Boy Camera natively via the Transfer Pak, the said printer is probably the unreleased elusive color printer. Anyway, Mario Artist Paint Studio contains a complete printer libray in its code and contains menus for using a Printer, but perhaps not the one expected.
 
 # List of games that display a printer support on the box but without any printing feature confirmed by players
 
