@@ -7,6 +7,15 @@ clear
 clc
 paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
 %watermarking='Raphael BOICHOT 2021';
+
+
+  try
+    pkg load image % for compatibility with Octave
+  catch 
+    % Nothing to do
+  end
+
+
 [ID]=get_unique_ID(8);
 DateString = date;
 BandW_image=imread('GameBoy pixel perfect 3 12-Aug-2021.png');

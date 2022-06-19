@@ -3,8 +3,8 @@ function [output, alpha]=epaper_packet(input,paper_color)
 % code to simulate the speckle aspect of real Game boy printer
 % image come from function call
 
-pixel_sample=imread('Pixel_sample_3600dpi_contrast.png');
-num_borders=13;%number of border images in the library
+pixel_sample=imread('Pixel_sample_3600dpi_high_contrast.png');
+num_borders=12;%number of border images in the library
 num1=ceil(num_borders*rand);
 num2=num1;
 while num1==num2
@@ -60,7 +60,7 @@ for i=1:1:heigth
        if not(IMAGE(i,j)==255);
        if rand<0.5; burn_dot=flip(burn_dot,ceil(2*rand));end;
        burn_dot=rot90(burn_dot,ceil(2*rand)-2);
-       if streaks(i,j)==0; burn_dot=burn_dot+30;end;
+       if streaks(i,j)==0; burn_dot=burn_dot+15;end;
        speckle_image(a:b,c:d,:)=min(burn_dot,speckle_image(a:b,c:d,:));
        end
 end
