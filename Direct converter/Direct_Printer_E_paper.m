@@ -13,7 +13,7 @@ paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1
     % Nothing to do
   end
   
-mkdir E_paper
+%mkdir E_paper
 imagefiles = dir('./Image_in/*.png');% the default format is png, other are ignored
 nfiles = length(imagefiles);    % Number of files found
 
