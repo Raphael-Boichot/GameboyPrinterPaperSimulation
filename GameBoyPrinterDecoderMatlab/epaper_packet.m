@@ -1,4 +1,4 @@
-function [output, alpha]=epaper_packet(input,paper_color)
+function [output, alpha]=epaper_packet(input,paper_color,darkness,scale_percentage)
 % Raphael BOICHOT 10-09-2020
 % code to simulate the speckle aspect of real Game boy printer
 % image come from function call
