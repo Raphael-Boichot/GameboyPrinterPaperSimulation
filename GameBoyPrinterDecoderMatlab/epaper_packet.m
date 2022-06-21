@@ -1,18 +1,19 @@
-function [output, alpha]=epaper_packet(input,paper_color)
+function [output, alpha]=epaper_packet(input,paper_color,darkness,scale_percentage)
 % Raphael BOICHOT 10-09-2020
 % code to simulate the speckle aspect of real Game boy printer
 % image come from function call
 
-pixel_sample=imread('Pixel_sample_3600dpi_high_contrast.png');
-num_borders=12;%number of border images in the library
+sourceborders = dir('Borders/*.png');
+pixel_sample=imread(['samplePixels/Pixel_sample_3600dpi_darkness_',num2str(darkness,'%03.f'),'.png']);
+num_borders=numel(sourceborders);%number of border images in the library
 num1=ceil(num_borders*rand);
 num2=num1;
 while num1==num2
     num2=ceil(num_borders*rand);
 end
 
-border_1=imread(['./Borders/Border_',num2str(num1),'.png']);
-border_2=imread(['./Borders/Border_',num2str(num2),'.png']);
+border_1=imread(['Borders/Border_',num2str(num1),'.png']);
+border_2=imread(['Borders/Border_',num2str(num2),'.png']);
 IMAGE=input;
 
 mul=20;%size of the mask
@@ -29,7 +30,6 @@ for i=1:1:width
   if rand<0.2;start=ceil(2*rand)-1;end;
   end
 end
-
 
 speckle_image=uint8(255*ones(heigth*(mul-overlapping)+overlapping,width*(mul-overlapping)+overlapping,3));
 
@@ -73,12 +73,6 @@ speckle_image=[vert_borders,speckle_image,vert_borders];
 %adding margins same size as lateral white borders
 horz_borders=255*ones(add_col,add_col*2+W,3);
 speckle_image=[horz_borders;speckle_image;horz_borders];
-%resizing the serrated borders
-[V,W,~]=size(speckle_image);
-[X,Y,~]=size(border_1);
-border1_resized=imresize(border_1,[round((X/Y)*W),W],'bilinear');
-[X,Y,~]=size(border_2);
-border2_resized=imresize(border_2,[round((X/Y)*W),W],'bilinear');
 %adding some subtle image noise
 surface_in_pixels=V*W;
 dot_rate=surface_in_pixels/200000;
@@ -93,12 +87,12 @@ for i=1:1:dot_rate
     speckle_image(I:I+mul-1,J:J+mul-1,:)=min(burn_dot,speckle_image(I:I+mul-1,J:J+mul-1,:));
 end
 %resizing everything
-resize_ratio=0.3; %1 for full image, 0.3 for nice looking image
-border1_resized=imresize(border1_resized,resize_ratio,'bilinear');
+resize_ratio=scale_percentage/100; %1 for full image, 0.3 for nice looking image
+border1_resized=imresize(border_1,resize_ratio);
 if rand<0.5,border1_resized=fliplr(border1_resized);end;
-border2_resized=imresize(border2_resized,resize_ratio,'bilinear');
+border2_resized=imresize(border_2,resize_ratio);
 if rand<0.5,border2_resized=fliplr(border2_resized);end;
-speckle_image=imresize(speckle_image,resize_ratio,'bilinear');
+speckle_image=imresize(speckle_image,resize_ratio);
 %creating the alpha layer from black pixels
 [V,W,~]=size(speckle_image);
 alpha_layer1=(border1_resized(:,:,1));
