@@ -1,5 +1,5 @@
 % Raphael BOICHOT 10/08/2021 Game Boy printer emulator
-% multi OS compatibility improved by Cristofer Cruz 2022/16/21
+% multi OS compatibility improved by Cristofer Cruz 2022/06/21
 % code can handle compression, palette tricks and multiple images
 % for any question : raphael.boichot@gmail.com
 % update V3 to follow compatibility with https://github.com/mofosyne/arduino-gameboy-printer-emulator
