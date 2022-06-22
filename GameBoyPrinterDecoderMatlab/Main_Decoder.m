@@ -76,9 +76,8 @@ while ~feof(fid)
             disp('Flush spooler by Print command')
         end
     end
-    str2='Completed'; % extend compatibility with V3.2.1 emulator
     str='Timed Out';
-    if not(isempty(strfind(a,str))||strfind(a,str2)))&&not(isempty(colored_image))&&(Timeout_printing)
+    if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(Timeout_printing)
         disp('Cut paper command received')
         num_image=num_image+1;
         imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
