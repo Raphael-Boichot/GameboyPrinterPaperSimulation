@@ -1,6 +1,6 @@
 # Gameboy Printer Paper Simulation
 
-* Creation Date: 2020-08-23, last update 2022-02-25
+* Creation Date: 2020-08-23, last update 2022-06-22
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 * Featured on [Hackaday](https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/) and companion project from the [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer), the [Arduino SD Game Boy Printer](https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer) and the [GameBEye](https://github.com/mtouzot/GameBEye).
 
