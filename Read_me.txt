@@ -1,1 +1,0 @@
-Just drop the files and folders at the root of BitBoy SD card and run 'Direct_Printer_E_paper_for_BitBoy.m' from GNU Octave or Matlab. Prints are in 'Paper-out' folder.
