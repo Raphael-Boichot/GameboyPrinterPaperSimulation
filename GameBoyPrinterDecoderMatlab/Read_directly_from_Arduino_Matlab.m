@@ -9,9 +9,10 @@ disp('-----------------------------------------------------------')
 disp('|Beware, this code is for Matlab ONLY !!!                 |')
 disp('|Beware, this code is not yet compatible Matlab Mobile !!!|')
 disp('|Reboot Arduino to end transmission                       |')
+disp('|If no transmission, set GBP_SO_PIN to 5 in Arduino code  |')
 disp('-----------------------------------------------------------')
 rng('shuffle');
-arduinoObj = serialport("COM4",115200,'TimeOut',3600); %set the Arduino com port here
+arduinoObj = serialport("COM3",115200,'TimeOut',3600); %set the Arduino com port here
 configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);
 arduinoObj.UserData = struct("Data",[],"Count",1);

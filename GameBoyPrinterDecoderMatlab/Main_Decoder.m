@@ -76,7 +76,7 @@ while ~feof(fid)
             disp('Flush spooler by Print command')
         end
     end
-    str='Timed Out';
+    str='Memory Waterline';
     if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(Timeout_printing)
         disp('Cut paper command received')
         num_image=num_image+1;

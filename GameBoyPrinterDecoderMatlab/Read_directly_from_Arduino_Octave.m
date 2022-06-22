@@ -5,10 +5,12 @@
 
 clear
 clc
-disp('--------------------------------------------')
-disp('|Beware, this code is for Octave ONLY !!!  |')
-disp('|Reboot Arduino to end transmission        |')
-disp('--------------------------------------------')
+disp('-----------------------------------------------------------')
+disp('|Beware, this code is for GNU Octave ONLY !!!             |')
+disp('|Beware, this code is not yet compatible Matlab Mobile !!!|')
+disp('|Reboot Arduino to end transmission                       |')
+disp('|If no transmission, set GBP_SO_PIN to 5 in Arduino code  |')
+disp('-----------------------------------------------------------')
 pkg load image
 pkg load instrument-control
 arduinoObj = serialport("COM4",'baudrate',115200,'timeout',-1); %set the Arduino com port here
