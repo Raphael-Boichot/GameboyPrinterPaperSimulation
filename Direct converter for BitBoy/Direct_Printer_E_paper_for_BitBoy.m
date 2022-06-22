@@ -17,7 +17,7 @@ scale_percentage=30; %100=full size, smaller values scale down image
     % Nothing to do
   end
 
-%mkdir E_paper
+mkdir Paper_out
 imagefiles = dir('DCIM/**/*.bmp');% the default format is png, other are ignored
 nfiles = length(imagefiles);    % Number of files found
 
