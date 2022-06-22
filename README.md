@@ -4,7 +4,7 @@
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 * Featured on [Hackaday](https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/) and companion project from the [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer), the [Arduino SD Game Boy Printer](https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer) and the [GameBEye](https://github.com/mtouzot/GameBEye).
 
-This project originates from the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator) and has still 100% compatibility with it (Just think to change GBP_SO_PIN from 4 to 5 in [GameBoyPrinterEmulator.ino](https://github.com/mofosyne/arduino-gameboy-printer-emulator/blob/master/GameBoyPrinterEmulator/GameBoyPrinterEmulator.ino)).
+This project originates from the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator) and has still 100% compatibility with it (Just think to change GBP_SO_PIN from 4 to 5 in [GameBoyPrinterEmulator.ino](https://github.com/mofosyne/arduino-gameboy-printer-emulator/blob/master/GameBoyPrinterEmulator/GameBoyPrinterEmulator.ino#L81)).
 
 Author want to thanks Frédéric Mercier for the find of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
 
