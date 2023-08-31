@@ -68,7 +68,7 @@ end
 end
 %centering image on paper, The width of the print should be 27.09mm compared to the paper at 38mm
 [V,W,~]=size(speckle_image);
-add_col=round((W*38/27.9)-W)/2;
+add_col=round((W*38/27.09)-W)/2;
 vert_borders=255*ones(V,add_col,3);
 speckle_image=[vert_borders,speckle_image,vert_borders];
 %adding margins same size as lateral white borders
