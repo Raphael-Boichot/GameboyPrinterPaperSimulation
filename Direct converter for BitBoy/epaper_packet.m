@@ -66,11 +66,12 @@ for i=1:1:heigth
        end
 end
 end
-%centering image on paper, The width of the print should be 27.09mm compared to the paper at 38mm
+%centering image on paper, The width of the print should be 27.1mm compared to the paper at 38mm
 [V,W,~]=size(speckle_image);
-add_col=round((W*38/27.09)-W)/2;
+add_col=round(((W*38/27.1)-W)/2);
 vert_borders=255*ones(V,add_col,3);
 speckle_image=[vert_borders,speckle_image,vert_borders];
+[~,new_width,~]=size(speckle_image);
 %adding margins same size as lateral white borders
 horz_borders=255*ones(add_col,add_col*2+W,3);
 speckle_image=[horz_borders;speckle_image;horz_borders];
@@ -87,11 +88,11 @@ for i=1:1:dot_rate
     burn_dot=rot90(burn_dot,ceil(2*rand)-2);
     speckle_image(I:I+mul-1,J:J+mul-1,:)=min(burn_dot,speckle_image(I:I+mul-1,J:J+mul-1,:));
 end
-%resizing everything
-resize_ratio=scale_percentage/100; %1 for full image, 0.3 for nice looking image
-border1_resized=imresize(border_1,resize_ratio);
+%resizing everything, 3492 is the width of the serrated borders
+resize_ratio=(scale_percentage/100); %1 for full image, 0.3 for nice looking image
+border1_resized=imresize(border_1,resize_ratio*new_width/3492);
 if rand<0.5,border1_resized=fliplr(border1_resized);end;
-border2_resized=imresize(border_2,resize_ratio);
+border2_resized=imresize(border_2,resize_ratio*new_width/3492);
 if rand<0.5,border2_resized=fliplr(border2_resized);end;
 speckle_image=imresize(speckle_image,resize_ratio);
 %creating the alpha layer from black pixels
