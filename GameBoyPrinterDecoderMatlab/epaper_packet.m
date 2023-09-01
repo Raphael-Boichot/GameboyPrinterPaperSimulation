@@ -71,16 +71,16 @@ end
 add_col=round(((W*38/27.1)-W)/2);
 vert_borders=255*ones(V,add_col,3);
 speckle_image=[vert_borders,speckle_image,vert_borders];
-[~,new_width,~]=size(speckle_image);
 %adding margins same size as lateral white borders
 horz_borders=255*ones(add_col,add_col*2+W,3);
 speckle_image=[horz_borders;speckle_image;horz_borders];
 %adding some subtle image noise
-surface_in_pixels=V*W;
-dot_rate=surface_in_pixels/200000;
+[new_heigth,new_width,~]=size(speckle_image);
+surface_in_pixels=new_heigth*new_width;
+dot_rate=surface_in_pixels*2e-6;
 for i=1:1:dot_rate
-    I=ceil(rand*(V-mul));
-    J=ceil(rand*(W-mul));
+    I=ceil(rand*(new_heigth-mul));
+    J=ceil(rand*(new_width-mul));
     y=2;
     x=ceil(49*rand);
     burn_dot=pixel_sample(1+20*y:20+20*y,1+20*x:20+20*x,:)+100;
