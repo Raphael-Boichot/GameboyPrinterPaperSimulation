@@ -17,15 +17,15 @@ The Game Boy printer emulator developped by Brian Khuu which is used here is abl
 
 My first idea was to do a simulation of printer head by replacing hard square pixels by some sort of bell-shaped spots with lots of noise. A 2D bell-shaped approximation had a sense to me as injecting heat in a point on a 2D surface result in gaussian distribution of temperatures. On thermal paper, tones are due to a chemical reaction of a powder deposited on the surface of paper driven by temperature and phase change. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. Misalignment of the printer head was also simulated. The result of a pure mathematical approach was interesting for sure.
 
-# Let's play with noisy gaussian dots
-![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/2020-08-23/octaveSimPixelDithering.png)
+## Let's play with noisy gaussian dots
+![](images/2020-08-23/octaveSimPixelDithering.png)
 
-# Example of an early attempt of paper simulation
-![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Early_fake_print.png)
+## Example of an early attempt of paper simulation
+![](images/Early_fake_print.png)
 
 Even if it was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with this approach. We need a more agressive design !
 
-# It MUST be like the real thermal paper !
+## It MUST be like the real thermal paper !
 
 After considering the differences between early outputs and real prints (scanned at 3600 dpi) obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer head and paper grain add noise to the image at different length scales. Moreover, the needles from thermal printer head do not just create noisy gaussian dots. These dots also have a random shape (typically due to fibers in paper). So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my Game Boy Printer. 
 
@@ -46,10 +46,10 @@ And I sampled manually a collection of 50 pixels of each level of grayscale (ver
 Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to get its color, picks a random pixel among the 50 of its own "color" and draws it on a new file with some overlapping. 50 pixels of each color is not much, but a pixel is a simple matrix of value. In consequence, to increase randomness each pixel itself is flipped or rotated randomly so that more than 200 different pixels can be generated out of just 50 for each color. Finally, the real printing paper presents fibres that create vertical streaks of "ink" (thermal paper has no ink but you see the idea). So the code randomly decreases the intensity of printing along some streaks of limited length chosen randomly. Of course the code in its present form can be improved, but the result is enough for my poor visual acuity.
 
 
-# Test case with a Chip Chip printed from Super Mario Deluxe:
+## Test case with a Chip Chip printed from Super Mario Deluxe:
 ![](./images/Fake_print.png)
 
-# Which Game Boy Printer emulator using with the Matlab/Octave decoder ?
+## Which Game Boy Printer emulator using with the Matlab/Octave decoder ?
 
 The Octave/Matlab decoder is of course natively backward compatible with the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator). However, I've added some new features to the original Game Boy Printer emulator after fruitful discussions with Rafael Zenaro from the Game boy Camera Club :
 
@@ -63,15 +63,15 @@ The pinout have been slightly modified. The SOUT pin have been moved to D5 to al
 
 ![](./images/Arduino_pinout2.png)
 
-# How to use the Game Boy Printer paper emulation ?
+## How to use the Game Boy Printer paper emulation ?
 
 You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
 - Install the last [Arduino IDE](https://www.arduino.cc/en/software) and load the .ino file to the board.
 - Install the open-source [GNU Octave](https://www.gnu.org/software/octave/index) or enjoy your pricey Matlab license.
 - Connect your Game Boy to Arduino with serial cable, open the serial console in 115200 bauds and print as with a real Game Boy Printer.
-- Copy paste text obtained from the Arduino serial output into Entry_file.txt
-- Open Octave/Matlab code "Main_Decoder.m"
+- Copy paste text obtained from the Arduino serial output into  [Entry_file.txt](GameBoyPrinterDecoderMatlab/Entry_file.txt)
+- Open Octave/Matlab code [Main_Decoder.m](GameBoyPrinterDecoderMatlab/Main_Decoder.m)
 - Choose some color palettes and printing options (default are OK).
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator).
@@ -103,7 +103,7 @@ Games that can take advantage from the "TimeOut" or idle mode are (for example):
 
 **Direct printing from Matlab/GNU Octave without using the Arduino IDE !**
 
-You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino_Octave.m" directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output from the IDE but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
+You can run [Read_directly_from_Arduino_Matlab.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Matlab.m) or [Read_directly_from_Arduino_Octave.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Octave.m) directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output from the IDE but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
 
 - Install the last [Arduino IDE](https://www.arduino.cc/en/software) and compile/load the .ino file with the TimeOut parameter you need. Note the USB port number, close the IDE, you won't need it.
 - Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
@@ -115,9 +115,9 @@ You can run "Read_directly_from_Arduino_Matlab.m" or "Read_directly_from_Arduino
 
 **Mobile printing !**
 
-With an OTG cable, you can plug, power and control the Arduino directly from your mobile Android phone with Arduinodroid App. Simply copy the output from serial console, paste to Entry_file.txt and decode the images with Matlab Mobile (The App is free with limited cloud storage for unlicensed user, but enough for our case). Matlab Mobile is however not yet able to control directly the Arduino (contrary to PC), perhaps in a future release.
+With an OTG cable, you can plug, power and control the Arduino directly from your mobile Android phone with the [GB Camera Android Manager](https://github.com/Mraulio/GBCamera-Android-Manager). It also features a printer paper simulator, the GB printer emulator and an interface to directly send any image to the printer ! I participate to the project so the similar features.
 
-![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/On%20the%20go.png)
+![](images/On%20the%20go.png)
 
 **Can I modify the palettes of the pixel perfect images or e-paper outputs ?**
 
@@ -146,8 +146,8 @@ X is the number of the e-paper palette and RGB the color levels applied to the w
 
     paper_color=X; %X your custome palette
 
-# Examples of default palette output from the code:
-![](https://github.com/Raphael-Boichot/GameboyPrinterPaperSimulation/blob/master/images/Palettes.png)
+## Examples of default palette output from the code:
+![](images/Palettes.png)
 
 White, blue and yellow papers have the regular tones of official Nintendo papers. Pink is an invented tone that would have been cool in the series.
 
@@ -163,7 +163,7 @@ White, blue and yellow papers have the regular tones of official Nintendo papers
 - *Finally, the way he serial port is handled under Matlab and GNU Octave is not the same, so I had to split the direct printing codes in two versions. All others codes are exactly the sames. I hope the two versions will be merged in a future release.*
 - *The direct printing mode is not yet compatible with Matlab Mobile or GNU Octave for Android which is still a prototype. So the only mobile solution is to chain a mobile USB/Serial sniffer App with Matlab Mobile. This is not as elegant as a single code, single App solution, but it works.*
 
-# The complete list of games compatible with the Game Boy Printer and the Printer Emulator (ポケットプリンタ - 対応ソフト)
+## The complete list of games compatible with the Game Boy Printer and the Printer Emulator (ポケットプリンタ - 対応ソフト)
 
 There is in total 110 games compatible with the Game Boy Printer (and printer emulator). I've tested them on various machines (DMG, GBC, GBA and the Chinese GB Boy Colour clone, serial plugged to the Arduino to print) and can certify the printer support with printer emulator, even if some printing features are very tricky to reach ! I used a general purpose flash cartridge (EZ-FLASH Junior) for testing the games I do not own (most of them in fact). Some rare games require the original cartridge (one game uses the uncommon HuC-3 mapper) or another flash cartridge for no obvious reasons (two games with common mappers are only compatible with the [GB SMART 32M](https://github.com/Raphael-Boichot/GB-SMART-multiboot-rom-manager)). One "game" (SMARTCOM) required a rom modification (I had to hack a hack from [Furrtek](http://furrtek.free.fr/?a=smartcom)) to counterpass a boot sequence trick and allow printing with real hardware. Timing to assess single or double speed mode in protocol was recorded with an analog oscilloscope probing the clock pin. 
 
@@ -294,13 +294,13 @@ Tips for printing with japanese games : search for these characters: プリン�
 
 **Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a small handful of games to be lacking in the list but I have no other idea to find them now.**
 
-# Example of printer outputs from various games made with the printer emulator from real hardware
+## Example of printer outputs from various games made with the printer emulator from real hardware
 
 ![](./images/Wall_of_fame1.png)
 
 ![](./images/Wall_of_fame2.png)
 
-# List of games that embed a printer library but without printer support for the player
+## List of games that embed a printer library but without printer support for the player
 
 Code analysis of the Game Boy and Game Boy Color romsets revealed that some games (generally sequels of the preceding list) embed a printer library into the code but no printer support for the player. Some of them where clearly intended to use the printer as their gameplay is about unlocking images. The printer support was probably dismissed during game development as most of them are late published Game Boy Color games. Lazy recycling of non-optimized graphical libraries is also not excluded as maskrom size was less and less critical at this time. Sadly for the fetishists of furs, there was a bunch of hamster related games with printer support removed...
 
@@ -324,7 +324,7 @@ Code analysis of the Game Boy and Game Boy Color romsets revealed that some game
 - *Watashi no Restaurant (わたしのレストラン)*
 - *Xena - Warrior Princess (never released in Japan)*
 
-# List of games that display a printer support on the box but without any printing feature confirmed by players
+## List of games that display a printer support on the box but without any printing feature confirmed by players
 
 These games display a printer support logo on their box but I did not find any evidence of a printer library into their code (even a remainder) and it seems than nobody on internet was able to print something from them since more than 20 years. The consensus in 2021 is that these games do not have printer support: 
 
@@ -333,7 +333,7 @@ These games display a printer support logo on their box but I did not find any e
 
 In consequence, I won't include them in the official list. The printer logo on the box is very probably a copy-paste from a generic template made by an *I-don't-give-a-shit-of-this-game* graphist.
 
-# Time for statistics !
+## Time for statistics !
 
 On the 110 games compatible with the Game Boy Printer:
 
@@ -351,7 +351,7 @@ On the 110 games compatible with the Game Boy Printer:
 - *1 game uses two palettes in the same image (Alice in Wonderland)*
 - *1 game uses a three colors palette on purpose (Pokémon Pinball)*
 
-# Some known relaxing scene made with the code to end.
+## Some known relaxing scene interpreted with the paper simulator to end.
 
 ![](./images/2020-09-10/Z1_e-paper.png)
 
