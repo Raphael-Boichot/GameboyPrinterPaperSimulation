@@ -1,3 +1,5 @@
+**Note: this archive is no longer maintained since Januray 2024. Enjoy it as it is !**
+
 # Gameboy Printer Paper Simulation
 
 * Authors: *Raphaël BOICHOT, Brian KHUU*
