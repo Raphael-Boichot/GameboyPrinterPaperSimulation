@@ -9,9 +9,7 @@ Author want to thanks Frédéric Mercier for the find of the original Huc-3 mapp
 
 The purpose of this Arduino/GNU Octave/Matlab project is to output images from a Game Boy Printer emulator with the same soft aspect than images printed on a fresh roll of thermal paper into a Game Boy Printer. The project comes with a fork of the game boy printer emulator that allows to print with any of the **110 games compatible with the Game Boy Printer**. Compression and custom palettes are supported by the decoder. The project also proposes for the first time the probable **complete list of games compatible with the Game Boy Printer with printing examples from every known game and 100% or any% saves for most of them.**
 
-The motivation ? As Game Boy Printer paper is becoming difficult to find and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. And using 6 AA batteries in 2021, honestly...
-
-Fresh thermal paper used in this study was graciously sent to me by *R.A.Helllord* from the Game Boy Camera Club Discord. 
+The motivation ? As Game Boy Printer paper is becoming more and more difficult (and damn expensive) to source and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. And using 6 AA batteries in 2021, honestly...
 
 The Game Boy printer emulator developped by Brian Khuu which is used here is able to capture a stream of serial data under text form. The project here aims to tranform this hexadecimal text stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer. Reproducing the tone, noise, granularity and aliasing of to the printer head is challenging compared to a classical pixel perfect rendering. And what is challenging is fun.
 
