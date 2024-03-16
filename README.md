@@ -55,8 +55,6 @@ The Octave/Matlab decoder is of course natively backward compatible with the [Ar
 
 - *Assembling automatically the images is challenging with some games so a modification of both the emulator and the decoder is proposed to ensure proper printing for a dozen of "difficult" games. This will be called "TimeOut" mode in opposition to the default "margin" mode using post-printing margins information to separate images*
 
-The pinout have been slightly modified. The SOUT pin have been moved to D5 to allow direct pin compatibility with this [other project](https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer). It is recommanded to add a LED on pin D13 to allow the Arduino to indicate flashing of the board and packet transmission.
-
 ![](./images/Arduino_pinout.png)
 
 ![](./images/Arduino_pinout2.png)
