@@ -43,17 +43,8 @@ And I sampled manually a collection of 50 pixels of each level of grayscale (ver
 
 Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to get its color, picks a random pixel among the 50 of its own "color" and draws it on a new file with some overlapping. 50 pixels of each color is not much, but a pixel is a simple matrix of value. In consequence, to increase randomness each pixel itself is flipped or rotated randomly so that more than 200 different pixels can be generated out of just 50 for each color. Finally, the real printing paper presents fibres that create vertical streaks of "ink" (thermal paper has no ink but you see the idea). So the code randomly decreases the intensity of printing along some streaks of limited length chosen randomly. Of course the code in its present form can be improved, but the result is enough for my poor visual acuity.
 
-
 ## Test case with a Chip Chip printed from Super Mario Deluxe:
 ![](./images/Fake_print.png)
-
-## Which Game Boy Printer emulator using with the Matlab/Octave decoder ?
-
-The Octave/Matlab decoder is of course natively backward compatible with the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator). However, I've added some new features to the original version:
-
-- *The game compatibility have been increased to 100% by applying two simple rules to the error packets sent by the Printer emulator to games: the error packet is always 0x00 before printing (the games clearly do not mind this error byte most of the time) except when an empty data packet is received, where it becomes 0x04 (image data full). This allows triggering the print command for certain rare games that require this. The post-printing commands are still the ones from the original project, except some increase of the number of busy state commands.*
-
-- *Assembling automatically the images is challenging with some games so a modification of both the emulator and the decoder is proposed to ensure proper printing for a dozen of "difficult" games. This will be called "TimeOut" mode in opposition to the default "margin" mode using post-printing margins information to separate images*
 
 ![](./images/Arduino_pinout.png)
 
@@ -72,7 +63,8 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator).
 
-Now let's detail the new features available with this version of emulator:
+The difficulty with a Game Boy printer emulator is to know where the images have to be cut automatically. It can appear trivial to human mind (when the print is finished) but it is not for a code (some printing sessions have more than 10 seconds deadtime inbetween packest). 90% of the game sends a margin information that can be detected to cut paper easily (they feed paper to separate images). But about 10% sends nothing (like feed paper with white packets and no margin at all in print command) or margins within a single print. For these "difficult games", a strategy have to be invented. 
+Now let's detail how to use the decoder:
 
 **Automatic mode or printing with margins**
 
@@ -81,7 +73,7 @@ Set gbp_serial_io.cpp and Main_Decoder.m like this:
     #define GBP_PKT10_TIMEOUT_MS 400 in gbp_serial_io.cpp line 39
     Timeout_printing=0;  in Main_Decoder.m line 13
     
-This is the mode by default: with this settings images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For 99% of the users this mode will be enough, no need to go farther.
+This is the mode by default: with this settings images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For most of the users this mode will be enough, no need to go farther.
 
 **Idle mode or printing with Timeout message**
 
@@ -90,12 +82,16 @@ Set gbp_serial_io.cpp and Main_Decoder.m like this:
     #define GBP_PKT10_TIMEOUT_MS 15000 in gbp_serial_io.cpp line 39
     Timeout_printing=1;  in Main_Decoder.m line 13
 
-In idle mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial (which means that the serial is idle) before making another print. This allows the decoder to know how to assemble images that contains inner margins. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
+In idle mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial (which means that the serial is idle) before making another print. This allows the decoder to know how to assemble images that contains inner margins or no margin at all. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
 
 Games that can take advantage from the "TimeOut" or idle mode are (for example): 
 - *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari, Hello Kitty no Magical museum and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol with very long lag times in-between chunks of images and/or inner margins.*
 - *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using TimeOut image splitting is mandatory.*
 - *In general, each time you used the Automatic mode, if the images decoded are splitted, stuck together or in brief, not what you expect in terms of assembly, use idle mode with TimeOut separator to print.*
+
+**Some more technical trivia**
+
+The game compatibility of the Game Boy Printer emulator have been increased to 100% by applying two simple rules to the error packets sent by the Printer emulator to games: the error packet is always 0x00 before printing (the games clearly do not mind this error byte most of the time) except when an empty data packet is received, where it becomes 0x04 (image data full). This allows triggering the print command for certain rare games that require this. The post-printing commands are still the ones from the original project, except some increase of the number of busy state commands.
 
 **Direct printing from Matlab/GNU Octave without using the Arduino IDE !**
 
