@@ -337,11 +337,12 @@ On the 110 games compatible with the Game Boy Printer:
 - *1 game uses two palettes in the same image (Alice in Wonderland)*
 - *1 game uses a three colors palette on purpose (Pokémon Pinball)*
 
+## Aknowledgments
+
+- Author want to thanks Frédéric Mercier for the finding of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
+- [Mraulio](https://github.com/Mraulio) and [cristofercruz](https://github.com/cristofercruz) for debugging and improving the code
+
 ## Some known relaxing scene interpreted with the paper simulator to end.
 
 ![](./images/2020-09-10/Z1_e-paper.png)
 
-## Aknowledgments
-
-- Author want to thanks Frédéric Mercier for the find of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
-- [Mraulio](https://github.com/Mraulio) and [cristofercruz](https://github.com/cristofercruz) for debugging and improving the code
