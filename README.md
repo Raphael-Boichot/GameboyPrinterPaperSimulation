@@ -4,6 +4,7 @@
 * Featured on [Hackaday](https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/)
 
 This project uses the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator) and have 100% compatibility with it.
+
 This e-paper feature is now included in the [GBCamera-Android-Manager](https://github.com/Mraulio/GBCamera-Android-Manager)
 
 Author want to thanks Frédéric Mercier for the find of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
