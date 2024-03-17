@@ -1,9 +1,10 @@
 # Gameboy Printer Paper Simulation
 
 * Authors: *Raphaël BOICHOT, Brian KHUU*
-* Featured on [Hackaday](https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/) and companion project from the [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer), the [Arduino SD Game Boy Printer](https://github.com/Raphael-Boichot/The-Arduino-SD-Game-Boy-Printer) and the [GameBEye](https://github.com/mtouzot/GameBEye).
+* Featured on [Hackaday](https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/)
 
 This project uses the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator) and have 100% compatibility with it.
+This e-paper feature is now included in the [GBCamera-Android-Manager](https://github.com/Mraulio/GBCamera-Android-Manager)
 
 Author want to thanks Frédéric Mercier for the find of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
 
@@ -106,12 +107,6 @@ You can run [Read_directly_from_Arduino_Matlab.m](GameBoyPrinterDecoderMatlab/Re
 - Once the printing session is finished, reboot the Arduino, it will indicate to GNU Octave/Matlab that transmission is over and will run the decoder automatically.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
 - Code generates an output .txt file that you can process again later with the classical decoder "Main_Decoder.m" or with the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator). The text output is also automatically backed-up with a unique ID so that you would never lost your prints.
-
-**Mobile printing !**
-
-With an OTG cable, you can plug, power and control the Arduino directly from your mobile Android phone with the [GB Camera Android Manager](https://github.com/Mraulio/GBCamera-Android-Manager). It also features a printer paper simulator, the GB printer emulator and an interface to directly send any image to the printer ! I participate to the project so the similar features.
-
-![](images/On%20the%20go.png)
 
 **Can I modify the palettes of the pixel perfect images or e-paper outputs ?**
 
