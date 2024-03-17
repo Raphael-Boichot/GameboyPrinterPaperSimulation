@@ -43,11 +43,13 @@ And I sampled manually a collection of 50 pixels of each level of grayscale (ver
 
 Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to get its color, picks a random pixel among the 50 of its own "color" and draws it on a new file with some overlapping. 50 pixels of each color is not much, but a pixel is a simple matrix of value. In consequence, to increase randomness each pixel itself is flipped or rotated randomly so that more than 200 different pixels can be generated out of just 50 for each color. Finally, the real printing paper presents fibres that create vertical streaks of "ink" (thermal paper has no ink but you see the idea). So the code randomly decreases the intensity of printing along some streaks of limited length chosen randomly. Of course the code in its present form can be improved, but the result is enough for my poor visual acuity.
 
-## Test case with a Chip Chip printed from Super Mario Deluxe:
+## Test case with a Chip Chip printed from Super Mario Deluxe
 ![](./images/Fake_print.png)
 
+## The pinout to use for Arduino
 ![](./images/Arduino_pinout.png)
 
+## My janky setup
 ![](./images/Arduino_pinout2.png)
 
 ## How to use the Game Boy Printer paper emulation ?
