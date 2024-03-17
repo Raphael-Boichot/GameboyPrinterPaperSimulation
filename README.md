@@ -3,9 +3,9 @@
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 * Featured on [Hackaday](https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/)
 
-This project uses the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator).
+This project uses the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator) to get raw printing data and GNU Octave/Matlab to decode them. It ic compatible with any of the 110 games compatible with the Game Boy Printer.
 
-This e-paper feature is now included in the [GBCamera-Android-Manager](https://github.com/Mraulio/GBCamera-Android-Manager).
+This e-paper feature is now included in the [GBCamera-Android-Manager](https://github.com/Mraulio/GBCamera-Android-Manager) which allows printing and sharing your images online with a mobile phone !
 
 Author want to thanks Frédéric Mercier for the find of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
 
