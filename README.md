@@ -23,7 +23,7 @@ My first idea was to do a simulation of printer head by replacing hard square pi
 
 Even if it was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with this approach. We need a more agressive design !
 
-# It MUST be like the real thermal paper !
+# My second trial : it MUST look like the real thermal paper !
 
 After considering the differences between early outputs and real prints (scanned at 3600 dpi) obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer head and paper grain add noise to the image at different length scales. Moreover, the needles from thermal printer head do not just create noisy gaussian dots. These dots also have a random shape (typically due to fibers in paper). So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my Game Boy Printer. 
 
