@@ -7,9 +7,11 @@ This project uses the [Arduino Game Boy Printer Emulator](https://github.com/mof
 
 This e-paper feature is now included in the [GBCamera-Android-Manager](https://github.com/Mraulio/GBCamera-Android-Manager) which allows printing and sharing your images online with a mobile phone !
 
-The motivation ? As Game Boy Printer paper is becoming more and more difficult (and damn expensive) to source and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. And using 6 AA batteries in 2021, honestly...
+The motivation ? As Game Boy Printer paper is becoming more and more difficult (and damn expensive) to source and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. And using 6 AA batteries in 2024, honestly...
 
 The Game Boy printer emulator developped by Brian Khuu which is used here is able to capture a stream of serial data under text form. The project here aims to tranform this hexadecimal text stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer. Reproducing the tone, noise, granularity and aliasing of to the printer head is challenging compared to a classical pixel perfect rendering. And what is challenging is fun.
+
+# My initial trials
 
 My first idea was to do a simulation of printer head by replacing hard square pixels by some sort of bell-shaped spots with lots of noise. A 2D bell-shaped approximation had a sense to me as injecting heat in a point on a 2D surface result in gaussian distribution of temperatures. On thermal paper, tones are due to a chemical reaction of a powder deposited on the surface of paper driven by temperature and phase change. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. Misalignment of the printer head was also simulated. The result of a pure mathematical approach was interesting for sure.
 
@@ -21,7 +23,7 @@ My first idea was to do a simulation of printer head by replacing hard square pi
 
 Even if it was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with this approach. We need a more agressive design !
 
-## It MUST be like the real thermal paper !
+# It MUST be like the real thermal paper !
 
 After considering the differences between early outputs and real prints (scanned at 3600 dpi) obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer head and paper grain add noise to the image at different length scales. Moreover, the needles from thermal printer head do not just create noisy gaussian dots. These dots also have a random shape (typically due to fibers in paper). So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my Game Boy Printer. 
 
@@ -50,7 +52,7 @@ Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to g
 ## My janky setup
 ![](./images/Arduino_pinout2.png)
 
-## How to use the Game Boy Printer paper emulation ?
+# How to use the Game Boy Printer paper emulation ?
 
 You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
@@ -149,7 +151,7 @@ White, blue and yellow papers have the regular tones of official Nintendo papers
 - *Finally, the way he serial port is handled under Matlab and GNU Octave is not the same, so I had to split the direct printing codes in two versions. All others codes are exactly the sames. I hope the two versions will be merged in a future release.*
 - *The direct printing mode is not yet compatible with Matlab Mobile or GNU Octave for Android which is still a prototype. So the only mobile solution is to chain a mobile USB/Serial sniffer App with Matlab Mobile. This is not as elegant as a single code, single App solution, but it works.*
 
-## The complete list of games compatible with the Game Boy Printer and the Printer Emulator (ポケットプリンタ - 対応ソフト)
+# The complete list of games compatible with the Game Boy Printer and the Printer Emulator (ポケットプリンタ - 対応ソフト)
 
 There is in total 110 games compatible with the Game Boy Printer (and printer emulator). I've tested all of them them on various machines (DMG, GBC, GBA and the Chinese GB Boy Colour clone, serial plugged to the Arduino to print) and can certify the printer support with printer emulator, even if some printing features are very tricky to reach ! I used a general purpose flash cartridge (EZ-FLASH Junior) for testing the games I do not own (most of them in fact). Some rare games require the original cartridge (one game uses the uncommon HuC-3 mapper) or another flash cartridge for no obvious reasons (two games with common mappers are only compatible with the [GB SMART 32M](https://github.com/Raphael-Boichot/GB-SMART-multiboot-rom-manager)). One "game" (SMARTCOM) required a rom modification (I had to hack a hack from [Furrtek](http://furrtek.free.fr/?a=smartcom)) to counterpass a boot sequence trick and allow printing with real hardware. Assessing single or double speed mode in protocol was made with an analog oscilloscope probing the clock pin. I'm probably the only human on earth to have printed with all games compatible with the Game Boy Printer, **which is a quite nerdy achievement I admit.**
 
@@ -337,7 +339,7 @@ On the 110 games compatible with the Game Boy Printer:
 - *1 game uses two palettes in the same image (Alice in Wonderland)*
 - *1 game uses a three colors palette on purpose (Pokémon Pinball)*
 
-## Aknowledgments
+# Aknowledgments
 
 - Author want to thanks Frédéric Mercier for the finding of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
 - [Mraulio](https://github.com/Mraulio) and [cristofercruz](https://github.com/cristofercruz) for debugging and improving the code
