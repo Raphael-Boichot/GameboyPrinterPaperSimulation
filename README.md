@@ -59,6 +59,9 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator).
 
+## The pinout to use for Arduino
+![](./images/Arduino_pinout.png)
+
 The difficulty with a Game Boy printer emulator is to know where the images have to be cut automatically. It can appear trivial to human mind (when the print is finished) but it is not for a code (some printing sessions have more than 10 seconds deadtime inbetween packest). 90% of the game sends a margin information that can be detected to cut paper easily (they feed paper to separate images). But about 10% sends nothing (like feed paper with white packets and no margin at all in print command) or margins within a single print. For these "difficult games", a strategy have to be invented. 
 Now let's detail how to use the decoder:
 
