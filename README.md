@@ -46,12 +46,6 @@ Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to g
 ## Test case with a Chip Chip printed from Super Mario Deluxe
 ![](./images/Fake_print.png)
 
-## The pinout to use for Arduino
-![](./images/Arduino_pinout.png)
-
-## My janky setup
-![](./images/Arduino_pinout2.png)
-
 # How to use the Game Boy Printer paper emulation ?
 
 You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
