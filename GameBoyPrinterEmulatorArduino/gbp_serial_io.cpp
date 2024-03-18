@@ -36,7 +36,7 @@
 
 /******************************************************************************/
 
-#define GBP_PKT10_TIMEOUT_MS 400 //400 instead of 500 allows supporting Love Hina Pocket, all 109 other games are OK with 500
+#define GBP_PKT10_TIMEOUT_MS 400
 
 // Testing
 //#define TEST_CHECKSUM_FORCE_FAIL
