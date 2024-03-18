@@ -74,19 +74,19 @@ Set gbp_serial_io.cpp and Main_Decoder.m like this:
     
 This is the mode by default: with this settings images will be separated by the decoder if an after margin different than zero is detected. Most of the games are happy with that and in particular the Game Boy Camera. For most of the users this mode will be enough, no need to go farther.
 
-**Idle mode or printing with Timeout message**
+**Idle mode or printing with a time out message**
 
 Set gbp_serial_io.cpp and Main_Decoder.m like this:
 
     #define GBP_PKT10_TIMEOUT_MS 15000 in gbp_serial_io.cpp line 39
     Timeout_printing=1;  in Main_Decoder.m line 13
 
-In idle mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "TimeOut" message to appear into the Arduino serial (which means that the serial is idle) before making another print. This allows the decoder to know how to assemble images that contains inner margins or no margin at all. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
+In idle mode, the printing command from the Game Boy is not taken into account. Instead, you have to wait for the "Memory Waterline" string to appear into the Arduino serial (which means that the serial is now idle) before making another print. This allows the decoder to know how to assemble images that contains inner margins or no margin at all. Remind that the real printer uses a roll of paper that you decide to cut manually, so certains games do not care of the printing margins. So you have to force a bit the image separation in order to get the nice printing wanted by the programmers.
 
-Games that can take advantage from the "TimeOut" or idle mode are (for example): 
+Games that can take advantage from the idle mode are (for example): 
 - *Nakayoshi Cooking (3, 4 and 5), Mc Donald's Monogatari, Hello Kitty no Magical museum and Nintama Rantarou GB: Eawase Challenge Puzzle. They generate splitted image files in Automatic mode due to weird printing protocol with very long lag times in-between chunks of images and/or inner margins.*
-- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using TimeOut image splitting is mandatory.*
-- *In general, each time you used the Automatic mode, if the images decoded are splitted, stuck together or in brief, not what you expect in terms of assembly, use idle mode with TimeOut separator to print.*
+- *Mary-Kate and Ashley Pocket Planner and E.T.: Digital Companion have the exact inverse problem : they always print images with no margin by default. Using time out image splitting is mandatory.*
+- *In general, each time you used the Automatic mode, if the images decoded are splitted, stuck together or in brief, not what you expect in terms of assembly, use idle mode with time out separator to print.*
 
 **Some more technical trivia**
 
@@ -139,7 +139,7 @@ White, blue and yellow papers have the regular tones of official Nintendo papers
 **Known minor issues related to the printer emulator, Arduino side**
 
 - *Printing with Hamster Club may crash after a certain number of images due to spamming of the serial console with 0F command in double speed mode. Apart from that, printing with this game is rather stable.*
-- *Game Boy Camera have an escape command during packet transmission (push B to avoid cringe images to be printed in front of your parents). This command, which have no interest with an emulator, is not supported.*
+- *Game Boy Camera have an abort command during packet transmission. This command, which have no interest with an emulator, is not supported.*
 
 **Known minor issues related to the decoder, Matlab/GNU Octave side**
 
@@ -149,9 +149,9 @@ White, blue and yellow papers have the regular tones of official Nintendo papers
 
 # The complete list of games compatible with the Game Boy Printer and the Printer Emulator (ポケットプリンタ - 対応ソフト)
 
-There is in total 110 games compatible with the Game Boy Printer (and printer emulator). I've tested all of them them on various machines (DMG, GBC, GBA and the Chinese GB Boy Colour clone, serial plugged to the Arduino to print) and can certify the printer support with printer emulator, even if some printing features are very tricky to reach ! I used a general purpose flash cartridge (EZ-FLASH Junior) for testing the games I do not own (most of them in fact). Some rare games require the original cartridge (one game uses the uncommon HuC-3 mapper) or another flash cartridge for no obvious reasons (two games with common mappers are only compatible with the [GB SMART 32M](https://github.com/Raphael-Boichot/GB-SMART-multiboot-rom-manager)). One "game" (SMARTCOM) required a rom modification (I had to hack a hack from [Furrtek](http://furrtek.free.fr/?a=smartcom)) to counterpass a boot sequence trick and allow printing with real hardware. Assessing single or double speed mode in protocol was made with an analog oscilloscope probing the clock pin. I'm probably the only human on earth to have printed with all games compatible with the Game Boy Printer, **which is a quite nerdy achievement I admit.**
+There is in total 110 games compatible with the Game Boy Printer (and printer emulator). I've tested all of them them on various machines (DMG, GBC, GBA and the Chinese GB Boy Colour clone, serial plugged to the Arduino to print) and can certify the printer support with printer emulator, even if some printing features are very tricky to reach ! I used a general purpose flash cartridge (EZ-FLASH Junior) for testing the games I do not own (most of them in fact). Some rare games require the original cartridge (one game uses the uncommon HuC-3 mapper) or another flash cartridge for no obvious reasons (two games with common mappers are only compatible with the [GB SMART 32M](https://github.com/Raphael-Boichot/GB-SMART-multiboot-rom-manager)). One "game" (SMARTCOM) required a rom modification (I had to hack a hack from [Furrtek](http://furrtek.free.fr/?a=smartcom)) to counterpass a boot sequence trick and allow printing with real hardware. Assessing single or double speed mode in protocol was made with an analog oscilloscope probing the clock pin. I'm probably the only human on earth to have printed with all games compatible with the Game Boy Printer, which is a quite nerdy achievement I admit (but I know at least someone jealous of that).
 
-The .zip file in the repo contains 100% or any% saves ready to use with printer features unlocked for most of the games, as well as examples of printer emulator output and prints for each of them. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from these games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer. 
+The .zip file in the repo contains 100% or any% saves ready to use with printer features unlocked for many games, as well as examples of printer emulator output and prints for each of them. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from these games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer. 
 
 The [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer) uses the same engine and has exactly the same compatibility with games. It even adds some serial protocol analysis to automate automatic/timeout modes.
 
