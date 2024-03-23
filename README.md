@@ -276,7 +276,7 @@ There is nevertheless a debatable case:
 
 Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Pocket Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
 
-On a more personal side, I found that many Japanese exclusive games are objectively piece of crap, for various reasons not related to barrier langage only, like: cryptic gameplay, unfair difficulty, ruthless RNG, boring objectives, endless repetitive maps or blatant (but crap) plagiarism of Pokémons. Of course western exclusive games have also their content of shitwares that gave me headaches. The GBC library overall deserves a "seal of crapiness" except for very few dozens exceptions.
+On a more personal side, I found that many Japanese exclusive games are objectively piece of crap, for various reasons not related to barrier langage only, like: cryptic gameplay, unfair difficulty, ruthless RNG, boring objectives, endless repetitive maps or blatant (but crap) plagiarism of Pokémons. Of course western exclusive games have also their load of shitwares that gave me headaches, but at least it's documented shit with no surprise. The GBC library overall deserves a "seal of crapiness" except for very few dozens exceptions.
 
 **Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a small handful of games to be lacking in the list but I have no other idea to find them now.**
 
