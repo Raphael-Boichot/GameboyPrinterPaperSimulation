@@ -3,7 +3,7 @@
 * Authors: *Raphaël BOICHOT, Brian KHUU*
 * Featured on [Hackaday](https://hackaday.com/2021/06/25/simulating-the-game-boy-printers-actual-paper-output/)
 
-This project uses the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator) to get raw printing data and GNU Octave/Matlab to decode them. It is compatible with any of the 110 games compatible with the Game Boy Printer.
+This project uses the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator) to get raw printing data and GNU Octave/Matlab to decode them in a fancy manner. It is compatible with any of the 110 games compatible with the Game Boy Printer.
 
 This e-paper feature is now included in the [GBCamera-Android-Manager](https://github.com/Mraulio/GBCamera-Android-Manager) which allows printing and sharing your images online with a mobile phone !
 
@@ -62,7 +62,7 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 ## The pinout to use for Arduino
 ![](./images/Arduino_pinout.png)
 
-The difficulty with a Game Boy printer emulator is to know where the images have to be cut automatically. It can appear trivial to human mind (when the print is finished) but it is not for a code (some printing sessions have more than 10 seconds deadtime inbetween packest). 90% of the game sends a margin information that can be detected to cut paper easily (they feed paper to separate images). But about 10% sends nothing (like feed paper with white packets and no margin at all in print command) or margins within a single print. For these "difficult games", a strategy have to be invented. 
+The difficulty with a Game Boy printer emulator is to know where the images have to be cut automatically. It can appear trivial to human mind (tear paper when the print is finished) but it is not for a code (some printing sessions have more than 10 seconds deadtime inbetween packets). 90% of the game sends a margin information that can be detected to cut paper easily (they feed paper to separate images). But about 10% sends nothing (like feed paper with white packets and no margin at all in print command) or margins but within a single print. For these "difficult" games, a strategy have to be invented. 
 Now let's detail how to use the decoder:
 
 **Automatic mode or printing with margins**
@@ -115,7 +115,7 @@ The code is of course fully open to modifications. Edit "color_packet.m" and add
             255 255 255 255 128 128 128 64 64 0 0 0];% 5 = Salmon
  (R G B for white) (R G B for light gray) (R G B for dark gray) (R G B for black)];%Your palette
             
-Then just edit "color_packet.m" to seek to the new palette by its line number in "color_packet.m"
+Then just edit "color_packet.m" to seek to the palette option:
         
     color_option=X; %X your custom palette
 
