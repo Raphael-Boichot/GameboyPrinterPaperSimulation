@@ -62,6 +62,11 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 ## The pinout to use for Arduino
 ![](./images/Arduino_pinout.png)
 
+## But toy can also use a dedicated PCB !
+![](https://github.com/Raphael-Boichot/Collection-of-PCB-for-Game-Boy-Printer-Emulators/blob/main/PCB_Arduino_Uno/Arduino_shield.jpg)
+
+If you want something neat, you can follow the [instructions given here](https://github.com/Raphael-Boichot/Collection-of-PCB-for-Game-Boy-Printer-Emulators?tab=readme-ov-file) to build a dedicated PCB
+
 The difficulty with a Game Boy printer emulator is to know where the images have to be cut automatically. It can appear trivial to human mind (tear paper when the print is finished) but it is not for a code (some printing sessions have more than 10 seconds deadtime inbetween packets). 90% of the game sends a margin information that can be detected to cut paper easily (they feed paper to separate images). But about 10% sends nothing (like feed paper with white packets and no margin at all in print command) or margins but within a single print. For these "difficult" games, a strategy have to be invented. 
 Now let's detail how to use the decoder:
 
