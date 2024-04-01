@@ -65,7 +65,7 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 ## But you can also use a dedicated PCB !
 ![](https://github.com/Raphael-Boichot/Collection-of-PCB-for-Game-Boy-Printer-Emulators/blob/main/PCB_Arduino_Uno/Arduino_shield.jpg)
 
-If you want something neat, you can follow the [instructions given here](https://github.com/Raphael-Boichot/Collection-of-PCB-for-Game-Boy-Printer-Emulators?tab=readme-ov-file) to build a dedicated PCB (fot cheap, really).
+If you want something neat, you can follow the [instructions given here](https://github.com/Raphael-Boichot/Collection-of-PCB-for-Game-Boy-Printer-Emulators?tab=readme-ov-file) to build a dedicated PCB (for cheap, really).
 
 **Back to the main subject**
 
