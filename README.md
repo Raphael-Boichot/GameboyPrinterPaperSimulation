@@ -153,7 +153,7 @@ There is in total 110 games compatible with the Game Boy Printer (and printer em
 
 The .zip file in the repo contains 100% or any% saves ready to use with printer features unlocked for many games, as well as examples of printer emulator output and prints for each of them. See the "Game Boy Printer Emulator - Games Support.xlsx" to check the various hints to print from these games, obscure Japanese and totally WTF ones included. This complete list was established by cross-checking English and Japanese game titles known for using the printer and by rom code analysis to reveal some new ones that were never included in any list before. This list was never published online before june 2021 and contains probably the entire game collection that uses the printer. 
 
-The [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer) uses the same engine and has exactly the same compatibility with games. It even adds some serial protocol analysis to automate automatic/timeout modes.
+I have contributed to the [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer) which uses the same engine and has exactly the same compatibility with games. It adds some serial protocol analysis to automate automatic/timeout modes.
 
 So, here is the game list:
 
