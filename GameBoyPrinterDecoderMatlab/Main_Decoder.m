@@ -14,7 +14,7 @@ color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG
 darkness=10; %1=lightest 10=darkest
 scale_percentage=30; %100=full size, smaller values scale down image
 Timeout_printing=0;  %0 to separate images automatically if margin >0
-                        %1 for continuous printing with TimeOut or Manual dode, ignore margin > 0);
+%1 for continuous printing with TimeOut or Manual dode, ignore margin > 0);
 %------------------------------------------------------------------------
 [ID]=get_unique_ID(8);
 DateString = date;

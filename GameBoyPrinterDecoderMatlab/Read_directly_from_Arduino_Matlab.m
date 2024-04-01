@@ -9,18 +9,17 @@ disp('-----------------------------------------------------------')
 disp('|Beware, this code is for Matlab ONLY !!!                 |')
 disp('|Beware, this code is not yet compatible Matlab Mobile !!!|')
 disp('|Reboot Arduino to end transmission                       |')
-disp('|If no transmission, set GBP_SO_PIN to 5 in Arduino code  |')
 disp('-----------------------------------------------------------')
 rng('shuffle');
-arduinoObj = serialport("COM3",115200,'TimeOut',3600); %set the Arduino com port here
+arduinoObj = serialport("COM6",115200,'TimeOut',3600); %set the Arduino com port here
 configureTerminator(arduinoObj,"CR/LF");
 flush(arduinoObj);
 arduinoObj.UserData = struct("Data",[],"Count",1);
 flag=0;
- str='Packet Capture V3';
+str='Packet Capture V3';
 while flag==0
-data = readline(arduinoObj);
-disp(data)
+    data = readline(arduinoObj);
+    disp(data)
     if not(isempty(strfind(data,str)))
         flag=1;
     end
@@ -31,15 +30,15 @@ fid=fopen('Entry_file.txt','w');
 str='Packet Capture V3';
 flag=0;
 while flag==0
-data = readline(arduinoObj);
-disp(data)
-fprintf(fid,'%s\r\n',data);
+    data = readline(arduinoObj);
+    disp(data)
+    fprintf(fid,'%s\r\n',data);
     if not(isempty(strfind(data,str)));
         flag=1;
     end
 end
 
-fclose(serial(arduinoObj.Port)); 
+fclose(serial(arduinoObj.Port));
 fclose(fid);
 disp('Normal termination, printing the images...')
 
