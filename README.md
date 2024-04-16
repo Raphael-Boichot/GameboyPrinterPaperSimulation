@@ -52,8 +52,14 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 
 - Install the last [Arduino IDE](https://www.arduino.cc/en/software) and load the .ino file to the board.
 - Install the open-source [GNU Octave](https://www.gnu.org/software/octave/index) or enjoy your pricey Matlab license.
+
+**On Arduino IDE 1.8.X and earlier:**
 - Connect your Game Boy to Arduino with serial cable, open the serial console in 115200 bauds and print as with a real Game Boy Printer.
-- Copy/paste text obtained directly from the Arduino serial (Arduino IDE 1.8.X) or from any terminal emulator (Arduino IDE 2.X.X does not allow direct copy/paste) like [PuTTy](https://www.putty.org/) into  [Entry_file.txt](GameBoyPrinterDecoderMatlab/Entry_file.txt)
+- Copy/paste text obtained directly from the Arduino serial into [Entry_file.txt](GameBoyPrinterDecoderMatlab/Entry_file.txt)
+
+**On Arduino IDE 2.X.X:**
+- Copy/paste text obtained from any terminal emulator like [PuTTy](https://datalab.medium.com/arduino-ide-serial-data-export-by-putty-6a77631a23ea) into [Entry_file.txt](GameBoyPrinterDecoderMatlab/Entry_file.txt). Arduino IDE 2.X.X does not allow reliable copy/paste from its serial anymore (it's not clear whether this is a bug or intentional).
+
 - Open Octave/Matlab code [Main_Decoder.m](GameBoyPrinterDecoderMatlab/Main_Decoder.m)
 - Choose some color palettes and printing options (default are OK).
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
