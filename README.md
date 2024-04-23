@@ -291,7 +291,7 @@ Tips for printing with japanese games : search for these characters: プリン�
 
 On a more personal side, I found that many Japanese exclusive games in this list are objectively piece of crap, for various reasons sadly not related to barrier langage, like: cryptic gameplay (Animal Breeder, Tsuri Sensei, McDonald's Monogatari, Chee-Chai Alien, Purikura Pocket), unfair difficulty (Sanrio Timenet series, Dino Breeder), ruthless RNG (Mahjong series, Daa! Daa! Daa! Totsuzen), boring objectives (Nakayoshi Cooking series, Hamster series), endless levels (Cross Hunter series, Kaseki Sousei Reborn) or blatant and uninspired plagiarism of Pokémons (Monster ★ Race series, Sanrio Timenet series). Of course western exclusive games have also their load of shit that gave me headaches and very unpleasant gaming sessions (Tarantula games deserve recycling in hot nitric acid bath), but at least it's documented shit with no surprise. The GBC library overall deserves a "seal of crapiness" except for very few dozens exceptions, east and west sides.
 
-**Feel free to contact me if you know other compatible games, I will be glad to test them, add them to the list and credit you. I still suspect a small handful of games to be lacking in the list but I have no other idea to find them now.**
+Even if I still suspect a small handful of cryptic games to be lacking in the list, I have no idea how to find them now.
 
 ## Example of printer outputs from various games made with the printer emulator from real hardware
 
