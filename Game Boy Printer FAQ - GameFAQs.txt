@@ -1,0 +1,1301 @@
+---------------------------------------------
+Game Boy Hardware                    Version
+Game Boy Printer FAQ                   3.2
+---------------------------------------------
+
+Welcome to the Game Boy Printer FAQ! 
+It is copyright Mark Raby 2005 via GameFAQs.  It is not to be used for
+commercial use without proper permission.  Please keep coming back for updates!
+
+
+-----------------------------------
+CONTENTS
+-----------------------------------
+0) Version history
+1) Background info
+2) Hardware Compatibility
+3) Where to get it
+ 3.1 Game Boy Printer
+ 3.2 Game Boy Printer Paper
+ 3.3 Compatible Games
+4) Getting your printer set up
+5) Software Compatibility
+ 5.1 1942
+ 5.2 Game Boy Camera*
+ 5.3 Legend of Zelda: Link's Awakening DX
+ 5.4 Mary Kate & Ashley: Pocket Planner
+ 5.5 NFL Blitz
+ 5.6 Pokemon Gold/Silver*
+ 5.7 Pokemon Pinball
+ 5.8 Pokemon Trading Card Game
+ 5.9 Pokemon Yellow*
+ 5.10 Quest For Camelot
+ 5.11 Roadsters*
+ 5.12 Alice in Wonderland*
+ 5.13 Austin Powers: Oh, Behave!*
+ 5.14 Austin Powers: Welcome to my Underground Lair*
+ 5.15 Dinosaur
+ 5.16 Disney's Tarzan
+ 5.17 Donkey Kong Country*
+ 5.18 ET Digital Companion*
+ 5.19 Fisher-Price Rescure Heroes: Fire Frenzy
+ 5.20 Klax
+ 5.21 Little Mermaid 2 Pinball
+ 5.22 Little Nicky
+ 5.23 Magical Drop
+ 5.24 Mickey's Speedway USA*
+ 5.25 Perfect Dark
+ 5.26 Pokemon Crystal*
+ 5.27 Super Mario Bros Deluxe*
+6) Fun Statistics
+7) Printer Errors
+8) Fixing a paper jam
+9) Coming Soon
+ 9.1 Next Version
+ 9.2 Future Versions
+10) Credits
+
+* - Denotes a game that has a detailed walkthrough on exactly what you can do
+with the GB Printer and how to do it.
+
+-----------------------------------
+0) Version history
+-----------------------------------
+(Dates are based on when the FAQ was submitted, not necessarily when it was 
+posted)
+
+2/27/05: (57 KB)
+Version 3.2
+- Added version 1.0 of E.T. Digital Companion's GB Printer Walkthrough
+- Added a preview of 3.3 in the "coming soon" section
+
+2/18/05: (52 KB)
+Version 3.1
+- Added important info on the link cable in section 4
+- Added minor stuff to the "background info" section
+- Moved "ET Digital Companion" from Game Boy section to Game Boy Color section
+- Added version 1.0 of the Austin Powers games' GB Printer Walkthrough
+- Updated Donkey Kong Country's GB Printer Walkthrough to version 1.1
+- Updated Mickey's Speedway USA's GB Printer Walkthrough to version 1.1
+- Added a preview of version 3.2 in the "coming soon" section
+
+2/15/05: (46 KB)
+Version 3.0
+- Changed some minor formatting
+- Added more info to Roadsters
+- Added version 1.0 of Roadsters' GB Printer Walkthrough
+- Added version 1.0 of Alice in Wonderland's GB Printer Walkthrough
+- Added version 1.0 of Donkey Kong Country's GB Printer Walkthrough
+- Added version 1.0 of Mickey's Speedway USA GB Printer Walkthrough
+- Added version 1.0 of Super Mario Bros Deluxe's GB Printer Walkthrough
+- Copied version 1.0 of Pokemon Gold/Silver's GB Printer Walkthrough to
+  Pokemon Crystal
+- Added a preview of Version 3.1 in the "coming soon" section
+
+2/12/05: (34 KB)
+Version 2.65
+- Updated Pokemon Yellow GB Printer Walkthrough to version 1.2
+
+2/12/05: (33 KB)
+Version 2.6
+- Updated Pokemon Yellow GB Printer Walkthrough to version 1.1
+- Added version 1.0 of Pokemon Gold/Silver's GB Printer Walkthrough
+- Added a preview of Version 2.7 in the "coming soon" section
+
+2/8/05:
+Version 2.5 (31 KB)
+- Added NFL Blitz information
+- Added Klax information
+- Added Little Mermaid 2 Pinball information
+- Added Little Nicky information
+- Added Fisher-Price Rescue Heroes: Fire Frenzy information
+- Added Magical Drop information
+
+2/8/05:
+Version 2.1 (28 KB)
+- Added a "where to find it" section
+- Added a preview of Version 2.2
+
+2/7/05:
+Version 2.0 (27 KB)
+- Added Pokemon Trading Card Game information (I can't believe I forgot to
+  include it in version 1.0)
+- Fixed some grammar stuff
+- Fixed numbering inconsistencies in the Contents section
+- Added some more info in the "Background info" section
+- Added developer/publisher info for compatible games
+- Added the idea of individual "GB Printer Walkthroughs" for specific games
+- Added Version 1.0 of Game Boy Camera's GB Printer Walkthrough
+- Added Version 1.0 of Pokemon Yellow's GB Printer Walkthrough
+- Added a "fun statistics" section
+- Added a preview of version 2.1
+
+2/5/05:
+Version 1.0 (16 KB)
+- Finished FAQ
+
+-----------------------------------
+1) Background info
+-----------------------------------
+
+The Game Boy Printer was released in 1998 to correspond with the launch of the
+Game Boy Camera accessory.  The Game Boy Camera is a digital camera of sorts
+that lets you print out your own pictures.  In fact, a lot of people think that
+the camera was the only thing that connected to the Printer.  That is not
+the case.  As Nintendo always does, they wanted to get the most possible use
+with this new peripheral (the printer).  So they opened up the printer
+accessibility to third party publishers and it really became a cool feature that
+let you take your games one step further.  As a matter of fact, third-party
+publishers showed a good amount of interest in the Printer.  Out of the 28
+compatible games, half of them (14) were actually from third-party publishers. 
+
+Unfortunately, there was not a whole lot of public interest in the printer and
+it died off, but not after giving a good number of games the opportunity to have
+Game Boy Printer connectivity.  As I stated, the printer was introduced in 1998.
+The last game, as far as I know, to have GB Printer support was in late 2001,
+meaning it would have technically not been unimaginable for an early Game Boy
+Advance game or two to have Printer support (it was released in the summer of
+2001).  Unfortunately, that did not happen.  But still, it was around for a good
+3 years, and unless there are some games I'm not aware of, a whopping 28 games
+actually had some kind of connectivity with the printer.  This may not sound
+like a lot, but in reality, for a Nintendo peripheral, it got some of the most
+exposure ever seen.  Compare it to the NES "running pad" or the SNES mouse, the
+Gamecube Bongo controllers, or the GBA e-Reader.  All of these had just a few
+compatible games, and third-party support for them was virtually unheard of.
+
+The Printer "printed" out on special rolls of thermal paper, meaning it did not
+actually use ink.  These rolls of paper also had adhesive backs, so anything you
+printed out could actually be turned into a sticker.
+
+The goal of this FAQ is to provide you with the most detailed guide on the Game
+Boy Printer, from how to use it to a comprehensive list of which games are
+compatible, as well as to provide you with extensive in-depth walkthroughs with
+how exactly to get the most use out of your Printer with each compatible game.
+
+-----------------------------------
+2) Hardware Compatibility
+-----------------------------------
+
+The Game Boy Printer is compatible with all versions of the Game Boy.  That is,
+the original Game Boy, the Game Boy Pocket, the Game Boy Color, the Game Boy
+Advance, and the Game Boy Advance SP.  Is it NOT compatible with the Nintendo DS
+becuase the DS has no connections port to link up to the printer.
+
+NOTE: Even though the Game Boy Printer is compatible with all Game Boy models,
+not all the Game Boy Printer-compatible games are.  Since the Printer was
+released in the Game Boy/Game Boy Color transitioning period, there are some
+games that are compatible with the Printer that are only compatible with the
+Game Boy Color, Game Boy Advance, and Game Boy Advance SP.
+
+-----------------------------------
+3) Where to get it
+-----------------------------------
+
+-3.1 Game Boy Printer-
+
+With the Game Boy Printer being out of circulation for more than 3 years, it is
+quite understandably getting harder to come across.  However, you can still
+find NEW GB Printers from Amazon.com.  They run about $60, which was the MSRP
+when it was released in 1998.  However, if you don't mind getting a used one,
+you can buy one from online stores for about $35, and if you have an eBay
+account you can get one for even cheaper.  Three years is not a substantially
+long time, but before too long the printer may be even more scarce.  Act
+quickly.
+
+-3.2 Game Boy Printer Paper-
+
+The printer paper is, obviously, extremely vital for your printer.  However, you
+don't have to worry just yet about the supply of it running out.  I'm not sure,
+but Nintendo may still even be manufacturing it.  At least, you can buy it
+from the official Nintendo online store (http://store.nintendo.com).  They may
+just be selling all the rolls leftover in their warehouse.  Regardless, the
+paper there is $9.95 for a pack of 3 rolls.  Each pack contains a roll of white
+paper, yellow paper, and blue paper.  You can also find them for much cheaper
+at other online sites, especially eBay.
+
+-3.3 Compatible Games-
+
+I've done some research and all of the Game Boy Printer-compatible games can
+be bought online.  EBGames.com and Amazon.com are your best online retailers
+for them.  Other than that, you can search Froogle to find other places to buy
+them.  And of course, eBay is always a great source for them.
+
+-----------------------------------
+4) Getting your printer set up
+-----------------------------------
+
+To use the Game Boy Printer, you need the following items:
+
+*Compatible Game Boy (see section 2 above)
+*Game Boy Printer
+*Compatible Link Cable
+*Game Boy Printer Paper
+
+Before you start linking everything up, make sure your printer is set up.
+First, you need 6 AA batteries in the bottom of the printer.  To load the paper,
+first press the tab on the top of the printer and remove the paper cover.  Next,
+take your roll of paper and unroll a few inches of it.  Instert the pointed end
+into the paper slot until it comes out the other end of the paper try.  Pull it
+out an inch or so, and then cut off the end (using the sharp edges on the paper
+tray).  You are now ready to use your Game Boy Printer!
+
+NOTE on the link cable: If you are using a Game Boy Color or Game Boy Advance,
+you may have some problems using a third-party cable to connect to the Printer.
+In fact, I have a Nyko and an Intec link cable and neither of them work (I get
+a printer error #2 when trying to print out something from my GB Color or
+Advance with these cables -- however, I have no problems connecting my original
+Game Boy with it).  I have no other 3rd-party cables, so I can't say for sure,
+but you may need an official Nintendo Universal Link Cable.  I use the one I got
+with my Printer and there is no problem.  Just a heads up if you're planning to
+be a GB Printer enthusiast and don't have access to an official Nintendo link
+cable.
+
+-----------------------------------
+5) Software Compatibility
+-----------------------------------
+
+So now, you need some games to use with the Game Boy Printer.  Listed below is,
+without a doubt, the most comprehensive list of Game Boy Printer-compatible
+games on the internet.  In fact, I am pretty sure it is a complete and
+comprehensive list.  If you know of any other compatible games, please e-mail me
+at markraby@gmail.com.  It is also the only place you will find such detailed
+information on exactly what you can print out from the individual games.
+
+The list is ordered alphabetically and by hardware compatibility.  That is, the
+first 10 games are compatible with all Game Boy models, and for the rest, you
+must have at least a Game Boy Color.  The "Game Boy Printer Support" information
+is based on a relative scale among all Game Boy Printer-compatible games, not
+necessarily on how crucial the printer is for each individual game.  Here's a
+breakdown on the Printer Support levels:
+
+*Minimal - Adds no real value to the game (i.e. Printing out high scores or
+passwords)
+*Slight - Adds a novelty factor to the game.  The printer support has virtually
+no ties to the game itself and is just thrown in as an extra feature.
+*Medium - The printer option is tied into the actual game or storyline somehow,
+but is not really a big part of the game.
+*Large - Much of the game is involved in some way with the printer.
+*Extensive - If you own a printer, you must own this game.  The game was created
+with the printer in mind.
+
+Also listed in some of the games' information are "GB Printer Walkthroughs",
+which detail extensively what you can print out and how to do so.  These act
+as their own little "mini FAQs/Walkthroughs" that have their own version
+numbers.  Be sure to keep coming back to see more GB Printer walkthroughs
+posted and updates on those that aren't 100% finished.
+
+-5.1 1942-
+
+Released: 2000
+Developer: Digital Eclipse
+Publisher: Capcom
+Genre: Action
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Minimal
+
+Brief Description:
+This game does not have a save feature, so at the end of each round, you will
+receive a password so you can start from there the next time you play the game.
+You are able to print out the password with the Game Boy Printer if you are too
+lazy to write it down yourself.
+
+-5.2 Game Boy Camera-
+
+Released: 1998
+Developer: Nintendo
+Publisher: Nintendo
+Genre: Accessory/Peripheral
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Extensive
+
+Brief Description:
+This is why the printer was created.  With the Game Boy Camera, you can take
+your own pictures.  It is basically a digital camera for your Game Boy.  There
+are also a few mini-games to play.  The printer lets you print out the pictures
+you've taken, captions about the pictures, and also your music information in
+the DJ mini-game.  You're also allowed to choose from quite an extensive set of
+borders for your pictures.
+
+GB Printer Walkthrough (Version 1.0):
+There are a few different ways to print out your pictures.  I'll outline them
+here:
+
+Option 1 (Single Pictures, Album A)
+- On the main menu, select the "shoot" option.  Once in the "shoot"
+menu, choose "check".  Now you can go through all the pictures you've taken.
+Once you're on the picture you want to print, press the Select button.  Push the
+up button to go to the "print" option.  Then press the A button.  Press the A
+button again on the confirmation screen.
+
+However, you can spice your picture up a bit if you want.  Instead of pushing
+the up button in the picture menu screen, press the right button.  From here,
+you can add a caption to your picture or set a frame for it.
+
+Once you have your frame and/or caption set, then go to the print option from
+the picture menu screen.  Before you press the A button on the confirmation
+screen, press the Start button if you want to include your caption.  If you
+press the select button on the confirmation screen, you get even more options.
+You can adjust the exposure (darkness) of the picture or you can set a frame for
+it directly from here.  This also allows you to print "wild" frames around your
+picture.  These frames are bigger and most of them are associated with Nintendo
+themes.
+
+Option 2 (Single Pictures, Album A)
+- On the main menu, select the "view" option and then choose "album".
+Choose a picture that you want to print and press the A button.  Then press the
+Select button to enter the picture menu screen.  The rest of the instructions
+are the same as Option 1 above.
+
+NOTE: You cannot print out the pictures in photo album B (the pre-arranged and
+unlockable pictures) with this method.
+
+Option 3 (Single or Multiple Pictures, Album A or B)
+- On the main menu, push the Select button.  A new set of options will
+appear.  Go up to the "link" option.  Once there, select the "print" option.
+In this screen, you have two options.  By going directly to the "print" option,
+you can print pictures in the same manner as Option 2 above.  However, a new
+addition here is that you can print out pictures in Album B.
+
+In the printer menu, if you choose "option", you have the ability to print
+multiple pictures at once.  First, set the feed margin using the left and
+right buttons.  This will be how much space you have between pictures.  Then
+push the down button, and you will be able to select as many pictures as you
+want from album A.  The only thing here is that you cannot print out your
+captions or set frames.  You can have frames in your pictures, but you have to
+set them using either Option 1 or Option 2 above.
+
+Option 4 (DJ Music Data)
+- This is not to print out pictures, but actually to print out the
+music you've created in the DJ mini-game.  To get to the DJ mini-game, select
+"play" at the main menu screen and shoot the "D" icon that comes down at the
+beginning of the game.  When you're in the DJ mode, press Select to create your
+own music.  Push the Select button while in the music screen to change between
+"sound 1", "sound 2", and "noise".  While in "sound 1", press and hold the A
+button with the Start button to print out your music.
+
+-5.3 Legend of Zelda: Link's Awakening DX-
+
+Released: 1998
+Developer: Nintendo
+Publisher: Nintendo
+Genre: RPG
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Medium
+
+Brief Description:
+Throughout the game, you will run into a photographer who likes to take
+pictures.  You can then print these pictures out on the Game Boy Printer.  There
+is a total of 13 different pictures you can get.
+
+-5.4 Mary Kate & Ashley: Pocket Planner-
+
+Released: 2000
+Developer: Unsure
+Publisher: Acclaim
+Genre: Personal Organization
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Medium
+
+Brief Description:
+This is a PDA-type game geared towards girls.  You get a diary, calendar, phone
+book, and some mini-games.  With the Game Boy Printer, you can print out some of
+the PDA stuff (i.e. Upcoming appointments you have programmed), as well as
+pictures of Mary Kate and Ashley.
+
+-5.5 NFL Blitz '99-
+
+Released: 1999
+Developer: Midway
+Publisher: Miday
+Genre: Sports
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Medium
+
+Brief Description:
+You can print out your team's statistics with the Game Boy Printer.  I don't
+know much more about this game.
+
+-5.6 Pokemon Gold/Silver-
+
+Released: 2000
+Developer: Nintendo
+Publisher: Nintendo
+Genre: RPG
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Medium
+
+Brief Description:
+As most people know, Pokemon games are all about catching as many Pokemon as
+possible.  With the Game Boy Printer, you can print out pictures from your
+Pokedex of individual Pokemon data.  There is also a Photo Studio in
+the game which allows you to take pictures of your Pokemon and print them out.
+
+GB Printer Walkthrough (Version 1.0):
+
+There are two different things you can do with the Printer in Pokemon Gold/
+Silver.
+
+Option 1 (Pokedex Data)
+- At any point in the game, you can print out Pokedex data of a 
+specific Pokemon.  Just press the Start button and choose "Pokedex".  Once
+there, select the Pokemon you want.  You can then go through a list of options,
+such as "data", "cry", "area", and "print".  Simply select the "print" option.
+
+The GB Printer will then print out the Pokedex description of the Pokemon (name,
+type, height, weight, Pokemon number, and a description about the Pokemon).
+Note, however, that you need to have at least seen a Pokemon in battle to be
+able to print out its data, and for the full Pokedex entry, you must have
+caught the Pokemon.
+
+Option 2 (Specific Pokemon Data)
+- Near the top-right section of Cianwood City, there is a house with
+a sign out front that says "Photo Studio".  Enter there and talk to the man
+inside.  He will let you print out some more info on certain Pokemon.  Note that
+you must have your Pokemon in your team to print out their info here.  What
+prints out is the individual data for your specific Pokemon.  This includes
+their moveset, nickname, and individual stats for attack, defense, etc.
+
+-5.7 Pokemon Pinball-
+
+Released: 1999
+Developer: Nintendo
+Publisher: Nintendo
+Genre: Pinball
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Minimal
+
+Brief Description:
+Pokemon Pinball is more or less your standard pinball game.  The game keeps
+track of your high scores.  With the Game Boy Printer, all you can do is print
+off your high score list.
+
+-5.8 Pokemon Trading Card Game-
+
+Released: 2000
+Developer: Nintendo
+Publisher: Nintendo
+Genre: RPG
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Medium
+
+Brief Description:
+This game is, quite obviously, based on the popular Pokemon trading card game.
+In it, you collect cards to build the best possible deck.  You can print out
+your decks, card lists, or just individual card info.  Personally, I find this
+option pretty cool.  You could print out the deck list that you used to beat
+the final boss, and keep the printed info as a reference for a deck in the
+real-life trading card game.
+
+-5.9 Pokemon Yellow-
+
+Released: 1999
+Developer: Nintendo
+Publisher: Nintendo
+Genre: RPG
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Medium
+
+Brief Description:
+Much like Pokemon Gold/Silver (5.7 above), you can print off Pokedex data about
+individual Pokemon, as well as a list of Pokemon stored in your Pokemon boxes.
+There is no GB Printer House in Pokemon Yellow, but if you obtain surfing
+Pikachu, you can print out your high scores in the surfing Pikachu mini-game.
+
+GB Printer Walkthrough (Version 1.2):
+
+There are three different kinds of things you can print in Pokemon Yellow:
+
+Option 1 (Pokedex Data)
+- At any point in the game, you can print out Pokedex data of a 
+specific Pokemon.  Just press the Start button and choose "Pokedex".  Once
+there, select the Pokemon you want.  You can then go through a list of options,
+such as "data", "cry", "area", and "print".  Simply select the "print" option.
+
+The GB Printer will then print out the Pokedex description of the Pokemon (name,
+type, height, weight, Pokemon number, and a description about the Pokemon).
+Note, however, that you need to have at least seen a Pokemon in battle to be
+able to print out its data, and for the full Pokedex entry, you must have
+caught the Pokemon.
+
+Option 2 (PC Box Data)
+- When you are in a Pokemon Center, you can print out the data of your
+Pokemon boxes.  Go to the PC, and select Bill's PC (or "Someone's PC" if you
+haven't met Bill yet).  Make sure the currently selected box is the one you
+want to print out (change this by choosing the "change box" option).  Then
+simply choose the "print box" option.  The GB Printer will then print out a list
+that starts "Pokemon List; Box 1".  It will then list, in order, all the
+Pokemon you have in your current box.  It also includes the Pokemon nicknames.
+If you have not filled up your box, all unfilled spots will still print out,
+but with "------" listed as the Pokemon name.
+
+Option 3 (Pikachu's Beach High Score List)
+- If you have a surfing Pikachu, you can play a special mini-game.
+With the GB Printer, you can also print out your high score data from this
+mini-game.  Go to Fuschia City and head to the house by the sea.  There should
+be two trainers near it and a sign that says "Sea Route 19: Fuscia City -
+Seafoam Islands".  Once in the house, you can play the surfing Pikachu
+mini-game.  If you want to print out your high score data, go to the GB Printer
+icon at the top-right corner of the room and push the A button.
+
+If you're not sure how to get a surfing Pikachu, here's how.  You must have an
+N64, the game Pokemon Stadium, and a Transfer Pak.  What you need to do is
+use your Pokemon Yellow team to defeat the Prime Cup (in Stadium mode).  This
+means you must defeat every trainer from every tier, up through the Master Ball
+level.  You must also have your Pikachu on your team for the entire thing.
+This is quite a challenge because the Pokemon you're battling are all level 100.
+After you win, you will get a message about Pikachu learning Surf.  Then you're
+ready to play the surfing Pikachu mini-game!
+
+-5.10 Quest for Camelot-
+
+Released: 1998
+Developer: Titus Software
+Publisher: Titus Software
+Genre: Adventure
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Medium
+
+Brief Description:
+Quest for Camelot is a story-driven adventure game.  As such, there are many
+cutscenes during the game.  You can print out pictures of these cutscenes by
+pushing the select button during them.
+
+-5.11 Roadsters-
+
+Released: 2000
+Developer: Titus Software
+Publisher: Titus Software
+Genre: Racing
+Lowest Game Boy Model Needed: original Game Boy
+Game Boy Printer Support: Minimal
+
+Brief Description:
+Roadsters is kind of like a retouched Pole Position.  You just steer left and
+right and the scenery changes with you.  Unfortunately, like 1942 (5.1 above),
+all you can do is print out passwords that you earn during the game.  This is
+actually more advantageous than 1942, though, because the passwords are really
+long (the passwords in 1942 are only 4 characters).
+
+GB Printer Walkthrough (Version 1.0):
+
+There's not a whole lot to talk about here.  After you complete a race, you will
+come upon a password screen.  Written on the screen is "press select to print".
+Simply hook up your GB Printer and press the Select button, and your password
+will print out.  You get no confirmation screen (you will be notified if there's
+an error), so just wait for it to print out.  Don't hit Select multiple times.
+
+NOTE: Do not try to print out the password if you are playing via the Super
+Game Boy (connected to the SNES) or your game will crash.
+
+-5.12 Alice in Wonderland-
+
+Released: 2000
+Developer: Nintendo
+Publisher: Digital Eclipse
+Genre: Action
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Slight
+
+Brief Description:
+Alice in Wonderland is an action game, but the printer actually has nothing to
+do with the game or its storyline.  There is a mode called "Alice's Art Gallery"
+which allows you to piece together pictures of the different Alice in Wonderland
+characters.  With the GB Printer, you can print out your creations.
+
+GB Printer Walkthrough (Version 1.0):
+
+The GB Printer option in this game has nothing to do with the game itself, so
+everything is already "unlocked" and ready for you to play with the moment you
+turn the game on.  From the menu screen, choose "Alice's Art Gallery".  You
+will then immediately start work on your masterpiece.
+
+First, choose a background.  There are three to choose from: an ocean backdrop
+(from the Dodo bird scene in the movie), a forest scene (including the hole to
+the cave that leads to Wonderland in the movie), and a white screen with a
+little design on the sides of it.  You will then be at the "select group"
+screen.  This is where you add different pictures to your artwork.
+
+You can choose from "cast", "creatures", and "props".  In "cast", there's the
+Queen's servant (two pics), the carpenter/gardener, the Hare, the Mad Hatter
+(3 pics), the Queen, the white rabbit, the Cheshire cat (4 pics), and of course
+Alice (10 pics).  In "creatures", there's the flamingo/croquet mallet, the
+penguin, the groundhog/croquet ball, and something else (I have no idea what it
+is!).  Finally, in props, you have some miscellaneous stuff (crown, heart,
+flower, pocket watch, etc).
+
+Once you select the object you want, you can place it on your backdrop.  To
+flip a picture horizontally, press the Select button.  To place it down, press
+the A button.  To add another object, press the B button.  To print it, press
+Start.  Once you do that, you will enter the "print picture" screen.  From here,
+you can confirm to print, go back to the picture, or exit the art gallery (I
+have no idea why they put that in the print option).  Simply choose "print" and
+the picture will print out.  
+
+-5.13 Austin Powers: Oh, Behave!-
+
+Released: 2000
+Developer: Tarantula Studios
+Publisher: Take2
+Genre: Miscellaneous
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Medium
+
+Brief Description:
+Oh, Behave! is best described as a simulation of a Windows computer.  You get
+wallpapers, sound clips, and mini-games to play around with.  There's also a
+Notepad-type application.  It'll even feel more like a computer in that you can
+hook it up to the Game Boy Printer.  However, the only thing you can print out
+are your Notepad files that you create.
+
+GB Printer Walkthrough (Version 1.0):
+
+Option 1 (Notes)
+- After the annoying boot-up screen (you can press Start, quit to skip it), you
+will arrive at the desktop screen.  To access the Notepad application (called
+"Austin's Pad"), move the cursor to the red icon near the bottom of the screen
+and press B twice.  This will take you to the program selection screen.  Move
+the cursor to the typewriter icon and again, press B twice.  You are now in
+the Austin's Pad application.  To type a new note, move your cursor to the
+top-middle icon (the word "New" should appear above) and press B.  You can then
+enter your note (press the B button to enter a character and the A button to
+toggle between caps/lowercase letters).  Once you're finished, choose the green
+folder icon at the bottom of the screen,
+
+To print out your note, you need to save it first.  Go to the middle icon on
+the screen to do this.  You will then be able to enter the filename for that
+note (remember, B is the main button for this, not A).  Once you have a saved
+file, go up to the top-right icon on the screen and press B.  You will then
+enter the print screen.  First, move your cursor to the top box on the screen,
+press B, and choose which file you want to print.  Then go down to the bottom
+of the screen and select "ok".
+
+Option 2 (E-Mail)
+- If you are lucky enough to match up with another one of the 20 people who
+actually bought this game, you can send and receive e-mail from them.  Using the
+Infa-Red connection, one person chooses the "send" icon at the bottom-right of
+the screen, and another chooses the "receive" icon (bottom-middle icon).  You
+just send notes that you've created in Austin's Pad.  So if you want to print
+out a note you've received from someone else, just choose the "e-mail" icon in
+the print screen and then follow the rest of the directions as outlined in
+Option 1 above.  
+
+-5.14 Austin Powers: Welcome to my Underground Lair-
+
+Released: 2000
+Developer: Tarantula Studios
+Publisher: Take2
+Genre: Miscellaneous
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Medium
+
+Brief Description:
+Welcome to my Underground Lair, for all intents & purposes related to the Game
+Boy Printer, is the exact same as Austin Powers: Oh, Behave (5.13 above).
+
+GB Printer Walkthrough (Version 1.0):
+
+See 5.13 above -- the method to printing is exactly the same
+
+-5.15 Dinosaur-
+
+Released: 2000
+Developer: Digital Eclipse
+Publisher: Ubisoft
+Genre: Action
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Slight
+
+Brief Description:
+Dinosaur's based on the Disney movie of the same name.  In the game, you get a
+team of 6 dinosaurs on your team.  During the game, you can print pictures of
+the dinosaurs in your herd.
+
+-5.16 Disney's Tarzan-
+
+Released: 1999
+Developer: Digital Eclipse
+Publisher: Activision
+Genre: Action
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Slight
+
+Brief Description:
+Much like Alice in Wonderland (5.12 above), the printer support in Tarzan has
+absolutely no connection to the game or its storyline.  There is a "paint &
+print" mode in the game that allows you to make your own pictures using
+Tarzan-themed backgrounds, clip art, and characters.  You can then, of course,
+print your pictures out with the GB Printer.
+
+-5.17 Donkey Kong Country-
+
+Released: 2000
+Developer: Rare Ltd.
+Publisher: Nintendo
+Genre: Action
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Medium
+
+Brief Description:
+Throughout the game, you will find DK sticker packs scattered in the rounds.
+Most of them are found near the green bananas.  Stomp on the sticker packs and
+you will be able to print out special Donkey Kong themed stickers.  It's one of
+the few action games that actually incorporated the printer into the game
+itself.
+
+GB Printer Walkthrough (Version 1.1):
+
+There are a few different things you can print out with the GB Printer:
+
+Option 1 (Letters/Numbers)
+- From the main menu, go to the "Print" option.  Once there, choose the 
+"alphabet" icon.  You can now scroll, using the left and right arrow keys, to
+choose a letter or number you want to print out.  They are in Donkey Kong font
+and have a character or item on them.  There are also special letters, those
+being simply letters with accents on them.  Once you've chosen the letter/
+number you want to print out, press A.  You'll see three circles pop up on the
+top right of the screen.  These determine the darkness/quality of the picture.
+The sun is for a quick, light version of the picture.  The moon is for a
+higher quality, darker picture.  The sun&moon is somewhere in the middle.  After
+you choose your darkness setting, choose the checkmark that comes up.  It will
+then start printing.
+
+Option 2 (Sticker Book)
+- While playing the adventure mode of the game, you may notice green banana
+bunches in some of the levels (one per each area of the map).  These indicate
+that there is a sticker pad somewhere nearby.  Use DK's ground slap (or jump
+from a high area) around that vicinity and you will see a yellow book-type
+object appear.  Touch it and you will unlock one of the stickers in the
+sticker book.  To access the sticker book, go to the "Print" option from the
+main menu.  Once there, choose the "sticker book" icon.  (Don't worry about
+having to save your game -- once you get the sticker pack in the level, it is
+automatically saved to your sticker book, even if you fail to finish the
+level).  Note that, for 2/3 of the sticker packs, you'll need to beat the
+game first and then go through it again with the DK barrels off and then with
+the star barrels off (or go through it once with both off).
+
+The sticker book has five pages of stickers.  There is a total of 10 pictures
+in the book, but there are 18 sticker packs to collect.  This is because some
+pictures are split up into 2 or 4 sections.  While you can view individual
+pieces of these pictures that you get, you cannot print them out until you
+have the entire picture.  The pictures are as follows: DK and Diddy swinging
+on vines; DK and Diddy on a mine cart with the Nintendo and Rare logos in the
+background (2 sticker packs); DK and Diddy hiking through a cave; DK and Diddy
+in the jungle along with some animals (4 sticker packs); DK's head; Diddy on
+top of a Nintendo sign; DK and Diddy standing next to a DK sign; DK and Diddy
+cheering alongside their frog friend; DK climbing a ladder in a mine with a
+miner hat on (Diddy's in the background) (2 sticker packs); Christmas-themed
+picture with DK and Diddy in a sled and presents under a Christmas tree with
+the Rare logo glowing on top as the star (4 sticker packs).
+
+To print out a picture, follow the same procedure outlined in Option 1 above.
+
+Option 3 (Banner)
+- To get this option, you must first beat the game and then beat all the mini-
+games in "Crosswire Crankies" from the bonus option.  Once you do this, you
+will get a message stating that you have unlocked a new print feature.  Now,
+go to "print" on the main menu.  You will notice that you can now select the
+"banner" option.  Once there, you can enter a message of up to 36 characters.
+
+Your letter/number choices are the same as the "alphabet" mode, but you don't
+get the DK characters or items appearing with your letters here.  This is
+much more efficient, though, for long messages you want to print out.  Once
+you have your message, press the Select button and choose the banner icon.
+Then follow the outlines from Option 1 above to choose the darkness and then
+print it out.
+
+-5.18 E.T. Digital Companion-
+
+Released: 2001
+Developer: NewKidCo
+Publisher: NewKidCo
+Genre: Personal Organization
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Large
+
+NOTE: You may notice that the boxart for this game does not have the "only for
+Game Boy Color" logo on it, but it should.  It is not compatible with the
+original Game Boy.
+
+Brief Description:
+E.T. Digital Companion is quite possibly the second biggest use for the GB
+Printer (right behind the Game Boy Camera).  You can print out just about
+everything that you do in the game.
+
+This game is mostly just like a PDA for your Game Boy.  You can store contact
+information, use it as a planner, and more.  There's also a virtual pet type of
+game in addition to some cool mini-games.  The Game Boy Printer focuses on
+the PDA side of the game.  You can print out your contact info, to-do lists,
+etc, as well as actual pictures from the ET movie (they're not that great,
+but they're possibly the most "ambitious" pictures for any GB Printer game)
+
+GB Printer Walkthrough (Version 1.0):
+
+There's so much that you're able to print out that it was tough for me to split
+it into different section (especially since most of the stuff is pretty
+straightforward).  One interesting note about most of the printable stuff is
+that a random ET-themed background will appear on the page, which also prints
+out.  If you don't like the background, simply exit the page you're in and
+go back in.  It is kind of a neat addition if you are an ET fan.
+
+Option 1 (Data: Personal Info, Address Book, Messages, & Game Settings)
+- When you start the game, you will be asked to enter all kinds of info about
+yourself.  The second time you turn on the game, however, you will go to a
+"start menu".  This is just to show you how many messages you have, how many
+things are still on your to-do list, and how many "events" are in the current
+month.  Most of this stuff can be printed out from the main menu, however, which
+you access by pushing the B button.  Once here, go to the "Friends" option.
+
+In this menu, you will see "messages", "address book", and "about you".  If you
+go to "about you", you will see all the data you entered about yourself when you
+started the game.  If you want to print this out, go to the print icon at the
+bottom of the screen and press A.  In the "address book" menu, you can print out
+an entire list of your contacts (names only) by choosing the print icon at the 
+bottom of the screen.  Or you can print out detailed contact info about specific
+people by first choosing the person's data you want to print out and then
+pressing A on the print icon at the bottom of their info screen.  The same goes
+for messages (you can either print out a complete list of subject lines from
+all your messages or print out the details of a specific message).  The messages
+feature is pretty much useless.  Judging by a picture in the instruction book,
+it would seem that you were originally supposed to be able to send messages to
+other people, but it was not included in the game.
+
+Another thing you can print out is your game's settings, including how much
+memory you're currently using and your pin number.  To print out this stuff,
+just go to "options" from the main menu and go to the print icon at the bottom
+of the screen.
+
+Option 2 (Data: Schedule, To-Do Lists, & Events)
+- This section covers how to print out other various data that you enter into
+the game.  First off, you can enter your school schedule into the game and print
+out the data.  To do this, go to "calendar" from the main menu and then choose
+"school schedule".  You will enter a screen that has "M T W T F" across the top
+and the numbers 1 - 10 across the side.  The numbers correspond to which period
+you have a specific class.  To enter data, just move the cursor to the
+corresponding space on the grid and enter which class you have that period.  You
+can then print out that specific data (i.e. "Tuesday; Period 1 - Math").  There
+is, unfortunately, no way to print out your entire schedule in one print option.
+
+The other option when you enter "calendar" mode is "month view".  Select this
+to enter the actual calendar mode.  As far as the Printer is concerned, all you
+can do here is more or less create to-do lists.  Simply choose a date and then
+choose the "new" icon at the bottom of the screen to enter data for that
+specific date.  From here, you can either print out a list of everything you
+have entered for that specific date, or more detailed info on a specific event
+you have for that date.
+
+One more relatively minor thing you can print out concerning dates is a list of
+all the preset events the game has stores for the current month (i.e. Christmas,
+April Fool's, etc).  To print this out, you must go to the "start menu" which
+appears when you turn on the game (or you can press B while in the main menu).
+Simply move the cursor to the bottom choice ("events"), select it, and then
+choose the print icon at the bottom of the screen.
+
+Option 3 (E.T. Pictures)
+- A cool, overlooked GB Printer feature is the ability to print out pictures
+from the ET movie.  These are just the background pictures that appear in the
+"PDA mode" of the game, but they are more clear and you can see them much
+better.  To unlock the pictures, you must play the mini-games.  To access them,
+go to "cool stuff" from the main menu and then select "games".  You have five
+games to choose from ("Bicycle Race", "Trivia Quiz", "Tile Puzzle", "Pair Up",
+and "Word Scramble").  When you play any of these games, you earn points.  After
+you earn a certain amount of points, you will unlock a new picture.  The
+pictures can be seen by going to "slide show" in the cool stuff menu.  I find
+that Word Scramble racks up the points the fastest.  To print out a picture, of
+course, choose the print icon at the bottom of the screen of the picture you
+want to print out.  I'm not sure how many pictures there are in total, but there
+are at least 7 (I have 6 right now and it still says I can unlock more).
+
+-5.19 Fisher-Price Rescue Heroes: Fire Frenzy-
+
+Released: 2000
+Developer: Vicarious Visions
+Publisher: Mattel Interactive
+Genre: Action
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Medium
+
+Brief Description:
+While putting out fires, you will earn awards, certificates, and increased
+ranks.  You can print out these awards on your Game Boy Printer.
+
+-5.20 Klax-
+
+Released: 1999
+Developer: Digital Eclipse
+Publisher: Midway
+Genre: Puzzle
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Slight
+
+In one of the unlockable mini-games, "Designer Dress-Up", you can mix and
+match the different parts of the game's developers' bodies.  You can then
+print out your creations on the GB Printer.
+
+-5.21 Little Mermaid 2 Pinball-
+
+Released: 2000
+Developer: Disney Interactive
+Publisher: Nintendo
+Genre: Pinball
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Slight
+
+This game bears a slight resemblance to Pokemon Pinball (5.8 above).  However,
+it has a little bit more printer support.  You can print out your high score
+list.  In addition, though, there are a few different Little Mermaid-themed
+pictures that you receive that you can also print out.
+
+-5.22 Little Nicky-
+
+Released: 2000
+Developer: Digital Eclipse
+Publisher: Ubisoft
+Genre: Action
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Slight
+
+There's a mode in the game that lets you create your own "Satan head".  The GB
+Printer allows you to print out your creations.
+
+-5.23 Magical Drop-
+
+Released: 2000
+Developer: Conspiracy Entertainment
+Publisher: Classified Games
+Genre: Puzzle
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Minimal
+
+Magical Drop is a quirky little puzzle game that smells of Tetris or Bust-a-
+Move.  It keeps track of your high scores, and with the Game Boy Printer, you
+can print off your high score list.
+
+-5.24 Mickey's Speedway USA-
+
+Released: 2001
+Developer: Rate Ltd.
+Publisher: Nintendo
+Genre: Racing
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Medium
+
+Brief Description:
+As you progress through the courses, you earn post cards of the race track areas
+you visit (i.e. Los Angeles, Grand Canyon).  You also earn a couple awards and
+pictures of the various Disney characters.  You can then print these out on the
+printer.  As an extra side note, Mickey's Speedway USA is also Transfer Pak
+compatible (to swap data back and forth from the N64 version of the game).  This
+makes it the most "connectible" game, that was not developed by Nintendo, for
+any Game Boy system.
+
+Game Boy Printer Walkthrough (Version 1.1):
+
+As you progress through the game, you will unlock new "postcards".  These show
+which areas/tracks you've been to.  The last two pages of the journal are for
+pictures of the Disney gang as well as a couple awards you obtain.  To access
+these postcards, go to the "extras" menu from the main screen.  Once there,
+choose "tour journal".  You will be taken to a book that has different pages and
+4 thumbnails of postcards per page.  Here's a list of the different locations
+you come across: Los Angeles, Grand Canyon, Yosemite, San Francisco, Seattle,
+Montana, Yellowstone, Utah, Milwaukee, Colorado, Nebraska, Texas, Gulf Coast,
+Louisiana, Indianapolis, Boston, Smoky Mountains, Florida Everglades, Daytona
+Beach, and Washington, DC.  You also can get these pictures/awards: Mickey
+calling on the phone (from the opening cutscene), Donald talking on the phone
+(from the opening cutscene), the whole Disney gang together, certificate of
+completion for passing the driving test, [4 left that I haven't unlocked yet]
+
+Choose the thumbnail of the postcard/picture you want and it will show it
+full screen (well, sort of -- a "Print?  Yes/No" screen will show up that will
+block some of the view of it).  So to be able to admire the entire thing, just
+choose the "yes" option and it will print out.
+
+-5.25 Perfect Dark-
+
+Released: 2000
+Developer: Rare Ltd.
+Publisher: Nintendo
+Genre: Action
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Medium
+
+Brief Description:
+As you play through Perfect Dark, you will meet a whole slew of characters. The
+Game Boy Printer lets you print out pictures and profile data of these
+characters. However, you must meet the characters before you can print out their
+profile data.
+
+-5.26 Pokemon Crystal-
+
+Released: 2001
+Developer: Nintendo
+Publisher: Nintendo
+Genre: RPG
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Medium
+
+Brief Description:
+The GB Printer compatibility includes all the stuff available in Pokemon
+Gold/Silver (5.7 above).  However, I've listed the game separately because you
+need a Game Boy Color to play the Crystal version.  Also, there is one more
+addition.  If you collect all 26 Unown species, you will be able to print out
+messages in the Unown font.  Another interesting fact about this game is that,
+as far as I know, it was the last game produced to include GB Printer
+compatibility.
+
+GB Printer Walkthrough (Version 1.0):
+
+I don't own Pokemon Crystal, but I know that at least two of the GB Printer
+options are the same as Gold/Crystal, so for convenience, here's that section
+from my Pokemon Gold/Silver GB Printer Walkthrough:
+
+Option 1 (Pokedex Data)
+- At any point in the game, you can print out Pokedex data of a 
+specific Pokemon.  Just press the Start button and choose "Pokedex".  Once
+there, select the Pokemon you want.  You can then go through a list of options,
+such as "data", "cry", "area", and "print".  Simply select the "print" option.
+
+The GB Printer will then print out the Pokedex description of the Pokemon (name,
+type, height, weight, Pokemon number, and a description about the Pokemon).
+Note, however, that you need to have at least seen a Pokemon in battle to be
+able to print out its data, and for the full Pokedex entry, you must have
+caught the Pokemon.
+
+Option 2 (Specific Pokemon Data)
+- Near the top-right section of Cianwood City, there is a house with
+a sign out front that says "Photo Studio".  Enter there and talk to the man
+inside.  He will let you print out some more info on certain Pokemon.  Note that
+you must have your Pokemon in your team to print out their info here.  What
+prints out is the individual data for your specific Pokemon.  This includes
+their moveset, nickname, and individual stats for attack, defense, etc.
+
+-5.27 Super Mario Bros Deluxe-
+
+Released: 1999
+Developer: Nintendo
+Publisher: Nintendo
+Genre: Action
+Lowest Game Boy Model Needed: Game Boy Color
+Game Boy Printer Support: Major
+
+Brief Description:
+This is another excellent example of how the Printer can truly enhance the
+game's value.  Throughout the game, you will earn special pictures, awards, and
+other special artwork that you can print out on the GB Printer.  You can also
+make your own customizable banners, among other things.
+
+GB Printer Walkthrough (Version 1.0):
+
+Option 1 (Album):
+- The album contains awards and pictures that you earn by completing various
+tasks.  The album is an option at the bottom of the screen in the main menu.
+There are 5 pages in the album.  Page 1 is for the lucrative awards.  Most of
+these are obtained in challenge mode.  Page 2 is for various accomplishments
+you've achieved.  Page 3 is for pictures of enemies that you've defeated.  Page
+4 is a large 4-part picture of Bowset.  Page 5 is a large 4-part picture of
+Mario & Luigi.  I will not go into too much detail about what's available here,
+as it's all listed pretty well in the codes section of GameFAQs for this
+game.
+
+Option 2 (Toy Box, Main Menu):
+- The toy box is another option at the bottom of the main screen.  In here, you
+will notice a calendar and a fortune telling icon.  Depending on how much
+you've previously completed, there may also be a cave entrance type of shape
+with a "?" on it, and Yoshi's head.  The two options immediately available to
+you when you start the game are the calendar and the fortune telling.
+
+The calendar lets you print off a picture of the entire month, or specific info
+on individual dates.  While in the calendar mode, you can set the month using
+the up and down buttons.  Once you have the month/year you want, press A.  From
+here, you can either print out the date list for that month, or you can "mark"
+an individual date.  If you mark an individual date, you will be taken to the
+"date book" screen for that section.  You can choose from 9 icons to mark this
+date with (smiley face, exclamation point, etc).  Once you've chosen your icon,
+press A.  You can enter a note for this date.  Once you're finished, press A 
+and you will go back to that month's screen.  Simply go back to that date and
+then choose the "print" option to print out that date's info and notes.
+
+The fortune teller option is another cool option.  Choose the icon on the toy
+box screen and you will see 5 cards to choose from.  Choose one of them and you
+will receive a fortune.  They will be classified from "Extremely Unlucky" to
+"Extremely Lucky".  Each classification has several individual fortunes.  Once
+you receive your fortune, simply press A and choose "print" to print it out.
+
+Option 3 (Toy Box, Extra Features):
+- Once the "?" space appears in the toy box, you will be open to a whole new
+slew of printer options.  This room will open up after you defeat the first
+castle in the original game.  As you defeat more castles, more Toads will
+appear in the room for additional features.  And when you defeat the final
+castle, Peach will appear.
+
+In this room, you can do all kinds of things.  You can print banners, various
+artwork from the game, logos (i.e. N64 logo, Nintendo logo, etc), and various
+pictures to which you can add captions.  In future versions of this guide, I
+may detail this more specifically, but again, there are FAQs devoted to just
+this kind of stuff for this game.
+
+Option 4 (High Score List):
+- Questionably the least exciting printer feature in the game, if you choose
+"records" from the main menu, you will bring up your high score list.  Press
+A and choose "print" and you will print it out.
+
+-----------------------------------
+6) Fun Statistics
+-----------------------------------
+
+I'm a statistics nut.  So I like to do some kind of statistical analysis of even
+the most basic thing.  Below are some interesting statistics all about the GB
+Printer.
+
+Total number of compatible games: 28
+
+# of compatible games that work with all Game Boy models: 12 (43%)
+# of compatible games that work only with GBC or later: 16 (57%)
+
+Earliest compatible game release date: June 1, 1998 (GB Camera)
+Latest compatible game release date: July 29, 2001 (Pokemon Crystal)
+Exact longevity of the GB Printer: 3 years, 1 month, 28 days
+
+Approximate # of GB/GBC games released between 1998 and 2001: 456
+% of compatible GB/GCB games released during GB Printer lifespan: 6.1%
+
+# of compatible games published and developed by Nintendo: 9 (41%)
+# of compatible games published by Nintendo: 14 (50%)
+# of compatible games with a third-party publisher: 14 (50%)
+
+# of different developers who used GB Printer compatibility: 10
+
+-----------------------------------
+7) Printer Errors
+-----------------------------------
+
+If you happen to run into a problem while trying to print, you will most likely
+come across a specific printer error number.  I got my Game Boy Printer soon
+after it was released in 1998, and I've never gotten an error other than #2.
+But just in case you should encounter any others, here is a reference for what
+the error numbers actually mean:
+
+Printer Error #1: The GB Printer batteries have lost their charge.
+Printer Error #2: The GB Printer is not properly connected to the Game Boy.
+Printer Error #3: Paper Jam (see section 7 below for info on how to fix this)
+Printer Error #4: It is either too hot or too cold for the printer to operate
+
+-----------------------------------
+8) Fixing a paper jam
+-----------------------------------
+
+If you encounter a paper jam and don't happen to have your GB Printer manual
+right at your side, it can be a pain to fix.  So here is a step-by-step
+procedure on how to fix it:
+
+Step 1: Make sure the GB Printer is off
+
+Step 2: Remove the paper cover
+
+Step 3: Cut off the paper near the end of the roll so that only the stuck paper
+is still in the printer.
+
+Step 4: Insert a coin under the top edge of the paper cutter, and lift it gently
+to remove the cutter.
+
+Step 5: Remove the paper (use tweezers if it's really stuck)
+
+-----------------------------------
+9) Coming Soon
+-----------------------------------
+
+-9.1 Next Version-
+
+Preview of version 3.3:
+
+- Version 1.0 of Pokemon Pinball's GB Printer Walkthrough
+
+ETA for version 3.3: 3/10/05
+
+---
+
+Preview of version 3.2:
+
+- Version 1.0 of ET Digital Companion's GB Printer Walkthrough
+
+ETA for version 3.2: on or before 2/28/05
+
+---
+
+I apologize for not getting Pokemon Trading Card Game's GB Printer Walkthrough
+up, but the copy I ordered was defective, so I have to wait to get a return
+envelope, send it back, and get a new copy.  In the meantime, a LOT of GB
+Printer Walkthroughs have been added.
+
+Preview of version 3.1:
+
+- Version 1.0 of Austin Powers: Oh, Behave's GB Printer Walkthrough:
+
+ETA for version 3.1: on or before 2/22/05
+
+---
+
+Preview of version 2.7:
+
+- Version 1.0 of Pokemon Trading Card Game's GB Printer Walkthrough
+
+ETA for version 2.7: 2/15/05 - 2/18/05
+
+---
+
+So there wasn't a version 2.2, but that's only because I found information on a
+few other GB Printer games and wanted to add their info on this FAQ ASAP.
+
+Preview of version 2.6:
+
+- Version 1.0 of Pokemon Gold's GB Printer Walkthrough
+
+ETA for version 2.6: 2/12/05
+
+---
+
+Preview of version 2.2:
+
+- Version 1.0 of Pokemon Gold's GB Printer Walkthrough
+
+ETA for version 2.2: 2/12/05
+
+---
+
+Preview of version 2.1:
+- More info on the printer itself and its components (including a "where to get
+  it" section)
+
+ETA for version 2.1: 2/10/05
+
+-9.2 Future Versions-
+
+This section is just to list which GB/GBC games I currently own or have
+purchased online and am waiting to receive.  These games are guaranteed to get
+their own GB Printer walkthroughs in future updates.  As for when you should
+expect to see these walkthroughs, that information will be posted in 9.1 (above)
+when I have an ETA for them.
+
+(list last updated: 2/27/05)
+
+Pokemon Pinball
+Pokemon Trading Card Game
+
+---
+
+UPCOMING VERSIONS:
+
+I am really starting to get back into my Game Boy Printer, so in the near future
+I will be buying several of these games that I don't already have.  So stay
+tuned for more specific details on what exactly you can do with the GB printer
+in these games.
+
+-----------------------------------
+10) Credits
+-----------------------------------
+
+Thanks so much to CJayC for publishing this FAQ (if he does).  I understand
+his unimaginably busy schedule, so the effort spent in putting up this FAQ is
+greatly appreciated!
+
+A big kudos also goes to Nintendo for making such an innovative peripheral, even
+if it was a little under-appreciated.
