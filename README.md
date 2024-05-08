@@ -58,7 +58,7 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Copy/paste text obtained directly from the Arduino serial into [Entry_file.txt](GameBoyPrinterDecoderMatlab/Entry_file.txt)
 
 **On Arduino IDE 2.X.X:**
-- Copy/paste text obtained from any terminal emulator like [PuTTy](https://datalab.medium.com/arduino-ide-serial-data-export-by-putty-6a77631a23ea) into [Entry_file.txt](GameBoyPrinterDecoderMatlab/Entry_file.txt). Arduino IDE 2.X.X does not allow reliable copy/paste from its serial anymore (it's not clear whether this is a bug or intentional).
+- Copy/paste text obtained from any terminal emulator like [PuTTy](https://datalab.medium.com/arduino-ide-serial-data-export-by-putty-6a77631a23ea) into [Entry_file.txt](GameBoyPrinterDecoderMatlab/Entry_file.txt) (or just target the putty log file to Entry_file.txt). Arduino IDE 2.X.X does not allow reliable copy/paste from its serial anymore (it's not clear whether this is a bug or intentional).
 
 - Open Octave/Matlab code [Main_Decoder.m](GameBoyPrinterDecoderMatlab/Main_Decoder.m)
 - Choose some color palettes and printing options (default are OK).
