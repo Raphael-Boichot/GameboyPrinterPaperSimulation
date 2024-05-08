@@ -16,6 +16,13 @@ scale_percentage=30; %100=full size, smaller values scale down image
 Timeout_printing=0;  %0 to separate images automatically if margin >0
 %1 for continuous printing with TimeOut or Manual dode, ignore margin > 0);
 %------------------------------------------------------------------------
+
+  try
+    pkg load image % for compatibility with Octave in case the code directly targets a Putty log file for example
+  catch
+    % Nothing to do
+  end
+
 [ID]=get_unique_ID(8);
 DateString = date;
 copyfile (file,['Backups/',DateString,'_',ID,'.txt']);
