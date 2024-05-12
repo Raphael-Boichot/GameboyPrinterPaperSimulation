@@ -281,11 +281,14 @@ So, here is the game list:
 - *Tsuri Sensei 2 (釣り先生2)*
 - *VS Lemmings (VS.レミングス)*
 
-There is nevertheless a debatable case: 
+There are nevertheless two debatable cases: 
 
 - *Mario Artist Paint Studio for N64*
+- *Debagame Tester: Second Impact*
 
 *[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. Mario Artist Paint Studio contains a complete printer libray and menus for using printers, both grayscale and color. So this game is intended to use the printer but without any documented physical possibility to do this, an essential piece of hardware (the transfer stuff) beeing lacking.
+
+The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera) contains a complete printer library, a COM menu but I do not find how to activate printing from it from button inputs.
 
 Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Pocket Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
 
