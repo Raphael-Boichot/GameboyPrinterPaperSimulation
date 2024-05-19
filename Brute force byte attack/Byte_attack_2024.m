@@ -1,6 +1,6 @@
-%this code makes e recusrive search with a byte sequence in folders (the search is recursive)
+%this code makes a recursive search with a byte sequence in folders (the search is recursive)
 %it then stores the files with the byte sequence in them in the .\output folder
-%was made initially around 2021, not sure when exactly
+%was made initially around 2021, not sure when exactly, this is an updated version
 clc
 clear
 disp('-----------------------------------------------------------')
