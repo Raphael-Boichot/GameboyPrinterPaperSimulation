@@ -359,7 +359,7 @@ On the 110 games compatible with the Game Boy Printer:
 
 - Author want to thanks Frédéric Mercier for the finding of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
 - [Mraulio](https://github.com/Mraulio) and [cristofercruz](https://github.com/cristofercruz) for debugging and improving the code.
-- Shonumi aka Daniel S. Baxter for the [in-depth documentation](https://shonumi.github.io/articles/art2.html) of the printer protocol.
+- Shonumi aka Daniel S. Baxter for the [in-depth documentation](https://shonumi.github.io/articles/art2.html) of the printer protocol and being the first to [cite this project in his book](https://www.amazon.fr/Peripheral-Vision-Inside-Accessories-Add-ons/dp/B0BYBHQC97) !
 
 
 ## Some known relaxing scene interpreted with the paper simulator to end.
