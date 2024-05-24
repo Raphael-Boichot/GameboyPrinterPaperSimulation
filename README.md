@@ -284,15 +284,15 @@ So, here is the game list:
 There are nevertheless some debatable cases: 
 
 - *Mario Artist: Communication Kit (マリオアーティスト　コミュニケーションキット) for N64*
-- *Mario Artist Paint Studio for N64*
-- *Debagame Tester: Second Impact*
+- *Mario Artist Paint Studio (マリオアーティストシリーズ) for N64*
+- *Debagame Tester: Second Impact (デバガメテスター SECOND IMPACT)*
 
-*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. Mario Artist Paint Studio contains a printer libray and menus for using printers, both grayscale and color. So this game is intended to use the printer but without any documented physical possibility to do this, an essential piece of hardware (the transfer stuff) beeing lacking. Mario Artist: Communication Kit also contains a [dismissed printer menu](https://www.mariowiki.com/Mario_Artist:_Communication_Kit) and a full printer library, uncompressed this time . I have no idea how it would be connected physically to the printer. Both N64 games contains commands for the classic printer with packets of 640 bytes but also for the color one with packets of 320 bytes and the undocumented (print ?) command 0x06.
+*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. Mario Artist Paint Studio contains a printer libray and menus for using printers, both grayscale and color. Mario Artist: Communication Kit also contains a [dismissed printer menu](https://www.mariowiki.com/Mario_Artist:_Communication_Kit) and a full printer library. I have no idea how it would be connected physically to the printer. Both N64 games contains commands for the classic printer with packets of 640 bytes but also for the color one with packets of 320 bytes and the undocumented (print ?) command 0x06.
 
 Example of printer library in Mario Artist: Communication Kit and Mario Artist Paint Studio (they are exactly the same)
 ![](/images/Communication%20Kit.png)
 
-The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera) contains a complete printer library, a COM menu but I do not find how to activate printing from it from button inputs.
+The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera) for Game Boy contains a complete printer library, a COM menu but I do not find how to activate printing from button inputs. I guess the version 10.24 of the rom (the only one know to date) was not compiled with that functionality.
 
 Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Pocket Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
 
