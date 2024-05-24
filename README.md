@@ -281,12 +281,16 @@ So, here is the game list:
 - *Tsuri Sensei 2 (釣り先生2)*
 - *VS Lemmings (VS.レミングス)*
 
-There are nevertheless two debatable cases: 
+There are nevertheless some debatable cases: 
 
+- *Mario Artist: Communication Kit (マリオアーティスト　コミュニケーションキット)*
 - *Mario Artist Paint Studio for N64*
 - *Debagame Tester: Second Impact*
 
-*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. Mario Artist Paint Studio contains a complete printer libray and menus for using printers, both grayscale and color. So this game is intended to use the printer but without any documented physical possibility to do this, an essential piece of hardware (the transfer stuff) beeing lacking.
+*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be compatible with the Game Boy Printer via an unreleased "64GB(?) Cable" ([or just the transfer pak (?)](https://luigiblood.tumblr.com/post/187348407478/reverse-enginnering-the-unreleased-gameboy-printer)) and an unreleased "Game Boy Printer cartridge" possibly used as an overkill buffer/level shifter. Mario Artist Paint Studio seems to contain a printer libray (according to the cited source but I do not see a trace on my side, maybe compressed ?) and menus for using printers, both grayscale and color. So this game is intended to use the printer but without any documented physical possibility to do this, an essential piece of hardware (the transfer stuff) beeing lacking. Mario Artist: Communication Kit also contains a [dismissed printer menu](https://www.mariowiki.com/Mario_Artist:_Communication_Kit) and a full printer library, uncompressed this time (both for the classic printer with packets of 640 bytes but also for the color one with packets of 320 bytes and the undocumented command 0x06). I have no idea how it would be connected physically to the printer.
+
+Example of printer library in Mario Artist: Communication Kit (マリオアーティスト　コミュニケーションキット)
+![](/images/Communication%20Kit.png)
 
 The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera) contains a complete printer library, a COM menu but I do not find how to activate printing from it from button inputs.
 
