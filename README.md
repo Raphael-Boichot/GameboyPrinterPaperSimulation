@@ -295,10 +295,6 @@ There are nevertheless some debatable cases:
 
 The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera), prototype of the Game Boy Camera, contains a complete printer library and a COM menu but I do not find any way to activate a serial port activity from button inputs. I guess the version 10.24 of the rom (the only one known to date) was not compiled with that functionality.
 
-Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Pocket Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
-
-On a more personal side, I found that many Japanese exclusive games in this list are objectively piece of crap, for various reasons sadly not only related to barrier langage, like: cryptic gameplay (Animal Breeder, Tsuri Sensei, McDonald's Monogatari, Chee-Chai Alien, Purikura Pocket), unfair difficulty (Sanrio Timenet series, Dino Breeder), ruthless RNG (Mahjong series, Daa! Daa! Daa! Totsuzen), boring objectives (Nakayoshi Cooking series, Hamster series), uninspired level design (Cross Hunter series, Kaseki Sousei Reborn) or blatant plagiarism of Pokémons (Monster ★ Race series, Sanrio Timenet series). Of course western exclusive games have also their load of shit that gave me headaches and very unpleasant gaming sessions (Tarantula games deserve [recycling in hot nitric acid bath](https://github.com/Raphael-Boichot/Game-Boy-chips-decapping-project)), but at least it's documented shit in the West with no surprise. The GBC library overall deserves a "seal of crapiness" except for very few dozens exceptions, East and West sides.
-
 Even if I still suspect a small handful of cryptic games to be lacking in the list, I have no idea how to find them now.
 
 ## Example of printer outputs from various games made with the printer emulator from real hardware
@@ -306,6 +302,10 @@ Even if I still suspect a small handful of cryptic games to be lacking in the li
 ![](./images/Wall_of_fame1.png)
 
 ![](./images/Wall_of_fame2.png)
+
+Tips for printing with japanese games : search for these characters: プリンタ (Printer) or more rarely ポケットプリンタ (Pocket Printer) in games menu. This sometimes brings you only to the contrast settings for the printer, so persevere. Some games are a real pain to play in japanese as they rely on endless discussions and menus, or need a 100% completion with special events to unlock printing features, but hey, it's for science !
+
+I found that many Japanese exclusive games in this list are just [kusoge]()ttps://en.wikipedia.org/wiki/Kusoge), for various reasons sadly not only related to barrier langage, like: cryptic gameplay (Animal Breeder, Tsuri Sensei, McDonald's Monogatari, Chee-Chai Alien, Purikura Pocket), unfair difficulty (Sanrio Timenet series, Dino Breeder), ruthless RNG (Mahjong series, Daa! Daa! Daa! Totsuzen), boring objectives (Nakayoshi Cooking series, Hamster series), uninspired level design (Cross Hunter series, Kaseki Sousei Reborn) or blatant plagiarism of Pokémons (Monster ★ Race series, Sanrio Timenet series). Of course western exclusive games have also their load of shit that gave me headaches and very unpleasant gaming sessions (Tarantula games deserve [recycling in hot nitric acid bath](https://github.com/Raphael-Boichot/Game-Boy-chips-decapping-project)), but at least it's documented shit in the West with no good surprise.
 
 ## List of games that embed a printer library but without printer support for the player
 
