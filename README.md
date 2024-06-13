@@ -299,9 +299,7 @@ The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera), pr
 
 ![](/images/Debagame_library.png)
 
-This is probably the most early version of the Game Boy printer library. Yet, all commands are here 
-
-Even if I still suspect a small handful of cryptic games to be lacking in the list, I have no idea how to find them now.
+This is probably the earliest version of the Game Boy printer library engraved in silicon. Yet, all commands are there.
 
 ## Example of printer outputs from various games made with the printer emulator from real hardware
 
