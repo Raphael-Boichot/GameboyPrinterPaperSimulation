@@ -293,11 +293,13 @@ There are nevertheless some debatable cases:
 
 ![](/images/Communication%20Kit.png)
 
-The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera), prototype of the Game Boy Camera, contains a complete printer library and a COM menu but I do not find any way to activate a serial port activity from button inputs. I guess the version 10.24 of the rom (the only one known to date) was not compiled with that functionality.
+The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera), prototype of the Game Boy Camera, contains a complete printer library and a COM menu but I do not find any way to activate a serial port activity from button inputs. I guess the version 10.24 of the rom (the only one known to date) was not compiled with that functionality.  Considering that the Game Boy Printer was probably just a prototype at that time, it is not that surprinsing.
 
 **Example of printer commands in Debagame Tester: Second Impact**
 
 ![](/images/Debagame_library.png)
+
+This is probably the most early version of the Game Boy printer library. Yet, all commands are here 
 
 Even if I still suspect a small handful of cryptic games to be lacking in the list, I have no idea how to find them now.
 
