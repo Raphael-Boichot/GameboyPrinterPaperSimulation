@@ -50,7 +50,7 @@ Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to g
 
 You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
-**Indirect printing from Matlab/GNU Octave using a logfile**
+### Indirect printing from Matlab/GNU Octave using a logfile
 
 - Install the last [Arduino IDE](https://www.arduino.cc/en/software) and load the .ino file to the board.
 - Install the open-source [GNU Octave](https://www.gnu.org/software/octave/index) or enjoy your pricey Matlab license.
@@ -67,7 +67,7 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator).
 
-**Direct printing from Matlab/GNU Octave without using the Arduino IDE !**
+### Direct printing from Matlab/GNU Octave without using the Arduino IDE !
 
 You can run [Read_directly_from_Arduino_Matlab.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Matlab.m) or [Read_directly_from_Arduino_Octave.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Octave.m) directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output from the IDE but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
 
