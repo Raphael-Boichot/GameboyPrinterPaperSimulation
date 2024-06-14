@@ -50,6 +50,8 @@ Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to g
 
 You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
+**Indirect printing from Matlab/GNU Octave using a logfile**
+
 - Install the last [Arduino IDE](https://www.arduino.cc/en/software) and load the .ino file to the board.
 - Install the open-source [GNU Octave](https://www.gnu.org/software/octave/index) or enjoy your pricey Matlab license.
 
@@ -64,6 +66,18 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Choose some color palettes and printing options (default are OK).
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator).
+
+**Direct printing from Matlab/GNU Octave without using the Arduino IDE !**
+
+You can run [Read_directly_from_Arduino_Matlab.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Matlab.m) or [Read_directly_from_Arduino_Octave.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Octave.m) directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output from the IDE but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
+
+- Install the last [Arduino IDE](https://www.arduino.cc/en/software) and compile/load the .ino file with the TimeOut parameter you need. Note the USB port number, close the IDE, you won't need it.
+- Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
+- Connect your Game Boy to Arduino with serial cable and print. It must behave like with the Arduino serial console but into the GNU Octave/Matlab Command window.
+- Print your images as usual.
+- Once the printing session is finished, reboot the Arduino, it will indicate to GNU Octave/Matlab that transmission is over and will run the decoder automatically.
+- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
+- Code generates an output .txt file that you can process again later with the classical decoder "Main_Decoder.m" or with the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator). The text output is also automatically backed-up with a unique ID so that you would never lost your prints.
 
 ## The pinout to use for Arduino
 ![](./images/Arduino_pinout.png)
@@ -104,18 +118,6 @@ Games that can take advantage from the idle mode are (for example):
 **Some more technical trivia**
 
 The game compatibility of the Game Boy Printer emulator have been increased to 100% by applying two simple rules to the error packets sent by the Printer emulator to games: the error packet is always 0x00 before printing (the games clearly do not mind this error byte most of the time) except when an empty data packet is received, where it becomes 0x04 (image data full). This allows triggering the print command for certain rare games that require this. The post-printing commands are still the ones from the original project, except some increase of the number of busy state commands.
-
-**Direct printing from Matlab/GNU Octave without using the Arduino IDE !**
-
-You can run [Read_directly_from_Arduino_Matlab.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Matlab.m) or [Read_directly_from_Arduino_Octave.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Octave.m) directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output from the IDE but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
-
-- Install the last [Arduino IDE](https://www.arduino.cc/en/software) and compile/load the .ino file with the TimeOut parameter you need. Note the USB port number, close the IDE, you won't need it.
-- Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
-- Connect your Game Boy to Arduino with serial cable and print. It must behave like with the Arduino serial console but into the GNU Octave/Matlab Command window.
-- Print your images as usual.
-- Once the printing session is finished, reboot the Arduino, it will indicate to GNU Octave/Matlab that transmission is over and will run the decoder automatically.
-- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
-- Code generates an output .txt file that you can process again later with the classical decoder "Main_Decoder.m" or with the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator). The text output is also automatically backed-up with a unique ID so that you would never lost your prints.
 
 **Can I modify the palettes of the pixel perfect images or e-paper outputs ?**
 
