@@ -172,7 +172,7 @@ The .zip file in the repo contains 100% or any% saves ready to use with printer 
 
 I have contributed to the [NeoGB Printer](https://github.com/zenaro147/NeoGB-Printer) which uses the same engine and has exactly the same compatibility with games. It adds some serial protocol analysis to automate automatic/timeout modes.
 
-So, here is the game list:
+So, here is the curated game list:
 
 - *1942 (never released in Japan)*
 - *Alice in Wonderland (never released in Japan)*
