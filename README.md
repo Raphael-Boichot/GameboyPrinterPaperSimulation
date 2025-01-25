@@ -1,3 +1,5 @@
+**Edit 2025: time has passed since this project which was my first repository. All the features presented here (emulator + decoder + paper emulator) are now condensed in the [TinyGB Printer](https://github.com/Raphael-Boichot/The-TinyGB-Printer) device for RP2040.** 
+
 # Gameboy Printer Paper Simulation
 
 * Authors: *Raphaël BOICHOT, Brian KHUU*
