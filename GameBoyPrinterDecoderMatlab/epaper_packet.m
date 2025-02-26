@@ -45,19 +45,19 @@ for i=1:1:heigth
             x=ceil(49*rand);
             burn_dot=pixel_sample(1+20*y:20+20*y,1+20*x:20+20*x,:);
         end
-        
+
         if IMAGE(i,j)==84
             y=1;
             x=ceil(49*rand);
             burn_dot=pixel_sample(1+20*y:20+20*y,1+20*x:20+20*x,:);
         end
-        
+
         if IMAGE(i,j)==168
             y=2;
             x=ceil(49*rand);
             burn_dot=pixel_sample(1+20*y:20+20*y,1+20*x:20+20*x,:);
         end
-        
+
         if not(IMAGE(i,j)==255);
             if rand<0.5; burn_dot=flip(burn_dot,ceil(2*rand));end;
             burn_dot=rot90(burn_dot,ceil(2*rand)-2);

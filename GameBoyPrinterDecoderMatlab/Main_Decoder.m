@@ -5,23 +5,25 @@
 % update V3 to follow compatibility with https://github.com/mofosyne/arduino-gameboy-printer-emulator
 clear
 clc
+close all
 % Here you enter some parameters
 %------------------------------------------------------------------------
 paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
 %watermarking='Raphaël BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
 color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, 5 for salmon, for pixel perfect output
-darkness=10; %1=lightest 10=darkest
+darkness=8; %1=lightest 10=darkest
 scale_percentage=30; %100=full size, smaller values scale down image
 Timeout_printing=0;  %0 to separate images automatically if margin >0
+Scaling_factor=4; %pixel perfect upscaling
 %1 for continuous printing with TimeOut or Manual dode, ignore margin > 0);
 %------------------------------------------------------------------------
 
-  try
+try
     pkg load image % for compatibility with Octave in case the code directly targets a Putty log file for example
-  catch
+catch
     % Nothing to do
-  end
+end
 
 mkdir('Images_e_paper')
 mkdir('Images_pixel_perfect')
@@ -42,12 +44,12 @@ while ~feof(fid)
     % if not(isempty(strfind(a,str)))
     % disp('INIT command received')
     % end
-    
+
     % str='88 33 0F';
     % if not(isempty(strfind(a,str)))
     % disp('STATUS command received')
     % end
-    
+
     str='88 33 04';
     if not(isempty(strfind(a,str)))
         if a(13:17)=='00 00'
@@ -60,7 +62,7 @@ while ~feof(fid)
             drawnow
         end
     end
-    
+
     str='88 33 02';
     if not(isempty(strfind(a,str)))&&not(isempty(raw_image))
         disp('PRINT command received')
@@ -74,8 +76,9 @@ while ~feof(fid)
         if not(margin==0)&&not(Timeout_printing);
             num_image=num_image+1;
             imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+            colored_image=imresize(colored_image,4,'nearest');
             imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
-            imagesc(colored_image)
+            imshow(colored_image)
             pause(1)
             disp('Images written')
             raw_image=[];
@@ -91,9 +94,10 @@ while ~feof(fid)
         disp('Cut paper command received')
         num_image=num_image+1;
         imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+        colored_image=imresize(colored_image,4,'nearest');
         imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
         disp('Images written')
-        imagesc(colored_image)
+        imshow(colored_image)
         pause(1)
         raw_image=[];
         colored_image=[];
@@ -107,9 +111,10 @@ end
 if not(isempty(colored_image))
     num_image=num_image+1;
     imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+    colored_image=imresize(colored_image,4,'nearest');
     imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
     disp('Images written')
-    imagesc(colored_image)
+    imshow(colored_image)
     pause(1)
     raw_image=[];
     colored_image=[];
@@ -120,3 +125,4 @@ if not(isempty(colored_image))
 end
 fclose(fid);
 disp('Normal termination')
+close all
