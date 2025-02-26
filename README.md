@@ -1,4 +1,4 @@
-**Edit 2025: time has passed since this project which was my first repository. All the features presented here (emulator + decoder + paper emulator) are now condensed in the [TinyGB Printer](https://github.com/Raphael-Boichot/The-TinyGB-Printer) device for RP2040.** 
+**Edit 2025: time has passed since this project which was my very first repository. All the features presented here (emulator + decoder + paper emulator) are now condensed in the [TinyGB Printer](https://github.com/Raphael-Boichot/The-TinyGB-Printer) device for RP2040. The codes in the current project are of course still updated** 
 
 # Gameboy Printer Paper Simulation
 
@@ -73,13 +73,13 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 
 You can run [Read_directly_from_Arduino_Matlab.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Matlab.m) or [Read_directly_from_Arduino_Octave.m](GameBoyPrinterDecoderMatlab/Read_directly_from_Arduino_Octave.m) directly to acquire data and decode them in the same run. It behaves like the Arduino Serial output from the IDE but without the need to copy-paste text output: the decoder is ran automatically as soon as you reboot the Arduino after a printing session. How to use it : 
 
-- Install the last [Arduino IDE](https://www.arduino.cc/en/software) and compile/load the .ino file with the TimeOut parameter you need. Note the USB port number, close the IDE, you won't need it.
-- Use your pricey Matlab license or the free GNU Octave alternative and modify the script with the correct port number and run it.
+- Install the last [Arduino IDE](https://www.arduino.cc/en/software) and compile/load the .ino file. Close the IDE, you won't need it anymore.
+- Use your pricey Matlab license or the free GNU Octave alternative and run the .m scripts with the Arduino connected to the USB port. It automatically detects the serial port to address.
 - Connect your Game Boy to Arduino with serial cable and print. It must behave like with the Arduino serial console but into the GNU Octave/Matlab Command window.
 - Print your images as usual.
 - Once the printing session is finished, reboot the Arduino, it will indicate to GNU Octave/Matlab that transmission is over and will run the decoder automatically.
 - Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol.
-- Code generates an output .txt file that you can process again later with the classical decoder "Main_Decoder.m" or with the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator). The text output is also automatically backed-up with a unique ID so that you would never lost your prints.
+- Code generates a log file that you can process again later with the classical decoder "Main_Decoder.m" or with the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator). The text output is also automatically backed-up with a unique ID so that you would never lost your prints.
 
 ## The pinout to use for Arduino
 ![](./images/Arduino_pinout.png)
