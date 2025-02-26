@@ -18,11 +18,8 @@ valid_port=[];
 protocol_failure=1;
 for i =1:1:length(list)
     disp(['Testing port ',char(list(i)),'...'])
-    %the communication protocol details can be set from keys on the front panel, see documentation
-    %here I set the maximum baudrate which is the case '3' from the front panel. In case of internal battery loss, the device uses case '1' (2400 bauds) by default
     arduinoObj = serialport(char(list(i)),115200,'TimeOut',2);
     flush(arduinoObj);
-    %here I rely on Timeout to be sure to get all the character string. It's not optimal but the GNU Octave library is not as practical as the Matlab one
     response=readline(arduinoObj);
     if ~isempty(response)
         if not(isempty(strfind(response,"GAMEBOY PRINTER")))
