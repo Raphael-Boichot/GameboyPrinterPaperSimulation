@@ -12,35 +12,64 @@ disp('|Reboot Arduino to end transmission                       |')
 disp('-----------------------------------------------------------')
 pkg load image
 pkg load instrument-control
-arduinoObj = serialport("COM6",'baudrate',115200,'timeout',-1); %set the Arduino com port here
-%configureTerminator(arduinoObj,"CR/LF");
-flush(arduinoObj);
 
-set(arduinoObj, 'timeout',-1);
-flag=0;
-str='Packet Capture V3';
-while flag==0
-    data = ReadToTermination(arduinoObj);
-    disp(data)
-    if not(isempty(strfind(data,str)))
-        flag=1;
+
+list = serialportlist;
+valid_port=[];
+protocol_failure=1;
+for i =1:1:length(list)
+    disp(['Testing port ',char(list(i)),'...'])
+    %the communication protocol details can be set from keys on the front panel, see documentation
+    %here I set the maximum baudrate which is the case '3' from the front panel. In case of internal battery loss, the device uses case '1' (2400 bauds) by default
+    s = serialport(char(list(i)),'BaudRate',115200);
+    set(s, 'timeout',2);
+    flush(s);
+    %here I rely on Timeout to be sure to get all the character string. It's not optimal but the GNU Octave library is not as practical as the Matlab one
+    response=char(read(s, 100));
+    if ~isempty(response)
+        if strcmp(response(4:18),'GAMEBOY PRINTER')
+            disp(['Arduino detected on port ',char(list(i))])%last char is ACK
+            valid_port=char(list(i));
+            beep ()
+            protocol_failure=0;
+        end
     end
+    clear s
 end
 
-disp('Entering the capture loop...')
-fid=fopen('Entry_file.txt','w');
-str='Packet Capture V3';
-flag=0;
-while flag==0
-    data = ReadToTermination(arduinoObj);
-    disp(data)
-    fprintf(fid,'%s\r\n',data);
-    if not(isempty(strfind(data,str)));
-        flag=1;
+if protocol_failure==0
+    arduinoObj = serialport(valid_port,'baudrate',115200,'timeout',-1); %set the Arduino com port here
+    %configureTerminator(arduinoObj,"CR/LF");
+    flush(arduinoObj);
+
+    set(arduinoObj, 'timeout',-1);
+    flag=0;
+    str='Packet Capture V3';
+    while flag==0
+        data = ReadToTermination(arduinoObj);
+        disp(data)
+        if not(isempty(strfind(data,str)))
+            flag=1;
+        end
     end
+
+    disp('Entering the capture loop...')
+    fid=fopen('Entry_file.txt','w');
+    str='Packet Capture V3';
+    flag=0;
+    while flag==0
+        data = ReadToTermination(arduinoObj);
+        disp(data)
+        fprintf(fid,'%s\r\n',data);
+        if not(isempty(strfind(data,str)));
+            flag=1;
+        end
+    end
+
+    fclose(fid);
+    disp('Normal termination, printing the images...')
+
+    run Main_Decoder.m
+else
+    disp('Arduino not detected')
 end
-
-fclose(fid);
-disp('Normal termination, printing the images...')
-
-run Main_Decoder.m
