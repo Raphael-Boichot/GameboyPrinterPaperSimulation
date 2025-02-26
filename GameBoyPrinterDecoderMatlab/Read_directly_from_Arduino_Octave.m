@@ -44,19 +44,18 @@ if protocol_failure==0
     str='Packet Capture V3';
     while flag==0
         data = ReadToTermination(arduinoObj);
-        disp(data)
+        fprintf(data)
         if not(isempty(strfind(data,str)))
             flag=1;
         end
     end
 
-    disp('Entering the capture loop...')
     fid=fopen('Entry_file.txt','w');
     str='Packet Capture V3';
     flag=0;
     while flag==0
         data = ReadToTermination(arduinoObj);
-        disp(data)
+        fprintf(data)
         fprintf(fid,'%s\r\n',data);
         if not(isempty(strfind(data,str)));
             flag=1;

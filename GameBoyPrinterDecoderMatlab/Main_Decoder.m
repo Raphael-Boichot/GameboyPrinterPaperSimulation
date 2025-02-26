@@ -23,6 +23,9 @@ Timeout_printing=0;  %0 to separate images automatically if margin >0
     % Nothing to do
   end
 
+mkdir('Images_e_paper')
+mkdir('Images_pixel_perfect')
+
 [ID]=get_unique_ID(8);
 DateString = date;
 copyfile (file,['Backups/',DateString,'_',ID,'.txt']);
@@ -70,8 +73,8 @@ while ~feof(fid)
         raw_image=[];
         if not(margin==0)&&not(Timeout_printing);
             num_image=num_image+1;
-            imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
-            imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
+            imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+            imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
             imagesc(colored_image)
             pause(1)
             disp('Images written')
@@ -87,8 +90,8 @@ while ~feof(fid)
     if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(Timeout_printing)
         disp('Cut paper command received')
         num_image=num_image+1;
-        imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
-        imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
+        imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+        imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
         disp('Images written')
         imagesc(colored_image)
         pause(1)
@@ -103,8 +106,8 @@ end
 
 if not(isempty(colored_image))
     num_image=num_image+1;
-    imwrite(epaper,['GameBoy e-paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
-    imwrite(colored_image,['GameBoy pixel perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
+    imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
+    imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
     disp('Images written')
     imagesc(colored_image)
     pause(1)
