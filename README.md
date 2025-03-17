@@ -13,7 +13,7 @@ The motivation ? As Game Boy Printer paper is becoming more and more difficult (
 
 The Game Boy printer emulator developped by Brian Khuu which is used here is able to capture a stream of serial data under text form. The project here aims to tranform this hexadecimal text stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer. Reproducing the tone, noise, granularity and aliasing of to the printer head is challenging compared to a classical pixel perfect rendering. And what is challenging is fun.
 
-# My initial trial
+# My initial trial: the mathematical way
 
 My first idea was to do a simulation of printer head by replacing hard square pixels by some sort of bell-shaped spots with lots of noise. A 2D bell-shaped approximation had a sense to me as injecting heat in a point on a 2D surface result in gaussian distribution of temperatures. On thermal paper, tones are due to a chemical reaction of a powder deposited on the surface of paper driven by temperature and phase change. I took inspiration from cashier tickets and Game Boy Printer scans at high resolution. Misalignment of the printer head was also simulated. The result of a pure mathematical approach was interesting for sure.
 
@@ -25,7 +25,7 @@ My first idea was to do a simulation of printer head by replacing hard square pi
 
 Even if it was not bad at all, pixels were too regularly spaced and paper fibers that deform the dots and create vertical streaks on paper were impossible to simulate with this approach. We need a more agressive design !
 
-# My second trial : it MUST look like the real thermal paper !
+# My second trial: the brute force way
 
 After considering the differences between early outputs and real prints (scanned at 3600 dpi) obtained with a recently bought Pocket Printer, I was still not satisfied by the result. The difficulty is that the printer head and paper grain add noise to the image at different length scales. Moreover, the needles from thermal printer head do not just create noisy gaussian dots. These dots also have a random shape (typically due to fibers in paper). So my new idea was to sample a collection of representative pixels of the different grayscales on a good quality scan of isolated pixels printed with my Game Boy Printer. 
 
