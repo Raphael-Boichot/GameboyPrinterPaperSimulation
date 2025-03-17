@@ -23,7 +23,7 @@ for i =1:1:length(list)
     response=readline(arduinoObj);
     if ~isempty(response)
         if not(isempty(strfind(response,"GAMEBOY PRINTER")))
-            disp(['Arduino detected on port ',char(list(i))])%last char is ACK
+            disp(['Arduino detected on port ',char(list(i))])
             valid_port=char(list(i));
             beep ()
             protocol_failure=0;
