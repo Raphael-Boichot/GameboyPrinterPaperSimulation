@@ -9,7 +9,7 @@ close all
 %%%%%%%%%%%%%%%%%%%%%%%%%General parameters%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 paper_color=2; %6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
 darkness=8; %1=lightest 10=darkest
-scale_percentage=25; %100=full size, smaller values scale down image
+scale_percentage=30; %100=full size, smaller values scale down image
 %%%%%%%%%%%%%%%%%%%%%%%%%General parameters%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 disp('-----------------------------------------------------------')
