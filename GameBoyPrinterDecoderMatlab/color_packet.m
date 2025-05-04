@@ -4,7 +4,7 @@ PALETTE=dec2bin(hex2dec(a(25:26)),8);
 disp(['The color palette is 0x',a(25:26)])
 if PALETTE=='00000000';PALETTE='11100100';end;
 %3 = black, 2 = dark gray, 1 = light gray, 0 = white
-COLORS=[bin2dec(PALETTE(7:8)), bin2dec(PALETTE(5:6))...
+COLORS_from_palette=[bin2dec(PALETTE(7:8)), bin2dec(PALETTE(5:6))...
     bin2dec(PALETTE(3:4)), bin2dec(PALETTE(1:2))];
 %margin=hex2dec(a(22:23));
 margin=hex2dec(a(23));
@@ -23,7 +23,7 @@ frame=zeros(h, w, 3);
 %now we swap the palette, as palette may vary.
 for j=1:1:h
     for k=1:1:w
-        raw_image(j,k)=colors(raw_image(j,k)+1);
+        raw_image(j,k)=COLORS_from_palette(raw_image(j,k)+1);
     end
 end
 
