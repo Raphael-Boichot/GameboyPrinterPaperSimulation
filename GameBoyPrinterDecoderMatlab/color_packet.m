@@ -23,7 +23,7 @@ frame=zeros(h, w, 3);
 %now we swap the palette, as palette may vary.
 for j=1:1:h
     for k=1:1:w
-        raw_image(j,k)=COLORS(raw_image(j,k)+1);
+        raw_image(j,k)=colors(raw_image(j,k)+1);
     end
 end
 
