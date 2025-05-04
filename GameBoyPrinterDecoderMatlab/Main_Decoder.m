@@ -11,7 +11,7 @@ close all
 paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
 %watermarking='Raphaël BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
-color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, 5 for salmon, for pixel perfect output
+color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, 5 for salmon, 6 for printer, for pixel perfect output
 darkness=8; %1=lightest 10=darkest
 scale_percentage=30; %100=full size, smaller values scale down image
 Timeout_printing=0;  %0 to separate images automatically if margin >0
