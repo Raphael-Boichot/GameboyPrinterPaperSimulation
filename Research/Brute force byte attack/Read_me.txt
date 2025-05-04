@@ -1,0 +1,1 @@
+Place the GB/GBC romset here and run the script
