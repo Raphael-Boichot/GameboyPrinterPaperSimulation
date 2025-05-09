@@ -6,7 +6,7 @@ clear
 clc
 
 paper_color=1; %6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
-darkness=10; %1=lightest 10=darkest
+darkness=8; %1=lightest 10=darkest
 scale_percentage=30; %100=full size, smaller values scale down image
 
 %watermarking='Raphael BOICHOT 2021';
