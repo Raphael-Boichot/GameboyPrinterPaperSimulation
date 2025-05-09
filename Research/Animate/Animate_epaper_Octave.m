@@ -7,11 +7,19 @@
 clear
 clc
 pkg load image
-paper_color=1; %6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
-darkness=10; %1=lightest 10=darkest
-scale_percentage=30; %100=full size, smaller values scale down image
-nb_frames=10; %number of images in animated gif
-BandW_image=imread('GameBoy pixel perfect.png');
+
+paper_color=3; %6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
+darkness=8; %1=lightest 10=darkest
+scale_percentage=25; %100=full size, smaller values scale down image
+nb_frames=24; %number of images in animated gif
+BandW_image=imread('GameBoy_pixel_perfect_big.png');
+[heigh,width,~]=size(BandW_image);
+
+if width>360
+  disp('Rescaling image')
+  BandW_image=imresize(BandW_image,160/width,'nearest');
+end
+
 map=BandW_image(:,:,1);
 C=unique(map);
 switch length(C)
@@ -32,14 +40,12 @@ average_map=[];
 for i=1:1:nb_frames
     disp(['Making frame ',num2str(i)])
     [epaper]=epaper_packet(map,paper_color,darkness,scale_percentage,num1,num2);
-    average_map=cat(3,average_map,epaper);
     [imind,cm] = rgb2ind(epaper);
     if i==1
-        imwrite(imind,cm,'Output.gif','gif', 'Loopcount',inf,'DelayTime',0.05);
+        imwrite(imind,cm,'Animation.gif','gif', 'Loopcount',inf,'DelayTime',0.04,'Compression','bzip');
     else
-        imwrite(imind,cm,'Output.gif','gif','WriteMode','append','DelayTime',0.05);
+        imwrite(imind,cm,'Animation.gif','gif','WriteMode','append','DelayTime',0.04,'Compression','bzip');
     end
 end
 
-imwrite(uint8(mean(average_map,3)),'Output.png');
 disp('Animation done !')
