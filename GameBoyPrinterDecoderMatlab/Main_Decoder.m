@@ -11,7 +11,7 @@ close all
 paper_color=1;%6=random, 5=purple, 4=pink, 3=regular blue, 2=regular yellow or 1=regular white
 %watermarking='Raphaël BOICHOT 2021';
 file='Entry_file.txt';% enter text file to decode
-color_option=1; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, 5 for salmon, 6 for printer, for pixel perfect output
+color_option=6; %1 for Black and white, 2 for Game Boy Color, 3 for Game Boy DMG, 4 for CGA, 5 for salmon, 6 for printer, for pixel perfect output
 darkness=8; %1=lightest 10=darkest
 scale_percentage=30; %100=full size, smaller values scale down image
 Timeout_printing=0;  %0 to separate images automatically if margin >0
@@ -74,9 +74,12 @@ while ~feof(fid)
         disp(['The after margin is 0x',num2str(dec2hex(margin))])
         raw_image=[];
         if not(margin==0)&&not(Timeout_printing);
+            disp('Flush spooler by Print command')
             num_image=num_image+1;
+            disp('Burning thermal paper...')
             imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
             colored_image=imresize(colored_image,4,'nearest');
+            disp('Making the pixel perfect image...')
             imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
             imshow(colored_image)
             pause(1)
@@ -86,15 +89,17 @@ while ~feof(fid)
             colored=[];
             BandW=[];
             BandW_image=[];
-            disp('Flush spooler by Print command')
         end
     end
     str='Memory Waterline';
     if not(isempty(strfind(a,str)))&&not(isempty(colored_image))&&(Timeout_printing)
+        disp('Flush spooler by Timed Out')
         disp('Cut paper command received')
         num_image=num_image+1;
+        disp('Burning thermal paper...')
         imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
         colored_image=imresize(colored_image,4,'nearest');
+        disp('Making the pixel perfect image...')
         imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
         disp('Images written')
         imshow(colored_image)
@@ -104,14 +109,16 @@ while ~feof(fid)
         colored=[];
         BandW=[];
         BandW_image=[];
-        disp('Flush spooler by Timed Out')
-    end
+     end
 end
 
 if not(isempty(colored_image))
+    disp('Flush spooler by force')
     num_image=num_image+1;
+    disp('Burning thermal paper...')
     imwrite(epaper,['Images_e_paper/GameBoy_e_paper_',num2str(num_image),'_',DateString,'_',ID,'.png'],'Alpha',alpha)
     colored_image=imresize(colored_image,4,'nearest');
+    disp('Making the pixel perfect image...')
     imwrite(colored_image,['Images_pixel_perfect/GameBoy_pixel_perfect_',num2str(num_image),'_',DateString,'_',ID,'.png'])
     disp('Images written')
     imshow(colored_image)
@@ -121,7 +128,6 @@ if not(isempty(colored_image))
     colored=[];
     BandW=[];
     BandW_image=[];
-    disp('Flush spooler by force')
 end
 fclose(fid);
 disp('Normal termination')
