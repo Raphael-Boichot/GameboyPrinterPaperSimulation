@@ -11,8 +11,6 @@ disp('|Beware, this code is not yet compatible Matlab Mobile !!!|')
 disp('|Reboot Arduino to end transmission                       |')
 disp('-----------------------------------------------------------')
 rng('shuffle');
-
-
 list = serialportlist;
 valid_port=[];
 protocol_failure=1;
@@ -31,7 +29,6 @@ for i =1:1:length(list)
     end
     clear arduinoObj
 end
-
 if protocol_failure==0
     arduinoObj = serialport(valid_port,115200,'TimeOut',3600); %set the Arduino com port here
     configureTerminator(arduinoObj,"CR/LF");
@@ -46,7 +43,6 @@ if protocol_failure==0
             flag=1;
         end
     end
-
     disp('Entering the capture loop...')
     fid=fopen('Entry_file.txt','w');
     str='Packet Capture V3';
@@ -59,12 +55,10 @@ if protocol_failure==0
             flag=1;
         end
     end
-
     fclose(serial(arduinoObj.Port));
     fclose(fid);
     disp('Normal termination, printing the images...')
     run Main_Decoder.m
-
 else
     disp('Arduino not detected')
 end
