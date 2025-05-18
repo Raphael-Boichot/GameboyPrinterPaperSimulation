@@ -488,6 +488,7 @@ void Connect_to_printer()
     delay(100);
     Serial.begin(9600);
     while (!Serial) { ; }
+    Serial.println("Waiting for data");
     while (Serial.available() > 0)
     {  //flush the buffer from any remaining data
       Serial.read();
