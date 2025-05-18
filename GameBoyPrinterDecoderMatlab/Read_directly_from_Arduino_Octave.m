@@ -24,7 +24,7 @@ for i =1:1:length(list)
     flush(s);
     response=char(read(s, 100));
     if ~isempty(response)
-        if strcmp(response(4:18),'GAMEBOY PRINTER')
+        if not(isempty(strfind(response,'GAMEBOY PRINTER')))
             disp(['Arduino detected on port ',char(list(i))])
             valid_port=char(list(i));
             beep ()

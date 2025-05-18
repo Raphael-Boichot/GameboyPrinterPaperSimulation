@@ -22,7 +22,7 @@ for i =1:1:length(list)
     flush(arduinoObj);
     response=readline(arduinoObj);
     if ~isempty(response)
-        if not(isempty(strfind(response,"GAMEBOY PRINTER")))
+        if not(isempty(strfind(response,'GAMEBOY PRINTER')))
             disp(['Arduino detected on port ',char(list(i))])
             valid_port=char(list(i));
             beep ()
