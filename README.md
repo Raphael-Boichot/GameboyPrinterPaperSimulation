@@ -293,13 +293,13 @@ There are nevertheless some debatable cases:
 - *Mario Artist Paint Studio (マリオアーティストシリーズ) for N64*
 - *Debagame Tester: Second Impact (デバガメテスター SECOND IMPACT)*
 
-*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be directly compatible with the Game Boy Printer via an unreleased "64GB Cable" coupled to an unreleased "Game Boy Printer cartridge" equipped with an unreleased "MBC4" mapper, in addition to yet allow using the transfer pak with the Game Boy Camera as middleman. Mario Artist Paint Studio contains a printer libray and menus for using printers, both grayscale and color. Mario Artist: Communication Kit also contains a [dismissed printer menu](https://www.mariowiki.com/Mario_Artist:_Communication_Kit) and a full printer library. Both N64 games contains commands for the classic printer with packets of 640 bytes but also for packets of 320 bytes and the undocumented command 0x06.
+*[Mario Artist Paint Studio](https://tcrf.net/Mario_Artist_Paint_Studio)* is supposed to be directly compatible with the Game Boy Printer via an unreleased "64GB Cable" coupled to an unreleased "Game Boy Printer cartridge" equipped with an unreleased "MBC4" mapper, in addition to yet allow using the transfer pak with the Game Boy Camera as middleman. Mario Artist Paint Studio contains a printer libray and menus for using printers, both grayscale and color. Mario Artist: Communication Kit also contains a [dismissed printer menu](https://www.mariowiki.com/Mario_Artist:_Communication_Kit) and a full printer library. Both N64 games contains commands for the classic printer with packets of 640 bytes but also for packets of 320 bytes, a print command with an unusual 5 bytes packet lenght the undocumented command 0x06 having a 4 bytes packet lenght.
 
 **Example of printer commands in Mario Artist: Communication Kit (and Mario Artist Paint Studio as they are exactly the same)**
 
 ![](/images/Communication%20Kit.png)
 
-The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera), prototype of the Game Boy Camera, contains a complete printer library and a COM menu but I do not find any way to activate a decent serial port activity from button inputs (other than a reset of CLOCK state). I guess the version 10.24 of the rom (the only one known to date) was not compiled with that functionality. Considering that the Game Boy Printer was probably just a prototype at that time, it is not that surprinsing.
+The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera), prototype of the Game Boy Camera, contains a complete printer library and a COM menu but I do not find any way to activate a decent serial port activity from button inputs (other than a reset of CLOCK state). I guess the version 10.24 of the rom (the only one known to date) was not compiled with that functionality. Considering that the Game Boy Printer was probably just a prototype at that time, it is not that surprising.
 
 **Example of printer commands in Debagame Tester: Second Impact**
 
