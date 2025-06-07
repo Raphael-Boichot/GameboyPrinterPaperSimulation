@@ -1,4 +1,4 @@
-**Edit 2025: time has passed since this project which was my very first repository. All the features presented here (emulator + decoder + paper emulator) are now smashed into the [TinyGB Printer](https://github.com/Raphael-Boichot/The-TinyGB-Printer) device for RP2040. The codes in the current project are still updated from time to time to improve their ease of use.** 
+**Edit 2025: time has passed since this project which was my very first repository. All the features presented here (emulator + decoder + paper emulator) are now merged into the [TinyGB Printer](https://github.com/Raphael-Boichot/The-TinyGB-Printer) device for RP2040. The codes in the current project are still updated from time to time to improve their ease of use.** 
 
 # Gameboy Printer Paper Simulation
 
@@ -11,7 +11,7 @@ This e-paper feature is now included in the [GBCamera-Android-Manager](https://g
 
 The motivation ? As Game Boy Printer paper is becoming more and more difficult (and damn expensive) to source and subjected to definitive deterioration with time, emulating it is more and more appealing from an heritage conservation point of view. And using 6 AA batteries in 2024, honestly...
 
-The Game Boy printer emulator developped by Brian Khuu which is used here is able to capture a stream of serial data under text form. The project here aims to tranform this hexadecimal text stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer. Reproducing the tone, noise, granularity and aliasing of to the printer head is challenging compared to a classical pixel perfect rendering. And what is challenging is fun.
+The Game Boy printer emulator developed by Brian Khuu which is used here is able to capture a stream of serial data under text form. The project here aims to transform this hexadecimal text stream into pleasant images that have the realistic aspect of a roll of paper exiting a thermal printer. Reproducing the tone, noise, granularity and aliasing of to the printer head is challenging compared to a classical pixel perfect rendering. And what is challenging is fun.
 
 # My initial trial: the mathematical way
 
@@ -35,7 +35,7 @@ I first printed this test image with isolated pixels of the three different gray
 
 ![](./images/2020-09-10/Image_test.png)
 
-Then I scanned a printing of this image at 3600 dpi (sufficient to see the details of pixels, each pixel beeing approx. 20x20 pixels on the scan):
+Then I scanned a printing of this image at 3600 dpi (sufficient to see the details of pixels, each pixel being approx. 20x20 pixels on the scan):
 
 ![](./images/2020-09-10/Image_test_printed.png)
 
@@ -50,7 +50,7 @@ Then the GNU Octave/Matlab code just reads a pixel on a pixel perfect image to g
 
 # How to use the Game Boy Printer paper emulation ?
 
-You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrify original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
+You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, the cheapest soldering iron or the cheapest breadboard, a serial cable to sacrify (for example the cheapest chinese clone found on Aliexpress, please do not sacrifice original Nintendo cables) and for ease the cheapest multimeter with continuity mode. The total project cost should be around $10 maximum. Wire and/or solder all that stuff, recharge your cheapest NiMH batteries and you are ready for printing.
 
 ### Indirect printing from Matlab/GNU Octave using a logfile
 
@@ -58,7 +58,7 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Install the open-source [GNU Octave](https://www.gnu.org/software/octave/index) or enjoy your pricey Matlab license.
 
 **On Arduino IDE 1.8.X and earlier:**
-- Connect your Game Boy to Arduino with serial cable, open the serial console in 115200 bauds and print as with a real Game Boy Printer.
+- Connect your Game Boy to Arduino with serial cable, open the serial console in 115200 baud and print as with a real Game Boy Printer.
 - Copy/paste text obtained directly from the Arduino serial into [Entry_file.txt](GameBoyPrinterDecoderMatlab/Entry_file.txt)
 
 **On Arduino IDE 2.X.X:**
@@ -67,7 +67,7 @@ You will need: the cheapest Arduino Uno, the cheapest LED, the cheapest wires, t
 - Open Octave/Matlab code [Main_Decoder.m](GameBoyPrinterDecoderMatlab/Main_Decoder.m)
 - Choose some color palettes and printing options (default are OK).
 - Run and wait for completion, code is fast on Matlab, slower with Octave.
-- Enjoy your images. The code outputs both pixel perfect and paperlike images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator).
+- Enjoy your images. The code outputs both pixel-perfect and paper-like images, can handle compressed protocol, custom palettes and the many variations of the Game Boy printing protocol. The Entry_file.txt is automatically backed-up with a unique date/ID so that you can process old printing sessions later or with other tools, for example the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator).
 
 ### Direct printing from Matlab/GNU Octave without using the Arduino IDE !
 
@@ -146,23 +146,23 @@ Same for the paper output, edit "epaper_packet.m" and seek for these commands:
     
 X is the number of the e-paper palette and RGB the color levels applied to the whole image. Then just edit "color_packet.m" to seek to the new palette by its number in "Main_decoder.m"
 
-    paper_color=X; %X your custome palette
+    paper_color=X; %X your custom palette
 
 ## Examples of default palette output from the code:
 ![](images/Palettes.png)
 
-White, blue and yellow papers have the regular tones of official Nintendo papers. Pink is an invented tone that would have been cool in the series.
+White, blue and yellow papers have the regular tones of official Nintendo papers. Pink is an invented tone that would have been cool to see in the series.
 
 **Known minor issues related to the printer emulator, Arduino side**
 
 - *Printing with Hamster Club may crash after a certain number of images due to spamming of the serial console with 0F command in double speed mode. Apart from that, printing with this game is rather stable.*
-- *Game Boy Camera have an abort command during packet transmission. This command, which have no interest with an emulator, is not supported.*
+- *Game Boy Camera has an abort command during packet transmission. This command, which have no interest with an emulator, is not supported.*
 
 **Known minor issues related to the decoder, Matlab/GNU Octave side**
 
 - *Direct printing from Matlab/GNU Octave without using the Arduino IDE may crash if the Game Boy reboots into the printing session. The best is to reboot Arduino before the Game Boy to flush decoder text output between each games. Printing with the copy-paste method from the Arduino IDE is totally stable but requires more steps.*
-- *The graphical objects (figures) from GNU Octave are very slow to display contrary to Matlab (codes being the sames).*
-- *Finally, the way he serial port is handled under Matlab and GNU Octave is not the same, so I had to split the direct printing codes in two versions. All others codes are exactly the sames. I hope the two versions will be merged in a future release.*
+- *The graphical objects (figures) from GNU Octave are very slow to display contrary to Matlab (codes being the same).*
+- *Finally, the way the serial port is handled under Matlab and GNU Octave is not the same, so I had to split the direct printing codes in two versions. All others codes are exactly the same. I hope the two versions will be merged in a future release.*
 
 # The complete (and tested) list of games compatible with the Game Boy Printer and the Printer Emulator (ポケットプリンタ - 対応ソフト)
 
@@ -357,7 +357,7 @@ In consequence, I won't include them in the official list. The printer logo on t
 On the 110 games compatible with the Game Boy Printer:
 
 - *106 got a physical release in cartridge*
-- *72 games were released only in Japan (unlocking printing features being more or less painfull)*
+- *72 games were released only in Japan (unlocking printing features being more or less painful)*
 - *52 games are for Game Boy Color only (clear cartridges)*
 - *49 games are for Game Boy / Game Boy Color (black cartridge)*
 - *9 games are for Game Boy only (no color features)*
@@ -366,13 +366,13 @@ On the 110 games compatible with the Game Boy Printer:
 - *5 games use an RLE compression in their serial protocol*
 - *4 games use a two colors palette on purpose*
 - *3 games use 0x00 as default palette instead of 0xE4 (which is documented is Game Boy programming manual)*
-- *4 games belongs to the games leaked in september 2020*
+- *4 games belong to the games leaked in september 2020*
 - *1 game uses two palettes in the same image (Alice in Wonderland)*
 - *1 game uses a three colors palette on purpose (Pokémon Pinball)*
 
-# Aknowledgments
+# Acknowledgments
 
-- Author want to thank Frédéric Mercier for the finding of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
+- Author wants to thank Frédéric Mercier for the finding of the original Huc-3 mapper **Pocket Family 2** cartridge in Japan.
 - [Mraulio](https://github.com/Mraulio) and [cristofercruz](https://github.com/cristofercruz) for debugging and improving the code.
 - Shonumi aka Daniel S. Baxter for the [in-depth documentation](https://shonumi.github.io/articles/art2.html) of the printer protocol and being the first to [cite this project in his book](https://www.amazon.fr/Peripheral-Vision-Inside-Accessories-Add-ons/dp/B0BYBHQC97) !
 
