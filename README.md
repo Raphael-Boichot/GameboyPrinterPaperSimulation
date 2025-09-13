@@ -299,7 +299,7 @@ There are nevertheless some debatable cases:
 
 ![](/images/Communication%20Kit.png)
 
-The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera), prototype of the Game Boy Camera, contains a complete printer library and a COM menu but I do not find any way to activate a decent serial port activity from button inputs (other than a reset of CLOCK state). I guess the version 10.24 of the rom (the only one known to date) was not compiled with that functionality. Considering that the Game Boy Printer was probably just a prototype at that time, it is not that surprising.
+The [Debagame Tester: Second Impact](https://tcrf.net/Proto:Game_Boy_Camera), prototype of the Game Boy Camera, contains a complete printer library and a COM menu but this latter just allows a boring connection handshake between two camera prototypes. I guess the version 10.24 of the rom (the only one known to date) was not compiled with the printer functionality activated. Considering that the Game Boy Printer was probably just a prototype at that time, it is not that surprising.
 
 **Example of printer commands in Debagame Tester: Second Impact**
 
