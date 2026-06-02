@@ -10,7 +10,7 @@ image_path = os.path.join(script_dir, 'Image_with_artifacts.jpg')
 # Verify the path before opening
 if not os.path.exists(image_path):
     print(f"Error: Could not find the file at {image_path}")
-    print("Please make sure 'Example.jpg' is in the same folder as this script.")
+    print("Please make sure targeted image is in the same folder as this script.")
 else:
     # 1. Load the image
     img = Image.open(image_path).convert('RGB')
